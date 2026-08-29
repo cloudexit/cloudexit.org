@@ -1,0 +1,20 @@
+series_id,label,date,value,unit,source_id,note
+bls_server_ppi,US host-computer producer price index,2006-01-01,294.2,index Feb-2023=100,BLS-SERVER-PPI,Constant-quality PPI category covering mainframes Unix and PC servers.
+bls_server_ppi,US host-computer producer price index,2014-01-01,110,index Feb-2023=100,BLS-SERVER-PPI,Early rapid decline had largely run its course.
+bls_server_ppi,US host-computer producer price index,2025-12-01,99.761,index Feb-2023=100,BLS-SERVER-PPI,Latest complete-year endpoint.
+bls_hosting_ppi,US hosting and IT infrastructure provisioning PPI,2006-12-01,100,index Dec-2006=100,BLS-HOSTING-PPI,Service price floor proxy rather than a pure colocation quote index.
+bls_hosting_ppi,US hosting and IT infrastructure provisioning PPI,2014-12-01,101,index Dec-2006=100,BLS-HOSTING-PPI,Nominal service prices did not follow hardware deflation.
+bls_hosting_ppi,US hosting and IT infrastructure provisioning PPI,2025-12-01,122.217,index Dec-2006=100,BLS-HOSTING-PPI,Latest complete-year endpoint.
+bea_computer_index,US private fixed-investment computer and peripheral price index,2006-01-01,146.358,index 2017=100,BEA-COMPUTER-INDEX,Broad quality-adjusted business equipment index.
+bea_computer_index,US private fixed-investment computer and peripheral price index,2013-01-01,101.543,index 2017=100,BEA-COMPUTER-INDEX,The broad series plateaued after this point.
+bea_computer_index,US private fixed-investment computer and peripheral price index,2025-01-01,103.723,index 2017=100,BEA-COMPUTER-INDEX,Latest annual endpoint.
+backblaze_hdd,Backblaze HDD acquisition cost,2009-01-01,0.114,USD per GB,BACKBLAZE-HDD,Observed fleet procurement average.
+backblaze_hdd,Backblaze HDD acquisition cost,2017-12-01,0.033,USD per GB,BACKBLAZE-HDD,Observed fleet procurement average.
+backblaze_hdd,Backblaze HDD acquisition cost,2022-11-01,0.0144,USD per GB,BACKBLAZE-HDD,Observed fleet procurement average.
+uptime_pue,Industry average PUE,2007-01-01,2.5,PUE ratio,UPTIME-PUE-2024,Facility power divided by IT power.
+uptime_pue,Industry average PUE,2011-01-01,1.98,PUE ratio,UPTIME-PUE-2024,Survey anchor.
+uptime_pue,Industry average PUE,2014-01-01,1.65,PUE ratio,UPTIME-PUE-2024,Survey anchor.
+uptime_pue,Industry average PUE,2018-01-01,1.58,PUE ratio,UPTIME-PUE-2024,Survey anchor.
+uptime_pue,Industry average PUE,2024-01-01,1.56,PUE ratio,UPTIME-PUE-2024,Survey endpoint.
+eia_commercial_power,US average commercial electricity price,2016-01-01,10.43,US cents per kWh,EIA-POWER,National nominal average.
+eia_commercial_power,US average commercial electricity price,2025-01-01,13.41,US cents per kWh,EIA-POWER,National nominal average.

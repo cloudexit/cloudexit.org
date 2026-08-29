@@ -1,0 +1,11 @@
+provider,service,reference_sku,region,monthly_cny,factor_vs_cn_hangzhou
+Alibaba Cloud,ECS,ecs.g9i.large,ap-northeast-1,429.0,1.7979882648784578
+Alibaba Cloud,ECS,ecs.g9i.large,ap-southeast-1,422.28,1.769823973176865
+Alibaba Cloud,ECS,ecs.g9i.large,cn-beijing,238.6,1.0
+Alibaba Cloud,ECS,ecs.g9i.large,cn-hangzhou,238.6,1.0
+Alibaba Cloud,ECS,ecs.g9i.large,cn-hongkong,460.25,1.9289606035205364
+Alibaba Cloud,ECS,ecs.g9i.large,cn-shanghai,238.6,1.0
+Alibaba Cloud,ECS,ecs.g9i.large,cn-wulanchabu,214.74,0.9
+Alibaba Cloud,ECS,ecs.g9i.large,eu-west-1,319.2,1.3378038558256495
+Alibaba Cloud,ECS,ecs.g9i.large,us-east-1,330.31,1.3843671416596814
+Alibaba Cloud,ECS,ecs.g9i.large,us-west-1,330.31,1.3843671416596814

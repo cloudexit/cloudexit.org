@@ -1,0 +1,10 @@
+provider,service,path,price_native_per_gb,currency,price_cny_per_gb,notes
+AWS,EC2/S3/RDS aggregate,internet egress first 100 GB,0,USD,0,"Shared monthly free tier, excluding China and GovCloud."
+AWS,EC2/S3/RDS aggregate,internet egress next 10 TB,0.09,USD,0.6103529999999999,
+AWS,EC2/RDS,"cross-AZ same Region, each direction",0.01,USD,0.067817,A bidirectional application exchange can therefore create two metered directions.
+AWS,VPC NAT Gateway,data processing,0.045,USD,0.30517649999999996,Plus $0.045/hour and normal transfer charges in us-east-1/2 examples.
+Alibaba Cloud,ECS,"internet egress by traffic, cn-hangzhou",0.8,CNY,0.8,
+Alibaba Cloud,OSS,internet egress busy 08:00-24:00,0.5,CNY,0.5,
+Alibaba Cloud,OSS,internet egress off-peak 00:00-08:00,0.25,CNY,0.25,
+Alibaba Cloud,OSS,CDN origin egress,0.15,CNY,0.15,
+Alibaba Cloud,NAT Gateway cross-AZ mode,data processing CU for first 1M GB-equivalent,0.23,CNY,0.23,Plus CNY 0.23/hour instance charge; ingress and egress bytes both count.

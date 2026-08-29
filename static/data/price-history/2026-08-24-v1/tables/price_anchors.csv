@@ -1,0 +1,50 @@
+series_id,provider,resource,date,product,spec,billing,value,currency,unit,source_id,evidence_type,note
+aws_compute_bundle,AWS,compute,2007-10-16,m1.large,2 virtual cores / 7.5 GiB,on-demand,0.4,USD,instance-hour,AWS-EC2-2007,observed,Launch price for the first roughly 2-core 8-GiB general-purpose bundle.
+aws_compute_bundle,AWS,compute,2009-11-01,m1.large,2 virtual cores / 7.5 GiB,on-demand,0.34,USD,instance-hour,AWS-EC2-2009,observed,Linux us-east price after the 2009 cut.
+aws_compute_bundle,AWS,compute,2012-11-01,m1.large,2 virtual cores / 7.5 GiB,on-demand,0.26,USD,instance-hour,AWS-EC2-2012,observed,Linux us-east price after the 2012 cut.
+aws_compute_bundle,AWS,compute,2014-01-21,m3.large,2 vCPU / 7 GiB,on-demand,0.225,USD,instance-hour,AWS-M3-2014,observed,Second-generation general-purpose launch anchor.
+aws_compute_bundle,AWS,compute,2014-04-01,m3.large,2 vCPU / 7 GiB,on-demand,0.14,USD,instance-hour,AWS-CUT-2014,derived,Official 38 percent M3 cut applied to the January price and rounded to the public rate.
+aws_compute_bundle,AWS,compute,2017-01-09,m4.large,2 vCPU / 8 GiB,on-demand,0.108,USD,instance-hour,AWS-M4-2017,observed,Official AWS cost example.
+aws_compute_bundle,AWS,compute,2017-11-28,m5.large,2 vCPU / 8 GiB,on-demand,0.096,USD,instance-hour,AWS-M5-2017,observed,Official AWS documentation and examples.
+aws_compute_bundle,AWS,compute,2021-08-16,m6i.large,2 vCPU / 8 GiB,on-demand,0.096,USD,instance-hour,AWS-M6I-2021,observed,Price remained equal to m5 while price-performance improved.
+aws_compute_bundle,AWS,compute,2023-08-02,m7i.large,2 vCPU / 8 GiB,on-demand,0.1008,USD,instance-hour,LOCAL-AWS-2026,observed,Price List snapshot confirms current rate; launch supplied quality anchor.
+aws_compute_bundle,AWS,compute,2025-08-28,m8i.large,2 vCPU / 8 GiB,on-demand,0.10584,USD,instance-hour,LOCAL-AWS-2026,observed,Current rate in the 2026-08-22 Price List snapshot.
+aws_compute_bundle,AWS,compute,2026-08-22,m8i.large,2 vCPU / 8 GiB,on-demand,0.10584,USD,instance-hour,LOCAL-AWS-2026,observed,Study endpoint.
+aws_s3_standard,AWS,object storage,2006-03-14,S3 Standard,first tier,on-demand,0.15,USD,GB-month,AWS-S3-2006,observed,Launch price.
+aws_s3_standard,AWS,object storage,2010-11-01,S3 Standard,first 1 TB,on-demand,0.14,USD,GB-month,AWS-S3-2010,observed,New first-terabyte tier.
+aws_s3_standard,AWS,object storage,2012-02-01,S3 Standard,first 1 TB,on-demand,0.125,USD,GB-month,AWS-S3-2012A,observed,February cut.
+aws_s3_standard,AWS,object storage,2012-12-01,S3 Standard,first 1 TB,on-demand,0.095,USD,GB-month,AWS-S3-2012B,observed,24 percent cut.
+aws_s3_standard,AWS,object storage,2014-02-01,S3 Standard,first 1 TB,on-demand,0.085,USD,GB-month,AWS-M3-2014,observed,February storage cut.
+aws_s3_standard,AWS,object storage,2014-04-01,S3 Standard,first 1 TB,on-demand,0.03,USD,GB-month,AWS-CUT-2014,observed,65 percent first-tier cut.
+aws_s3_standard,AWS,object storage,2016-12-01,S3 Standard,first 50 TB,on-demand,0.023,USD,GB-month,AWS-S3-2016,observed,23.33 percent cut.
+aws_s3_standard,AWS,object storage,2026-08-22,S3 Standard,first 50 TB,on-demand,0.023,USD,GB-month,LOCAL-AWS-2026,observed,Nominal first-tier price unchanged since 2016.
+aws_ebs_ssd,AWS,block storage,2014-06-16,EBS gp2,General Purpose SSD,on-demand,0.1,USD,GB-month,AWS-GP2-2014,observed,Launch price with 3 IOPS per GiB and burst credits.
+aws_ebs_ssd,AWS,block storage,2020-12-01,EBS gp3,General Purpose SSD,on-demand,0.08,USD,GB-month,AWS-GP3-2020,observed,20 percent capacity-price cut plus decoupled performance.
+aws_ebs_ssd,AWS,block storage,2026-08-22,EBS gp3,General Purpose SSD,on-demand,0.08,USD,GB-month,LOCAL-AWS-2026,observed,Nominal capacity price unchanged since gp3 launch.
+aws_egress,AWS,network,2006-03-14,Internet data transfer out,first paid tier,on-demand,0.2,USD,GB,AWS-S3-2006,observed,S3 launch anchor; EC2 used the same infrastructure rate.
+aws_egress,AWS,network,2008-05-01,Internet data transfer out,first 10 TB,on-demand,0.17,USD,GB,AWS-DT-2008,observed,Down from 0.18 dollars per GB immediately before the change.
+aws_egress,AWS,network,2010-02-01,Internet data transfer out,first 10 TB,on-demand,0.15,USD,GB,AWS-DT-2010,observed,Two-cent reduction.
+aws_egress,AWS,network,2011-07-01,Internet data transfer out,first 10 TB,on-demand,0.12,USD,GB,AWS-DT-2011,observed,20 percent first-tier cut; ingress also became free.
+aws_egress,AWS,network,2014-12-01,Internet data transfer out,first 10 TB,on-demand,0.09,USD,GB,AWS-DT-2014,observed,25 percent first-tier cut.
+aws_egress,AWS,network,2026-08-22,Internet data transfer out,first 10 TB after free tier,on-demand,0.09,USD,GB,LOCAL-AWS-2026,observed,Marginal list rate unchanged since 2014; first 100 GB is free.
+aliyun_compute_monthly,Alibaba Cloud,compute,2016-05-06,n2 2-core,2 vCPU / 8 GiB,monthly subscription,302,CNY,instance-month,ALI-ECS-2016,observed,Official archived China price table for Hangzhou non-Windows.
+aliyun_compute_monthly,Alibaba Cloud,compute,2026-08-22,ecs.g9i.large,2 vCPU / 8 GiB,monthly subscription,238.6,CNY,instance-month,LOCAL-ALI-2026,observed,Current monthly list price.
+aliyun_compute_payg,Alibaba Cloud,compute,2016-05-06,n2 2-core,2 vCPU / 8 GiB,pay-as-you-go,1.31,CNY,instance-hour,ALI-ECS-2016,observed,Official archived China price table for Hangzhou non-Windows.
+aliyun_compute_payg,Alibaba Cloud,compute,2026-08-22,ecs.g9i.large,2 vCPU / 8 GiB,pay-as-you-go,0.4971,CNY,instance-hour,LOCAL-ALI-2026,observed,Current pay-as-you-go list price.
+aliyun_oss_standard,Alibaba Cloud,object storage,2014-03-27,OSS Standard LRS,Hangzhou first tier,on-demand,0.3,CNY,GB-month,ALI-CUT-2014,observed,Price immediately before the April 2014 cut.
+aliyun_oss_standard,Alibaba Cloud,object storage,2014-04-03,OSS Standard LRS,Hangzhou first tier,on-demand,0.175,CNY,GB-month,ALI-CUT-2014,observed,41.7 percent first-tier cut.
+aliyun_oss_standard,Alibaba Cloud,object storage,2015-01-28,OSS Standard LRS,Hangzhou first tier,on-demand,0.16625,CNY,GB-month,ALI-OSS-2015,derived,Official five percent Hangzhou reduction applied to 0.175.
+aliyun_oss_standard,Alibaba Cloud,object storage,2017-04-20,OSS Standard LRS,Hangzhou first tier,on-demand,0.148,CNY,GB-month,ALI-OSS-2017,observed,Official Alibaba Cloud worked example.
+aliyun_oss_standard,Alibaba Cloud,object storage,2018-06-02,OSS Standard LRS,mainland China,on-demand,0.12,CNY,GB-month,ALI-OSS-2018,observed,18.9 percent permanent cut.
+aliyun_oss_standard,Alibaba Cloud,object storage,2024-03-01,OSS Standard LRS,mainland China website-discounted PAYG,on-demand,0.09,CNY,GB-month,ALI-CUT-2024-CN,observed,Long-term stable public website discount; directory price remained 0.12.
+aliyun_oss_standard,Alibaba Cloud,object storage,2026-08-22,OSS Standard LRS,mainland China website-discounted PAYG,on-demand,0.09,CNY,GB-month,ALI-OSS-CURRENT,observed,Current public effective price; current directory price is still 0.12.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2014-03-27,OSS Standard LRS,Hangzhou first tier,directory price,0.3,CNY,GB-month,ALI-CUT-2014,observed,Price immediately before the April 2014 cut.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2014-04-03,OSS Standard LRS,Hangzhou first tier,directory price,0.175,CNY,GB-month,ALI-CUT-2014,observed,41.7 percent first-tier cut.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2015-01-28,OSS Standard LRS,Hangzhou first tier,directory price,0.16625,CNY,GB-month,ALI-OSS-2015,derived,Official five percent Hangzhou reduction applied to 0.175.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2017-04-20,OSS Standard LRS,Hangzhou first tier,directory price,0.148,CNY,GB-month,ALI-OSS-2017,observed,Official Alibaba Cloud worked example.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2018-06-02,OSS Standard LRS,mainland China,directory price,0.12,CNY,GB-month,ALI-OSS-2018,observed,18.9 percent directory-price cut.
+aliyun_oss_standard_list,Alibaba Cloud,object storage,2026-08-22,OSS Standard LRS,mainland China,directory price,0.12,CNY,GB-month,ALI-OSS-CURRENT,observed,Current directory price; website-discounted public effective price is 0.09.
+aliyun_ssd_capacity,Alibaba Cloud,block storage,2016-05-06,SSD cloud disk,Hangzhou,monthly subscription,1,CNY,GB-month,ALI-ECS-2016,observed,Archived SSD capacity rate.
+aliyun_ssd_capacity,Alibaba Cloud,block storage,2026-08-22,ESSD PL1,Hangzhou,monthly subscription,1,CNY,GiB-month,LOCAL-ALI-2026,observed,Capacity rate unchanged in name but product quality is materially higher.
+aliyun_ecs_egress,Alibaba Cloud,network,2016-05-06,ECS internet egress,Hangzhou by traffic,on-demand,0.8,CNY,GB,ALI-ECS-2016,observed,Official archived price table.
+aliyun_ecs_egress,Alibaba Cloud,network,2026-08-22,ECS internet egress,Hangzhou by traffic,on-demand,0.8,CNY,GB,LOCAL-ALI-2026,observed,Marginal rate unchanged.

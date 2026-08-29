@@ -1,0 +1,23 @@
+{
+  "generated_for": "cloudexit.org",
+  "datasets": [
+    {
+      "id": "cloud-pricing",
+      "version": "2026-08-22-v1",
+      "url": "/data/cloud-pricing/2026-08-22-v1/README.md",
+      "status": "released-snapshot"
+    },
+    {
+      "id": "build-vs-buy",
+      "version": "2026-08-24-v1",
+      "url": "/data/build-vs-buy/2026-08-24-v1/README.md",
+      "status": "released-snapshot"
+    },
+    {
+      "id": "price-history",
+      "version": "2026-08-24-v1",
+      "url": "/data/price-history/2026-08-24-v1/README.md",
+      "status": "released-snapshot"
+    }
+  ]
+}

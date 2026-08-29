@@ -1,0 +1,40 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $catalog := hugo.Data.datasets.catalog -}}
+{{- if not $catalog.datasets -}}
+  <div class="ce-dataset-note">No datasets are registered.</div>
+{{- else -}}
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          {{- if eq $lang "zh" -}}
+            <th>数据集</th><th>覆盖范围</th><th>来源窗口</th><th>状态</th>
+          {{- else -}}
+            <th>Dataset</th><th>Coverage</th><th>Source window</th><th>Status</th>
+          {{- end -}}
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $dataset := $catalog.datasets -}}
+          <tr>
+            <td>
+              {{- with .url -}}<a href="{{ . | relURL }}"><strong>{{ cond (eq $lang "zh") (index $dataset "title_zh") $dataset.title }}</strong></a>
+              {{- else -}}<strong>{{ cond (eq $lang "zh") (index $dataset "title_zh") $dataset.title }}</strong>{{- end -}}
+              <br><code>{{ .id }}</code>
+            </td>
+            <td>{{ cond (eq $lang "zh") (index . "coverage_zh") .coverage }}</td>
+            <td>{{ .source_window }}</td>
+            <td><span class="ce-status">{{ .status }}</span></td>
+          </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+  <p class="ce-dataset-note">
+    {{- if eq $lang "zh" -}}
+      “已发布快照”表示数据文件已经进入站点构建并带有来源账、方法、schema 与校验和；它仍然不是当前实时报价。
+    {{- else -}}
+      “Released snapshot” means the files ship with the site together with sources, methodology, schema, and checksums. It is still not a live provider quote.
+    {{- end -}}
+  </p>
+{{- end -}}

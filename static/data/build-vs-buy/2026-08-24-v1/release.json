@@ -1,0 +1,10 @@
+{
+  "dataset": "build-vs-buy",
+  "version": "2026-08-24-v1",
+  "snapshot": "2026-08-22",
+  "analysis_as_of": "2026-08-24",
+  "published_in_site_source": "2026-08-29",
+  "source_project": "pgsty/cloud/research/cloud-build-vs-buy-2026",
+  "status": "released-snapshot",
+  "warning": "Historical snapshot; not a live provider quote."
+}

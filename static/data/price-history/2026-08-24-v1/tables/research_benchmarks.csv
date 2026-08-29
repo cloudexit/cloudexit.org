@@ -1,0 +1,10 @@
+study,metric,period,cagr_pct,implied_halving_years,source_id,scope_note
+Byrne Corrado Sichel,AWS EC2 hedonic quality-adjusted price,2009Q1-2016Q4,-6.9,9.69,NBER-CLOUD-INDEX,On-demand US EC2; quality controls include processor memory storage and other characteristics.
+Byrne Corrado Sichel,AWS EC2 hedonic quality-adjusted price,2009Q1-2013Q4,-5.1,13.24,NBER-CLOUD-INDEX,Pre-2014 phase.
+Byrne Corrado Sichel,AWS EC2 hedonic quality-adjusted price,2014Q1-2016Q4,-10.5,6.25,NBER-CLOUD-INDEX,Competition-era phase.
+Byrne Corrado Sichel,AWS RDS hedonic quality-adjusted price,2010Q2-2016Q4,-11.6,5.62,NBER-CLOUD-INDEX,Database instances across engines and US regions.
+Byrne Corrado Sichel,AWS RDS hedonic quality-adjusted price,2014Q1-2016Q4,-22.6,2.71,NBER-CLOUD-INDEX,Competition-era phase.
+Byrne Corrado Sichel,AWS S3 matched-model price across tiers,2009Q1-2016Q4,-17.3,3.65,NBER-CLOUD-INDEX,Unweighted average across available price tiers.
+Byrne Corrado Sichel,AWS S3 matched-model price across tiers,2014Q1-2016Q4,-25.1,2.40,NBER-CLOUD-INDEX,Competition-era phase.
+Gonzalez-Prieto et al.,HPC energy efficiency,2008-2023,-26.1,2.29,KOOMEY-REVISITED,Maximum energy efficiency in TOP500 and Green500 systems; not a finished-server price index.
+Moore ideal,Cost per transistor under a two-year doubling cadence,ideal,-29.289,2.00,MOORE-INTEL,Conceptual benchmark only; not a server or cloud service price.

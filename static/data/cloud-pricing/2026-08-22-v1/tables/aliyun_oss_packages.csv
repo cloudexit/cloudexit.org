@@ -1,0 +1,8 @@
+provider,product,capacity_label,monthly_price_cny,six_month_total_cny,year_total_cny,duration_factor_6m_vs_monthly,duration_factor_12m_vs_monthly
+Alibaba Cloud,OSS Standard LRS package,100 GB,11.0,54.78,99.0,0.8300000000000001,0.75
+Alibaba Cloud,OSS Standard LRS package,1 TB,111.0,552.78,999.0,0.83,0.75
+Alibaba Cloud,OSS Standard LRS package,10 TB,1106.0,5507.88,9954.0,0.8300000000000001,0.75
+Alibaba Cloud,OSS Standard LRS package,100 TB,11059.0,55073.82,99531.0,0.83,0.75
+Alibaba Cloud,OSS Standard LRS package,500 TB,55296.0,275374.08,497664.0,0.8300000000000001,0.75
+Alibaba Cloud,OSS Archive LRS package,100 GB,3.0,14.94,27.0,0.83,0.75
+Alibaba Cloud,OSS Infrequent Access LRS package,100 GB,7.2,35.86,64.8,0.8300925925925925,0.7499999999999999

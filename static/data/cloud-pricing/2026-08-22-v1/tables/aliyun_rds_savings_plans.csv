@@ -1,0 +1,7 @@
+provider,service,term_years,payment_option,discount_rate_factor,headline_discount,break_even_utilization_vs_uncovered_payg,deductible_bill_per_cny_hourly_commitment,notes
+Alibaba Cloud,RDS general-purpose Savings Plan,1,all_upfront,0.5,0.5,0.5,2.0,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.
+Alibaba Cloud,RDS general-purpose Savings Plan,1,partial_upfront,0.7,0.30000000000000004,0.7,1.4285714285714286,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.
+Alibaba Cloud,RDS general-purpose Savings Plan,1,no_upfront,0.8,0.19999999999999996,0.8,1.25,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.
+Alibaba Cloud,RDS general-purpose Savings Plan,3,all_upfront,0.3,0.7,0.3,3.3333333333333335,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.
+Alibaba Cloud,RDS general-purpose Savings Plan,3,partial_upfront,0.43,0.5700000000000001,0.43,2.3255813953488373,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.
+Alibaba Cloud,RDS general-purpose Savings Plan,3,no_upfront,0.5,0.5,0.5,2.0,Eligible postpaid RDS line items only; exceptions include IO burst and archived OSS storage.

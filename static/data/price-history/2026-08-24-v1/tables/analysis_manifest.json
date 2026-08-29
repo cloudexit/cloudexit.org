@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-08-24T01:49:18.527408+08:00",
+  "analysis_as_of": "2026-08-24",
+  "conventions": [
+    "730 hours per month",
+    "1 TiB represented as 1024 GB for workload baskets",
+    "nominal capacity, real price, and quality-adjusted scenarios are separate",
+    "headline maximum reductions are not compounded",
+    "current price endpoint is the local 2026-08-22 snapshot"
+  ],
+  "input_sha256": {
+    "price_anchors.csv": "695482402abc62bc47e00a3268302980c2a8866b188298f8e9edc1e1e09d8f8a",
+    "external_anchors.csv": "6f5c738f4bb3e032d5ea71239c3855f87e08f332b8ea60a2454cf74a27d44231",
+    "cpi_anchors.csv": "afa3419f0ae674144310ba9f8294ee233ce9b565c50ce3dbf8d41c7483f349bb",
+    "research_benchmarks.csv": "714490f3fbd54e878b9087ff15e6d9671cda30a099f38becaaa75ca612d70f7f",
+    "event_catalog.csv": "58d9d5a636ff40d3e4b9446819fca2d630be708916c557498cc59780dba57d3f"
+  },
+  "outputs": {
+    "normalized_price_index.csv": "ccdfd690fba98693dc464d59c4f779243132afa50b326a745bcba41b22a3acfa",
+    "long_run_metrics.csv": "71dc755777e509388e3315dafce752bc43194298d4ceaad77e73084c0182bdc1",
+    "phase_metrics.csv": "8c4669cebceb041954864afa1ef4b98c6ffce2d78b50d1491a029c7007c5d1c2",
+    "external_normalized_index.csv": "d5d14abba5bc2a8e284b93da06e210bb0a43079c8be1bb7557f1d2a675e4a7d3",
+    "external_metrics.csv": "6ea0352d80ae1d6f7aaba2fdd76807d90e84e8e20b246a20781a12b416adb6bb",
+    "workload_baskets.csv": "a421a833edc04c0ecb574a7cde699442c69e34334ec432c4d16d6d547bafdd45",
+    "basket_metrics.csv": "eb24237763201e7f26659e84ce2eefc2e5b532b657536c2d947030fbd1de8d61",
+    "quality_scenarios.csv": "6d6d6565f5cb4df40c5618eed89ad837deb0017436a0701b44f3cd972eb096aa",
+    "self_build_cost_floor.csv": "c0b4e831369ef57bc408617107f0669de945d2b7ffd8841a7d709e994f563caf"
+  },
+  "charts": {
+    "price_index.png": "0fff551d1eb1c52f6605b2575ccbd423474611b3ea31bed536ec94fb3bfdd591",
+    "physical_input_index.png": "9ca1d3015b907035dfffbddac7531c0aed86f5d95037399c438f72e736283324",
+    "halving_times.png": "a1fda7a19b5d2f32761ee5f5b1258343f1be08d67c0670e17e9e3bc0e6d982b7",
+    "basket_composition.png": "c3a7b2105e897d88fd7ec1fa249cb531caa0ad8e4a94651163049081114db0a8",
+    "phase_cagr.png": "03e78fd1475671f24b9f12e1ab821140c907ec18027af2ce1b684ab5f681f89c"
+  },
+  "checks": {
+    "aws_s3_endpoint": 0.023,
+    "aws_egress_endpoint": 0.09,
+    "aliyun_oss_effective_endpoint": 0.09,
+    "aliyun_oss_directory_endpoint": 0.12,
+    "aliyun_ecs_egress_endpoint": 0.8,
+    "flat_series_have_no_finite_halving_time": true
+  }
+}

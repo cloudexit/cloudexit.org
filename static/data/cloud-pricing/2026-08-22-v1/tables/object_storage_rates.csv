@@ -1,0 +1,12 @@
+provider,product,region,price_native_per_gb_month,currency,price_cny_per_gb_month,minimum_storage_days,minimum_billable_object_kib,per_object_metadata_overhead_kib,note
+AWS,S3 Glacier Instant Retrieval,us-east-1,0.004,USD,0.0271268,90,128,0,
+AWS,S3 Glacier Flexible Retrieval,us-east-1,0.0036,USD,0.024414119999999997,90,0,40,
+AWS,S3 Standard-IA,us-east-1,0.0125,USD,0.08477125,30,128,0,
+AWS,S3 One Zone-IA,us-east-1,0.01,USD,0.067817,30,128,0,
+AWS,S3 Standard,us-east-1,0.023,USD,0.15597909999999998,0,0,0,
+AWS,S3 Glacier Deep Archive,us-east-1,0.00099,USD,0.0067138829999999995,180,0,40,Official S3 pricing-page reference rate; not present as a clean named row in the compact meter extraction.
+Alibaba Cloud,OSS Standard LRS,cn-mainland,0.12,CNY,0.12,0,0,0,
+Alibaba Cloud,OSS Infrequent Access LRS,cn-mainland,0.08,CNY,0.08,30,64,0,
+Alibaba Cloud,OSS Archive LRS,cn-mainland,0.033,CNY,0.033,60,64,0,
+Alibaba Cloud,OSS Cold Archive LRS,cn-mainland,0.015,CNY,0.015,180,64,0,
+Alibaba Cloud,OSS Deep Cold Archive LRS,cn-mainland,0.0075,CNY,0.0075,180,64,0,

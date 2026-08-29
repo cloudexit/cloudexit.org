@@ -1,0 +1,6 @@
+kind: registry
+standard_version: v0.1-draft
+release_target: quarterly
+assessment_validity_days: 180
+published_assessments: 0
+

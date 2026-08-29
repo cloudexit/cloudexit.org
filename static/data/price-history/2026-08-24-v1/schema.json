@@ -1,0 +1,15 @@
+{
+  "dataset": "price-history",
+  "version": "2026-08-24-v1",
+  "format": "CSV anchors, indexes, metrics, baskets, and JSON manifest",
+  "primary_keys": {
+    "price_anchors.csv": ["series_id", "date"],
+    "normalized_price_index.csv": ["series_id", "date"],
+    "long_run_metrics.csv": ["series_id"],
+    "workload_baskets.csv": ["provider", "scenario", "year", "component"],
+    "basket_metrics.csv": ["provider", "scenario"],
+    "source_ledger.csv": ["source_id"]
+  },
+  "warning": "Implied half-life describes the observed span and is not a forecast."
+}
+

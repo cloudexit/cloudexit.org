@@ -1,0 +1,109 @@
+utilization,hardware_price_factor,life_months,cloud_offer,first_crossing_vcpu,durable_crossing_vcpu
+0.5,0.75,36,AWS EC2 c7a on-demand,17,17
+0.5,0.75,36,AWS EC2 c7a 3y Standard RI proxy,43,127
+0.5,0.75,36,Alibaba ECS c8i on-demand,29,29
+0.5,0.75,36,Alibaba ECS c8i 5y public term,,
+0.5,0.75,60,AWS EC2 c7a on-demand,12,12
+0.5,0.75,60,AWS EC2 c7a 3y Standard RI proxy,29,29
+0.5,0.75,60,Alibaba ECS c8i on-demand,19,19
+0.5,0.75,60,Alibaba ECS c8i 5y public term,1717,4820
+0.5,0.75,84,AWS EC2 c7a on-demand,9,9
+0.5,0.75,84,AWS EC2 c7a 3y Standard RI proxy,23,23
+0.5,0.75,84,Alibaba ECS c8i on-demand,15,15
+0.5,0.75,84,Alibaba ECS c8i 5y public term,76,979
+0.5,1.0,36,AWS EC2 c7a on-demand,22,22
+0.5,1.0,36,AWS EC2 c7a 3y Standard RI proxy,54,297
+0.5,1.0,36,Alibaba ECS c8i on-demand,37,110
+0.5,1.0,36,Alibaba ECS c8i 5y public term,,
+0.5,1.0,60,AWS EC2 c7a on-demand,14,14
+0.5,1.0,60,AWS EC2 c7a 3y Standard RI proxy,36,106
+0.5,1.0,60,Alibaba ECS c8i on-demand,24,24
+0.5,1.0,60,Alibaba ECS c8i 5y public term,,
+0.5,1.0,84,AWS EC2 c7a on-demand,11,11
+0.5,1.0,84,AWS EC2 c7a 3y Standard RI proxy,28,28
+0.5,1.0,84,Alibaba ECS c8i on-demand,19,19
+0.5,1.0,84,Alibaba ECS c8i 5y public term,93,3847
+0.5,1.25,36,AWS EC2 c7a on-demand,26,26
+0.5,1.25,36,AWS EC2 c7a 3y Standard RI proxy,66,412
+0.5,1.25,36,Alibaba ECS c8i on-demand,45,133
+0.5,1.25,36,Alibaba ECS c8i 5y public term,,
+0.5,1.25,60,AWS EC2 c7a on-demand,17,17
+0.5,1.25,60,AWS EC2 c7a 3y Standard RI proxy,43,127
+0.5,1.25,60,Alibaba ECS c8i on-demand,29,29
+0.5,1.25,60,Alibaba ECS c8i 5y public term,,
+0.5,1.25,84,AWS EC2 c7a on-demand,13,13
+0.5,1.25,84,AWS EC2 c7a 3y Standard RI proxy,33,33
+0.5,1.25,84,Alibaba ECS c8i on-demand,22,22
+0.5,1.25,84,Alibaba ECS c8i 5y public term,9064,21999
+0.7,0.75,36,AWS EC2 c7a on-demand,17,17
+0.7,0.75,36,AWS EC2 c7a 3y Standard RI proxy,43,43
+0.7,0.75,36,Alibaba ECS c8i on-demand,29,29
+0.7,0.75,36,Alibaba ECS c8i 5y public term,12634,12634
+0.7,0.75,60,AWS EC2 c7a on-demand,12,12
+0.7,0.75,60,AWS EC2 c7a 3y Standard RI proxy,29,29
+0.7,0.75,60,Alibaba ECS c8i on-demand,19,19
+0.7,0.75,60,Alibaba ECS c8i 5y public term,97,724
+0.7,0.75,84,AWS EC2 c7a on-demand,9,9
+0.7,0.75,84,AWS EC2 c7a 3y Standard RI proxy,23,23
+0.7,0.75,84,Alibaba ECS c8i on-demand,15,15
+0.7,0.75,84,Alibaba ECS c8i 5y public term,76,482
+0.7,1.0,36,AWS EC2 c7a on-demand,22,22
+0.7,1.0,36,AWS EC2 c7a 3y Standard RI proxy,54,162
+0.7,1.0,36,Alibaba ECS c8i on-demand,37,37
+0.7,1.0,36,Alibaba ECS c8i 5y public term,,
+0.7,1.0,60,AWS EC2 c7a on-demand,14,14
+0.7,1.0,60,AWS EC2 c7a 3y Standard RI proxy,36,36
+0.7,1.0,60,Alibaba ECS c8i on-demand,24,24
+0.7,1.0,60,Alibaba ECS c8i 5y public term,121,2972
+0.7,1.0,84,AWS EC2 c7a on-demand,11,11
+0.7,1.0,84,AWS EC2 c7a 3y Standard RI proxy,28,28
+0.7,1.0,84,Alibaba ECS c8i on-demand,19,19
+0.7,1.0,84,Alibaba ECS c8i 5y public term,93,701
+0.7,1.25,36,AWS EC2 c7a on-demand,26,26
+0.7,1.25,36,AWS EC2 c7a 3y Standard RI proxy,66,197
+0.7,1.25,36,Alibaba ECS c8i on-demand,45,45
+0.7,1.25,36,Alibaba ECS c8i 5y public term,,
+0.7,1.25,60,AWS EC2 c7a on-demand,17,17
+0.7,1.25,60,AWS EC2 c7a 3y Standard RI proxy,43,43
+0.7,1.25,60,Alibaba ECS c8i on-demand,29,29
+0.7,1.25,60,Alibaba ECS c8i 5y public term,12634,12634
+0.7,1.25,84,AWS EC2 c7a on-demand,13,13
+0.7,1.25,84,AWS EC2 c7a 3y Standard RI proxy,33,33
+0.7,1.25,84,Alibaba ECS c8i on-demand,22,22
+0.7,1.25,84,Alibaba ECS c8i 5y public term,110,1383
+0.85,0.75,36,AWS EC2 c7a on-demand,17,17
+0.85,0.75,36,AWS EC2 c7a 3y Standard RI proxy,43,43
+0.85,0.75,36,Alibaba ECS c8i on-demand,29,29
+0.85,0.75,36,Alibaba ECS c8i 5y public term,145,3430
+0.85,0.75,60,AWS EC2 c7a on-demand,12,12
+0.85,0.75,60,AWS EC2 c7a 3y Standard RI proxy,29,29
+0.85,0.75,60,Alibaba ECS c8i on-demand,19,19
+0.85,0.75,60,Alibaba ECS c8i 5y public term,97,654
+0.85,0.75,84,AWS EC2 c7a on-demand,9,9
+0.85,0.75,84,AWS EC2 c7a 3y Standard RI proxy,23,23
+0.85,0.75,84,Alibaba ECS c8i on-demand,15,15
+0.85,0.75,84,Alibaba ECS c8i 5y public term,76,227
+0.85,1.0,36,AWS EC2 c7a on-demand,22,22
+0.85,1.0,36,AWS EC2 c7a 3y Standard RI proxy,54,54
+0.85,1.0,36,Alibaba ECS c8i on-demand,37,37
+0.85,1.0,36,Alibaba ECS c8i 5y public term,155204,155204
+0.85,1.0,60,AWS EC2 c7a on-demand,14,14
+0.85,1.0,60,AWS EC2 c7a 3y Standard RI proxy,36,36
+0.85,1.0,60,Alibaba ECS c8i on-demand,24,24
+0.85,1.0,60,Alibaba ECS c8i 5y public term,121,984
+0.85,1.0,84,AWS EC2 c7a on-demand,11,11
+0.85,1.0,84,AWS EC2 c7a 3y Standard RI proxy,28,28
+0.85,1.0,84,Alibaba ECS c8i on-demand,19,19
+0.85,1.0,84,Alibaba ECS c8i 5y public term,93,566
+0.85,1.25,36,AWS EC2 c7a on-demand,26,26
+0.85,1.25,36,AWS EC2 c7a 3y Standard RI proxy,66,197
+0.85,1.25,36,Alibaba ECS c8i on-demand,45,45
+0.85,1.25,36,Alibaba ECS c8i 5y public term,,
+0.85,1.25,60,AWS EC2 c7a on-demand,17,17
+0.85,1.25,60,AWS EC2 c7a 3y Standard RI proxy,43,43
+0.85,1.25,60,Alibaba ECS c8i on-demand,29,29
+0.85,1.25,60,Alibaba ECS c8i 5y public term,145,3430
+0.85,1.25,84,AWS EC2 c7a on-demand,13,13
+0.85,1.25,84,AWS EC2 c7a 3y Standard RI proxy,33,33
+0.85,1.25,84,Alibaba ECS c8i on-demand,22,22
+0.85,1.25,84,Alibaba ECS c8i 5y public term,110,819

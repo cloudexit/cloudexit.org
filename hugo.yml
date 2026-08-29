@@ -1,0 +1,125 @@
+title: Cloud Exit
+baseURL: https://cloudexit.org/
+defaultContentLanguage: en
+enableRobotsTXT: true
+enableEmoji: true
+
+outputs:
+  home: [HTML, markdown, LLMS, NAVJSON]
+  page: [HTML, markdown]
+  section: [HTML, RSS, print, markdown]
+
+markup:
+  tableOfContents:
+    endLevel: 4
+  goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+languages:
+  en:
+    label: English
+    locale: en-US
+    weight: 1
+    title: Cloud Exit
+    params:
+      description: An open standard, public ledger, and practical playbook for cloud exit capability.
+      ui:
+        navbar_autohide: true
+    menus:
+      main:
+        - { identifier: standard, name: Standard, pageRef: /standard, weight: 10 }
+        - { identifier: ledger, name: Ledger, pageRef: /ledger, weight: 20 }
+        - { identifier: evidence, name: Evidence, pageRef: /evidence, weight: 30 }
+        - { identifier: cases, name: Cases, pageRef: /cases, weight: 40 }
+        - { identifier: playbook, name: Playbook, pageRef: /playbook, weight: 50 }
+        - identifier: source
+          name: Essays
+          url: https://vonng.com/cloud/
+          weight: 90
+          params:
+            icon: fa-solid fa-arrow-up-right-from-square
+
+  zh:
+    label: 简体中文
+    locale: zh-CN
+    hasCJKLanguage: true
+    weight: 2
+    title: 下云 · Cloud Exit
+    params:
+      description: 一套衡量下云能力的开放标准、公共账本与实操手册。
+      ui:
+        navbar_autohide: true
+    menus:
+      main:
+        - { identifier: standard, name: 标准, pageRef: /standard, weight: 10 }
+        - { identifier: ledger, name: 账本, pageRef: /ledger, weight: 20 }
+        - { identifier: evidence, name: 档案, pageRef: /evidence, weight: 30 }
+        - { identifier: cases, name: 案例, pageRef: /cases, weight: 40 }
+        - { identifier: playbook, name: 手册, pageRef: /playbook, weight: 50 }
+        - identifier: source
+          name: 评论原文
+          url: https://vonng.com/cloud/
+          weight: 90
+          params:
+            icon: fa-solid fa-arrow-up-right-from-square
+
+params:
+  tdVersion:
+    latest: v0.8.0
+  version: v0.1
+  hugoMinVersion: 0.160.1
+  productionURL: https://cloudexit.org
+  copyright:
+    authors: >-
+      [Cloud Exit](https://cloudexit.org/) is an open evidence project initiated
+      by [Ruohang Feng](https://vonng.com/en/).
+    from_year: 2026
+  footer_center_info: 'Built with [Oink](https://oink.pgsty.com/) · Evidence before advocacy'
+  offline_search: true
+  offline_search_on_serve: true
+  offline_search_index: summary
+  page_width: normal
+  ui:
+    typography: technical
+    theme_color: '#164b63'
+    theme_color_dark: '#78c5e6'
+    dark_mode: true
+    section_index: cards
+    sidebar_icon_policy: groups
+    sidebar_menu_foldable: true
+    sidebar_root_enabled: true
+    sidebar_root_menu: true
+    sidebar_expand_levels: 2
+    page_context_menu:
+      enable: true
+      assistant_links: false
+      links: []
+    feedback:
+      enable: false
+    reading_time: false
+  print:
+    toc: true
+
+module:
+  imports:
+    - path: github.com/pgsty/oink
+  hugoVersion:
+    extended: true
+    min: 0.160.1
+  mounts:
+    - source: content
+      target: content
+      sites: { matrix: { languages: [en, zh] } }

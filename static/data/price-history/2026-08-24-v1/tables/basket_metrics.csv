@@ -1,0 +1,4 @@
+provider,scenario,currency,start_year,end_year,start_monthly_cost,end_monthly_cost,change_pct,cagr_pct,implied_halving_years,scope
+AWS,capacity basket,USD,2008,2026,486.080,180.073,-62.954,-5.367,12.564,Capacity-equivalent basket; not quality- or service-level-equivalent.
+Alibaba Cloud,monthly subscription basket,CNY,2016,2026,1321.200,1257.800,-4.799,-0.491,140.952,Capacity-equivalent basket; not quality- or service-level-equivalent.
+Alibaba Cloud,pay-as-you-go basket,CNY,2016,2026,1979.900,1488.683,-24.810,-2.811,24.308,Capacity-equivalent basket; not quality- or service-level-equivalent.

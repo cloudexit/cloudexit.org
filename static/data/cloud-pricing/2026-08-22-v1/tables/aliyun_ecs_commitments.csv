@@ -1,0 +1,6 @@
+provider,service,reference_sku,purchase_option,term_years,effective_monthly_cny_at_100pct,factor_vs_subscription_month,factor_vs_full_month_ondemand,break_even_utilization_vs_ondemand,public_discount_factor_vs_list_contract
+Alibaba Cloud,ECS,ecs.g9i.large,on_demand,,362.883,1.5208843252305113,1.0,1.0,
+Alibaba Cloud,ECS,ecs.g9i.large,subscription_month,,238.6,1.0,0.6575122009022192,0.6575122009022192,
+Alibaba Cloud,ECS,ecs.g9i.large,subscription_year,1,167.02083333333334,0.7000034925956972,0.46026083705583715,0.46026083705583715,0.6999986029714798
+Alibaba Cloud,ECS,ecs.g9i.large,subscription_year,3,109.75694444444444,0.4600039582751234,0.302458215029209,0.302458215029209,0.4600002095540341
+Alibaba Cloud,ECS,ecs.g9i.large,subscription_year,5,76.35266666666666,0.3200027940765577,0.2104057414281371,0.2104057414281371,0.32000011176212545

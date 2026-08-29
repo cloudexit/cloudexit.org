@@ -1,0 +1,75 @@
+:root {
+  --td-brand-copper: #9a4f12;
+  --td-brand-copper-dim: #c57a35;
+  --td-brand-mark-from: #164b63;
+  --td-brand-mark-to: #9a4f12;
+  --td-brand-line-strong: rgba(22, 75, 99, 0.34);
+}
+
+[data-bs-theme='dark'] {
+  --td-brand-copper: #e3a15f;
+  --td-brand-copper-dim: #b9793c;
+  --td-brand-mark-from: #78c5e6;
+  --td-brand-mark-to: #e3a15f;
+  --td-brand-line-strong: rgba(120, 197, 230, 0.38);
+}
+
+.td-home .td-landing-hero__title {
+  max-width: 17ch;
+}
+
+.td-home .td-landing-hero__eyebrow {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+// OINK supplies its own mark as the default. Cloud Exit deliberately starts
+// with a typographic, CSS-native monogram while the permanent identity is
+// still open; this prevents the theme's pig mark from becoming accidental
+// project branding.
+.td-nav-brand > .td-nav-logo,
+.td-shell-sidebar__brand > img {
+  display: none;
+}
+
+.td-nav-brand::before,
+.td-shell-sidebar__brand::before {
+  content: 'CE';
+  display: inline-grid;
+  width: 1.55rem;
+  height: 1.55rem;
+  flex: 0 0 1.55rem;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 0.3rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.ce-registry-empty,
+.ce-dataset-note {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--bs-border-color);
+  border-inline-start: 4px solid var(--td-brand-copper);
+  border-radius: 0.5rem;
+  background: var(--bs-tertiary-bg);
+}
+
+.ce-registry-meta {
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+}
+
+.ce-status {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

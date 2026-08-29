@@ -1,0 +1,17 @@
+logical_gib_per_business_vcpu,cloud_offer,cloud_cny_per_business_vcpu_month,first_crossing_business_vcpu,durable_crossing_business_vcpu
+20,AWS RDS m7i Multi-AZ on-demand,912.409918,8,8
+20,AWS RDS m7i Multi-AZ 1y all-upfront RI,585.599795,12,12
+20,Alibaba RDS x86 HA PAYG,578.89,12,12
+20,Alibaba RDS x86 HA 3y all-upfront Savings Plan,173.667,40,40
+64,AWS RDS m7i Multi-AZ on-demand,981.040722,8,8
+64,AWS RDS m7i Multi-AZ 1y all-upfront RI,654.230599,11,11
+64,Alibaba RDS x86 HA PAYG,688.098,11,11
+64,Alibaba RDS x86 HA 3y all-upfront Savings Plan,206.4294,34,34
+200,AWS RDS m7i Multi-AZ on-demand,1193.172298,6,6
+200,AWS RDS m7i Multi-AZ 1y all-upfront RI,866.362175,9,9
+200,Alibaba RDS x86 HA PAYG,1025.65,7,7
+200,Alibaba RDS x86 HA 3y all-upfront Savings Plan,307.695,23,23
+1000,AWS RDS m7i Multi-AZ on-demand,2441.0050979999996,3,3
+1000,AWS RDS m7i Multi-AZ 1y all-upfront RI,2114.194975,4,4
+1000,Alibaba RDS x86 HA PAYG,3011.25,3,3
+1000,Alibaba RDS x86 HA 3y all-upfront Savings Plan,903.375,153,194

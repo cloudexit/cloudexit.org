@@ -1,0 +1,8 @@
+provider,period,revenue_million,profit_measure,profit_million,margin_pct,accounting_basis,source_id,note
+AWS,2015,7880,segment operating income,1863,23.642,Amazon segment reporting,AWS-10K-2015,Core IaaS and higher-level services are mixed in the segment.
+AWS,2023,90757,segment operating income,24631,27.140,Amazon segment reporting,AWS-10K-2025,Core IaaS and higher-level services are mixed in the segment.
+AWS,2024,107556,segment operating income,39834,37.036,Amazon segment reporting,AWS-10K-2025,Core IaaS and higher-level services are mixed in the segment.
+AWS,2025,128725,segment operating income,45606,35.429,Amazon segment reporting,AWS-10K-2025,Margin cannot identify the markup of a particular SKU.
+Alibaba Cloud Intelligence,FY2024,106374,adjusted EBITA,6121,5.754,Alibaba non-GAAP segment reporting,ALI-20F-2026,Not directly comparable with AWS segment operating income.
+Alibaba Cloud Intelligence,FY2025,118028,adjusted EBITA,10556,8.944,Alibaba non-GAAP segment reporting,ALI-20F-2026,Not directly comparable with AWS segment operating income.
+Alibaba Cloud Intelligence,FY2026,158132,adjusted EBITA,14265,9.021,Alibaba non-GAAP segment reporting,ALI-20F-2026,Not directly comparable with AWS segment operating income.

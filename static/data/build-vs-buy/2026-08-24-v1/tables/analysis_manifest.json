@@ -1,0 +1,26 @@
+{
+  "files": [
+    "compute_breakpoints.csv",
+    "compute_one_way_sensitivity.csv",
+    "compute_scale_curve.csv",
+    "compute_sensitivity.csv",
+    "egress_scale_curve.csv",
+    "object_breakpoints.csv",
+    "object_one_way_sensitivity.csv",
+    "object_scale_curve.csv",
+    "object_sensitivity.csv",
+    "observed_cost_anchors.csv",
+    "rds_breakpoints.csv",
+    "rds_one_way_sensitivity.csv",
+    "rds_scale_curve_64g.csv",
+    "source_ledger.csv"
+  ],
+  "model_status": "generated",
+  "key_conventions": [
+    "labor excluded",
+    "cloud prices use 2026-08-22 snapshot",
+    "cash and 8% economic annuity both reported",
+    "S3 comparisons distinguish one-, two-, and three-site self-built topologies",
+    "first and durable discrete crossings both reported"
+  ]
+}

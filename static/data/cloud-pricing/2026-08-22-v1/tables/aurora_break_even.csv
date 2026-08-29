@@ -1,0 +1,4 @@
+aurora_standard_compute_usd_month,logical_storage_gib,standard_storage_usd_month,io_optimized_compute_usd_month,io_optimized_storage_usd_month,break_even_million_io_per_month,break_even_average_iops_30d,formula
+208.8,80,8.0,271.44,18.0,363.2,140.12345679012347,"0.20*I > 0.30*C + 0.125*G, with I in million I/O/month"
+417.6,1000,100.0,542.88,225.0,1251.3999999999999,482.79320987654313,"0.20*I > 0.30*C + 0.125*G, with I in million I/O/month"
+1000,5000,500.0,1300.0,1125.0,4625.0,1784.3364197530864,"0.20*I > 0.30*C + 0.125*G, with I in million I/O/month"

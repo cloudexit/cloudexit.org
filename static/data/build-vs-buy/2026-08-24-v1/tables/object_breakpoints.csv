@@ -1,0 +1,21 @@
+topology_key,site_copies,min_nodes_per_site,min_racks_per_site,service_interpretation,cloud_offer,cloud_cny_per_gb_month,first_crossing_logical_tb,durable_crossing_logical_tb
+minio4_single,1,4,0,4-node single-site lower bound,AWS S3 Standard list,0.1559791,55,55
+minio4_single,1,4,0,4-node single-site lower bound,AWS S3 DHH contract observed,0.08477125,101,101
+minio4_single,1,4,0,4-node single-site lower bound,Alibaba OSS Standard LRS PAYG,0.12,71,71
+minio4_single,1,4,0,4-node single-site lower bound,Alibaba OSS Standard LRS 1y package,0.09,95,95
+aistor8_single,1,8,0,8-node single-site current production baseline,AWS S3 Standard list,0.1559791,115,115
+aistor8_single,1,8,0,8-node single-site current production baseline,AWS S3 DHH contract observed,0.08477125,211,211
+aistor8_single,1,8,0,8-node single-site current production baseline,Alibaba OSS Standard LRS PAYG,0.12,149,149
+aistor8_single,1,8,0,8-node single-site current production baseline,Alibaba OSS Standard LRS 1y package,0.09,199,199
+aistor8_dual,2,8,0,8-node per site dual-site geo replica,AWS S3 Standard list,0.1559791,310,310
+aistor8_dual,2,8,0,8-node per site dual-site geo replica,AWS S3 DHH contract observed,0.08477125,569,569
+aistor8_dual,2,8,0,8-node per site dual-site geo replica,Alibaba OSS Standard LRS PAYG,0.12,402,402
+aistor8_dual,2,8,0,8-node per site dual-site geo replica,Alibaba OSS Standard LRS 1y package,0.09,536,536
+aistor8_three,3,8,0,8-node per site three-site conservative replica,AWS S3 Standard list,0.1559791,498,498
+aistor8_three,3,8,0,8-node per site three-site conservative replica,AWS S3 DHH contract observed,0.08477125,916,1299
+aistor8_three,3,8,0,8-node per site three-site conservative replica,Alibaba OSS Standard LRS PAYG,0.12,647,647
+aistor8_three,3,8,0,8-node per site three-site conservative replica,Alibaba OSS Standard LRS 1y package,0.09,863,1223
+backblaze_vault20,1,20,20,20-node 20-rack Backblaze-style vault,AWS S3 Standard list,0.1559791,642,642
+backblaze_vault20,1,20,20,20-node 20-rack Backblaze-style vault,AWS S3 DHH contract observed,0.08477125,1181,1181
+backblaze_vault20,1,20,20,20-node 20-rack Backblaze-style vault,Alibaba OSS Standard LRS PAYG,0.12,834,834
+backblaze_vault20,1,20,20,20-node 20-rack Backblaze-style vault,Alibaba OSS Standard LRS 1y package,0.09,1112,1112

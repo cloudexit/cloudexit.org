@@ -1,0 +1,23 @@
+provider,service,region,instance_type,family,architecture,vcpu,memory_gib,memory_per_vcpu,price_kind,hourly_cny,monthly_cny,on_demand_monthly_cny_730h,monthly_cny_per_vcpu,on_demand_cny_per_vcpu_month_730h,year1_total_cny,year3_total_cny,year5_total_cny,source
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c8i.large,计算型 c8i,X86 计算,2,4.0,2.0,discount,0.4076989583,195.7,297.620239559,97.85,148.8101197795,1526.43,3029.37,3522.52,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c8i.large,计算型 c8i,X86 计算,2,4.0,2.0,list,0.4076989583,195.7,297.620239559,97.85,148.8101197795,2348.35,7045.04,11741.73,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c8y.large,计算型 c8y,ARM,2,4.0,2.0,discount,0.2669333333,128.13,194.861333309,64.065,97.4306666545,999.4,1845.04,2306.3,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c8y.large,计算型 c8y,ARM,2,4.0,2.0,list,0.2669333333,128.13,194.861333309,64.065,97.4306666545,1537.54,4612.61,7687.68,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c9i.large,ecs.c9i,X86 计算,2,4.0,2.0,discount,0.3873,185.91,282.729,92.955,141.3645,1561.65,3078.68,3569.48,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.c9i.large,ecs.c9i,X86 计算,2,4.0,2.0,list,0.3873,185.91,282.729,92.955,141.3645,2230.93,6692.79,11154.64,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8i.large,通用型 g8i,X86 计算,2,8.0,4.0,discount,0.52325,251.16,381.97249999999997,125.58,190.98624999999998,1959.05,3887.96,4520.88,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8i.large,通用型 g8i,X86 计算,2,8.0,4.0,list,0.52325,251.16,381.97249999999997,125.58,190.98624999999998,3013.92,9041.76,15069.6,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8i.xlarge,通用型 g8i,X86 计算,4,16.0,4.0,discount,1.0465,502.32,763.9449999999999,125.58,190.98624999999998,3918.1,7775.91,9041.76,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8i.xlarge,通用型 g8i,X86 计算,4,16.0,4.0,list,1.0465,502.32,763.9449999999999,125.58,190.98624999999998,6027.84,18083.52,30139.2,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8y.large,通用型 g8y,ARM,2,8.0,4.0,discount,0.4,192.0,292.0,96.0,146.0,1497.6,2972.16,3456.0,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8y.large,通用型 g8y,ARM,2,8.0,4.0,list,0.4,192.0,292.0,96.0,146.0,2304.0,6912.0,11520.0,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8y.xlarge,通用型 g8y,ARM,4,16.0,4.0,discount,0.8,384.0,584.0,96.0,146.0,2995.2,5944.32,6912.0,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g8y.xlarge,通用型 g8y,ARM,4,16.0,4.0,list,0.8,384.0,584.0,96.0,146.0,4608.0,13824.0,23040.0,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g9i.large,ecs.g9i,X86 计算,2,8.0,4.0,discount,0.4971,238.6,362.883,119.3,181.4415,2004.25,3951.25,4581.16,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.g9i.large,ecs.g9i,X86 计算,2,8.0,4.0,list,0.4971,238.6,362.883,119.3,181.4415,2863.22,8589.67,14316.12,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r8i.large,内存型 r8i,X86 计算,2,16.0,8.0,discount,0.69622125,334.19,508.2415125,167.095,254.12075625,2606.65,5173.2,6015.35,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r8i.large,内存型 r8i,X86 计算,2,16.0,8.0,list,0.69622125,334.19,508.2415125,167.095,254.12075625,4010.23,12030.7,20051.17,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r8y.large,内存型 r8y,ARM,2,16.0,8.0,discount,0.5425875,260.44,396.088875,130.22,198.0444375,2031.44,4031.64,4687.96,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r8y.large,内存型 r8y,ARM,2,16.0,8.0,list,0.5425875,260.44,396.088875,130.22,198.0444375,3125.3,9375.91,15626.52,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r9i.large,ecs.r9i,X86 计算,2,16.0,8.0,discount,0.6614,317.48,482.822,158.74,241.411,2666.8,5257.42,6095.56,data/derived/2026-08-22/aliyun_ecs_price.csv
+Alibaba Cloud,ECS,cn-hangzhou,ecs.r9i.large,ecs.r9i,X86 计算,2,16.0,8.0,list,0.6614,317.48,482.822,158.74,241.411,3809.72,11429.17,19048.61,data/derived/2026-08-22/aliyun_ecs_price.csv

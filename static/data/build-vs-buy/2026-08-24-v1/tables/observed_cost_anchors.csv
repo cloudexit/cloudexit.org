@@ -1,0 +1,16 @@
+category,sample,scale,unit,value,currency,included,year
+colo,China retail 1U,1,server-month,500,CNY,"1U, 50M, 220V/1A, IP, DDoS",2026
+colo,China retail 2U,1,server-month,700,CNY,"2U, 50M, 300W, IP, DDoS",2026
+colo,China Post 5kW rack limit,920,rack-year,38500,CNY,5kW cabinet; network/security separate,2025
+colo,China Post 20kW rack limit,40,rack-year,154000,CNY,20kW cabinet; network/security separate,2025
+colo,CAICT package 1,174,rack-year,70000,CNY,service bundle not fully visible,2025
+colo,CAICT package 2,306,rack-year,60000,CNY,service bundle not fully visible,2025
+colo,Chengdu wholesale award,,kW-month,430,CNY,IDC rack leasing award,2026
+colo,DHH eight racks,8,rack-month,7500,USD,"power, bandwidth, white-glove service across two DCs",2023
+compute,DHH R7625 fleet,20,fleet acquisition,500000,USD,"4000 vCPU, 7.68 TiB RAM, 384 TB NVMe",2023
+compute,Dell R7625 current starting price,1,server,16698.99,USD,"base configuration, selections alter total",2026
+database,Inspur NF5476G7 quote,1,server,147000,CNY,"2x24C, 512GiB, 3x3.2TB NVMe, 3y warranty",2026
+storage,60-bay integrated appliance retail,1,node,399999,CNY,"60x20TB SAS, 1.2PB raw",2025
+storage,Government 18TB drive transaction,231,drive,3200,CNY,Seagate enterprise surveillance HDD,2025
+storage,Government 60-bay appliance,10,node,181440,CNY,chassis/appliance without 60x8TB drives,2021
+storage,DHH Pure S3 replacement,18,PB combined acquisition,1500000,USD,two-site 18PB combined; support under $1m/5y,2025

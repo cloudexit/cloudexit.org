@@ -1,0 +1,7 @@
+provider,product,region,capacity_price_native,capacity_unit,capacity_price_cny,included_iops,included_throughput_mibps,extra_iops_price_native,extra_throughput_price_native,on_demand_capacity_cny_per_gib_month_730h,year1_effective_cny_per_gib_month,year3_effective_cny_per_gib_month,year5_effective_cny_per_gib_month
+AWS,EBS gp3,us-east-1,0.08,USD/GB-month,0.542536,3000,125,0.005,0.04,,,,
+Alibaba Cloud,ESSD PL0,cn-hangzhou,0.5,CNY/GiB-month,0.5,,,,,0.7665,0.425,0.25,0.25
+Alibaba Cloud,ESSD PL1,cn-hangzhou,1.0,CNY/GiB-month,1.0,,,,,1.533,0.85,0.5,0.5
+Alibaba Cloud,ESSD PL2,cn-hangzhou,2.0,CNY/GiB-month,2.0,,,,,3.066,1.7,1.0,1.0
+Alibaba Cloud,ESSD PL3,cn-hangzhou,4.0,CNY/GiB-month,4.0,,,,,6.132,3.4,2.0,2.0
+Alibaba Cloud,ESSD AutoPL,cn-hangzhou,1.0,CNY/GiB-month,1.0,,,,,1.533,0.85,0.5,0.5

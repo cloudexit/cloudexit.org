@@ -1,0 +1,187 @@
+sections:
+  - hero
+  - capabilities
+  - { type: cards, key: criteria }
+  - { type: logo-wall, key: scope }
+  - { type: cards, key: actions }
+  - faq
+  - cta
+
+hero:
+  eyebrow: CLOUD EXIT · 开放标准 · 公共证据
+  title_lines:
+    - 上云是选择，
+    - 下云是能力。
+  title_size: 4.35rem
+  align: center
+  lead: >-
+    在真正需要离开之前，就保有迁移数据、工作负载与运维体系的能力。
+    用判据、价格、档案和演练，把这项能力测出来。
+  note: v0.1 先定义方法；目前尚未发布任何厂商评级。
+  note_icon: fa-solid fa-flask
+  actions:
+    - { label: 阅读判据, url: standard/, icon: fa-solid fa-scale-balanced, style: primary }
+    - { label: 查看名录, url: standard/registry/, icon: fa-solid fa-list-check, style: ghost }
+
+capabilities:
+  eyebrow: 论证链
+  title: 一次基础设施决策，依次需要回答五个问题
+  text: 这不是五个并列频道；每一节的答案，都会引出下一节必须回答的问题。
+  items:
+    - ref: 01 / 标准
+      title: 谁在收取退出罚金？
+      url: standard/
+      motto: 按行为划界，而不是按公司身份站队
+      bullets:
+        - '五条公开判据分别检查[出网](standard/c1-no-exit-toll/)、[导出](standard/c2-whole-data-export/)、[接口](standard/c3-standard-interfaces/)、[承诺](standard/c4-no-commitment-lock/)与[故障责任](standard/c5-accountable-downtime/)。'
+        - '每个结果必须公开证据、复核日期、适用范围与不确定性。'
+        - '厂商可以按公开流程申诉事实错误。'
+      value: 争论从立场之争，变成任何人都能复验的具体问题。
+      visual:
+        type: card
+        icon: fa-solid fa-scale-balanced
+        title: C1–C5
+        lines: [无退出罚金, 可整体导出, 标准化接口, 无承诺捆绑, 停机可问责]
+
+    - ref: 02 / 账本
+      title: 账单里到底有多少租金？
+      url: ledger/
+      motto: 溢价是算术，不是修辞
+      bullets:
+        - '200 GiB 基线下 gp3 更便宜；对齐 11.8K IOPS 与 220 MiB/s 后，gp3 变成 AutoPL 的 2.16 倍。'
+        - '自有算力对模型按量物料价约在 14–24 个稳定 vCPU 交叉；五年深折扣把稳定交点推到数千核。'
+        - '对比 OSS 一年包，对象存储可靠拓扑交点从单站 199 TB 移到三站 1,223 TB。'
+      value: 每个标题数字都能回到带日期的数据表、假设、完整报告与校验和。
+      visual:
+        type: code
+        title: ledger.snapshot
+        lines:
+          - { class: c, prefix: '# ', text: '2026-08-22 公开价快照' }
+          - { class: p, prefix: 'EBS/ESSD ', text: '基线 0.54× → 等性能 2.16×' }
+          - { class: p, prefix: 'S3/OSS   ', text: '¥0.156 / ¥0.120 每 GB 月' }
+          - { class: ok, prefix: '✓ ', text: '报告 + CSV + 来源 + SHA-256' }
+
+    - ref: 03 / 档案
+      title: 哪些风险已经真实发生？
+      url: evidence/
+      motto: 集中度风险首先是一份记录，然后才是预测
+      bullets:
+        - '故障编年区分一手来源、二手报道与编辑评论。'
+        - '锁定图鉴说明机制，也说明如何验证能否退出。'
+        - '通稿核对把公开表述与可观察结果并排放置。'
+      value: 风险讨论从可核查、可纠错的记录出发。
+      visual:
+        type: components
+        items:
+          - { icon: fa-solid fa-triangle-exclamation, title: 故障, detail: 按时间记录 }
+          - { icon: fa-solid fa-link, title: 锁定, detail: 按机制归档 }
+          - { icon: fa-solid fa-quote-right, title: 通稿, detail: 说法对证据 }
+          - { icon: fa-solid fa-clock-rotate-left, title: 修订, detail: 保留历史 }
+
+    - ref: 04 / 案例
+      title: 真的有人做成过吗？
+      url: cases/
+      motto: 成功与失败使用同一份模板
+      bullets:
+        - '搬了什么、留了什么、花了多少、用了多久。'
+        - '哪里翻车，为什么中止或回迁。'
+        - '如果重来一次，会做出哪些不同选择。'
+      value: 读者能判断一个案例何时适用于自己，也能看清它何时不适用。
+      visual:
+        type: card
+        icon: fa-solid fa-route
+        title: 六个问题
+        lines: [搬了什么, 留了什么, 成本, 工期, 失败点, 如果重来]
+
+    - ref: 05 / 手册
+      title: 下周一具体做什么？
+      url: playbook/
+      motto: 从一次可回退的演练开始
+      bullets:
+        - '把关键数据在另一个地方完整恢复出来。'
+        - '计时，并记录每一个缺失依赖。'
+        - '把这个数字变成可重复的下云能力。'
+      value: 第一个动作只需要一个下午，不需要先立项做大迁移。
+      visual:
+        type: code
+        title: exit-drill.log
+        lines:
+          - { class: p, prefix: '$ ', text: restore --somewhere-else }
+          - { class: ok, prefix: '✓ ', text: 数据校验通过 }
+          - { class: ok, prefix: '✓ ', text: 依赖已记录 }
+          - { class: p, prefix: 'T+ ', text: 这就是你的下云能力 }
+
+criteria:
+  eyebrow: 五条判据
+  title: 一套任何人都能自行核验的标准
+  text: 每条判据页都遵循同一结构：定义 → 怎么验 → 算例 → 边界与反驳。
+  columns: 3
+  link_label: 查看判据
+  items:
+    - { title: C1 · 无退出罚金, meta: 经济性, icon: fa-solid fa-arrow-right-from-bracket, desc: 离开时不应承担惩罚性的传输或提取费用。, url: standard/c1-no-exit-toll/ }
+    - { title: C2 · 数据可整体导出, meta: 数据, icon: fa-solid fa-box-archive, desc: 客户能在有界时间内导出完整且可用的数据。, url: standard/c2-whole-data-export/ }
+    - { title: C3 · 接口走公开标准, meta: 可移植性, icon: fa-solid fa-plug, desc: 核心操作使用公开且可被广泛实现的接口。, url: standard/c3-standard-interfaces/ }
+    - { title: C4 · 无承诺捆绑, meta: 合同, icon: fa-solid fa-file-signature, desc: 折扣不能变成实际上无法离开的惩罚。, url: standard/c4-no-commitment-lock/ }
+    - { title: C5 · 停机有账可查, meta: 可靠性, icon: fa-solid fa-clock-rotate-left, desc: 故障、补救与责任应当留下可审计记录。, url: standard/c5-accountable-downtime/ }
+    - { title: 厂商名录, meta: 结果, icon: fa-solid fa-list-check, desc: 只有完成证据复核的评级才会发布，并且必须带失效日期。, url: standard/registry/ }
+
+scope:
+  eyebrow: 射程
+  title: 这条线按行为划，不按 Logo 划
+  text: 卖资源是买卖；为“你走不了”定价才是收租。
+  layout: grid
+  columns: 2
+  items:
+    - title: 射程内
+      icon: fa-solid fa-crosshairs
+      desc: 退出收费、专有导出壁垒、接口锁定、强制承诺，以及不可问责的服务故障。
+      url: standard/scope/
+    - title: 潜在盟友
+      icon: fa-solid fa-handshake
+      desc: 让可移植性变得真实且可衡量的计算资源、CDN、IDC、托管服务与云厂商。
+      url: standard/scope/
+
+actions:
+  eyebrow: 选择入口
+  title: 五分钟、三十分钟，或一个下午
+  text: 从最小动作开始，先得到一个关于自己处境的事实。
+  columns: 3
+  link_label: 从这里开始
+  items:
+    - { title: 查一个厂商, meta: 5 分钟, icon: fa-solid fa-magnifying-glass, desc: 用 C1–C5 快速检查，并记下还缺哪些证据。, url: standard/registry/ }
+    - { title: 算一笔账单, meta: 30 分钟, icon: fa-solid fa-calculator, desc: 把单位、期限、利用率和退出成本全部显式列出。, url: ledger/model/ }
+    - { title: 做一次演练, meta: 一个下午, icon: fa-solid fa-stopwatch, desc: 在别处恢复关键数据，校验结果并记录耗时。, url: playbook/exit-drill/ }
+
+faq:
+  eyebrow: 正面回答
+  title: 这个项目必须公开回答的质疑
+  items:
+    - question: 这是一个反云运动吗？
+      answer: >-
+        不是。云服务可以是正确的运营选择，也可以增强下云能力。这里针对的是可衡量的锁定行为，
+        不是某种厂商身份或公司规模。
+      open: true
+    - question: 所有公司都应该离开云吗？
+      answer: >-
+        不是。主张更窄：每个组织都应该知道自己能不能走、要走多久、什么东西会卡住。
+        只有仍然能离开，留下才是真正的选择。
+    - question: 什么才算证据？
+      answer: >-
+        官方价目表与故障报告优先，其次是合同、可复现实测和一手运营记录。
+        评论必须标成评论，不确定性必须留在页面上。
+    - question: 厂商可以申诉评级吗？
+      answer: >-
+        可以。方法页记录具体结论、来源窗口、复核人和失效日期。
+        事实纠错会保留修订记录；没有反证的施压不会改变结果。
+    - question: 发起人是否存在商业利益冲突？
+      answer: >-
+        存在。冯若航为自托管 PostgreSQL 平台 Pigsty 提供商业支持，组织选择自建时，
+        他可能从中受益。这里主动披露，是为了让读者把它纳入判断。
+        项目不以“中立”自证，而以开放方法、可复算数据、具名来源和可申诉结果接受检验。
+
+cta:
+  title: 先把下云能力测一次。
+  text: 在别处恢复数据，计时，记录哪里坏了。这个数字就是起点。
+  label: 开始下云演练
+  url: playbook/exit-drill/
+  style: primary

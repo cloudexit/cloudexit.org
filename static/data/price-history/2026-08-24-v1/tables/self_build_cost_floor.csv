@@ -1,0 +1,17 @@
+case,demand_vcpu,hardware_share_start,facility_share_start,elapsed_years,hardware_factor,facility_factor,total_cost_factor,total_change_pct,cagr_pct,implied_halving_years,note
+actual 2006-2025 US input-index mix,1,0.8015,0.1985,19.916,0.3391,1.2222,0.5144,-48.558,-3.283,20.767,Illustrative cross-geography decomposition; US indexes applied to current China-model cost shares.
+real 2006-2025 US input-index mix,1,0.8015,0.1985,19.916,0.2073,0.7613,0.3173,-68.271,-5.601,12.025,CPI-deflated version of the same illustrative cross-geography decomposition.
+hypothetical Moore hardware cycle 0,1,0.8015,0.1985,0,1.0000,1.0000,1.0000,0.000,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 1,1,0.8015,0.1985,2,0.5000,1.0204,0.6033,-39.669,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 2,1,0.8015,0.1985,4,0.2500,1.0411,0.4071,-59.293,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 3,1,0.8015,0.1985,6,0.1250,1.0623,0.3111,-68.891,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 4,1,0.8015,0.1985,8,0.0625,1.0839,0.2653,-73.470,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 5,1,0.8015,0.1985,10,0.0312,1.1060,0.2446,-75.537,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+actual 2006-2025 US input-index mix,64000,0.8698,0.1302,19.916,0.3391,1.2222,0.4540,-54.597,-3.887,17.483,Illustrative cross-geography decomposition; US indexes applied to current China-model cost shares.
+real 2006-2025 US input-index mix,64000,0.8698,0.1302,19.916,0.2073,0.7613,0.2794,-72.060,-6.202,10.826,CPI-deflated version of the same illustrative cross-geography decomposition.
+hypothetical Moore hardware cycle 0,64000,0.8698,0.1302,0,1.0000,1.0000,1.0000,0.000,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 1,64000,0.8698,0.1302,2,0.5000,1.0204,0.5677,-43.227,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 2,64000,0.8698,0.1302,4,0.2500,1.0411,0.3530,-64.703,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 3,64000,0.8698,0.1302,6,0.1250,1.0623,0.2470,-75.300,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 4,64000,0.8698,0.1302,8,0.0625,1.0839,0.1954,-80.455,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.
+hypothetical Moore hardware cycle 5,64000,0.8698,0.1302,10,0.0312,1.1060,0.1711,-82.886,,,Hardware halves every two years while facility price follows the observed hosting-PPI CAGR.

@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-08-24",
+  "snapshot": "2026-08-22",
+  "assumptions": {
+    "usd_cny": 6.7817,
+    "fx_source": "China Foreign Exchange Trade System central parity published 2026-08-21",
+    "hours_per_month": 730,
+    "aliyun_on_demand_to_monthly_equivalent_hours": 480,
+    "aliyun_public_cloud_prices_include_vat": true,
+    "aliyun_standard_vat_rate": 0.06
+  },
+  "tables": {
+    "aws_ec2_reference.csv": 15,
+    "aws_ec2_factors.csv": 6,
+    "aws_ec2_commitments.csv": 26,
+    "aws_ec2_regions.csv": 11,
+    "aliyun_ecs_reference.csv": 22,
+    "aliyun_ecs_commitments.csv": 5,
+    "aliyun_ecs_regions.csv": 10,
+    "block_storage_rates.csv": 6,
+    "block_storage_scenarios.csv": 6,
+    "object_storage_rates.csv": 11,
+    "traffic_rates.csv": 9,
+    "aws_rds_ratios.csv": 4,
+    "aws_rds_commitments.csv": 5,
+    "aws_rds_storage_rates.csv": 3,
+    "aliyun_rds_ratios.csv": 5,
+    "aliyun_rds_savings_plans.csv": 6,
+    "aws_rds_storage_curve.csv": 12,
+    "aliyun_rds_storage_curve.csv": 16,
+    "aurora_vs_rds_curve.csv": 15,
+    "polardb_vs_rds_curve.csv": 24,
+    "aurora_break_even.csv": 3,
+    "aliyun_oss_packages.csv": 7,
+    "prepay_time_value.csv": 9
+  },
+  "warnings": [
+    "Price is not performance: vCPU generations and architectures have different throughput.",
+    "General/shared RDS classes are not isolation-equivalent to exclusive ECS/EC2 instances.",
+    "Private commercial discounts are contract-specific and are not embedded in public price tables.",
+    "Object-storage retrieval latency and minimum-duration semantics must match before comparing rates.",
+    "Tax, support, credit, utilization, and commitment waste are modeled separately from list rates."
+  ]
+}

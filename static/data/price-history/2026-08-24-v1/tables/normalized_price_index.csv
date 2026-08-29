@@ -1,0 +1,50 @@
+series_id,series_label,provider,resource,date,product,value,currency,unit,cpi_value,nominal_index,real_index,source_id
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2007-10-16,m1.large,0.400000,USD,instance-hour,209.190000,100.000000,100.000000,AWS-EC2-2007
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2009-11-01,m1.large,0.340000,USD,instance-hour,217.234000,85.000000,81.852518,AWS-EC2-2009
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2012-11-01,m1.large,0.260000,USD,instance-hour,231.249000,65.000000,58.799606,AWS-EC2-2012
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2014-01-21,m3.large,0.225000,USD,instance-hour,235.288000,56.250000,50.010785,AWS-M3-2014
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2014-04-01,m3.large,0.140000,USD,instance-hour,236.468000,35.000000,30.962540,AWS-CUT-2014
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2017-01-09,m4.large,0.108000,USD,instance-hour,243.618000,27.000000,23.184371,AWS-M4-2017
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2017-11-28,m5.large,0.096000,USD,instance-hour,247.284000,24.000000,20.302810,AWS-M5-2017
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2021-08-16,m6i.large,0.096000,USD,instance-hour,272.676000,24.000000,18.412181,AWS-M6I-2021
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2023-08-02,m7i.large,0.100800,USD,instance-hour,306.082000,25.200000,17.222797,LOCAL-AWS-2026
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2025-08-28,m8i.large,0.105840,USD,instance-hour,323.291000,26.460000,17.121316,LOCAL-AWS-2026
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2026-08-22,m8i.large,0.105840,USD,instance-hour,332.813000,26.460000,16.631464,LOCAL-AWS-2026
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2006-03-14,S3 Standard,0.150000,USD,GB-month,199.700000,100.000000,100.000000,AWS-S3-2006
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2010-11-01,S3 Standard,0.140000,USD,GB-month,219.590000,93.333333,84.879396,AWS-S3-2010
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2012-02-01,S3 Standard,0.125000,USD,GB-month,228.329000,83.333333,72.884595,AWS-S3-2012A
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2012-12-01,S3 Standard,0.095000,USD,GB-month,231.221000,63.333333,54.699472,AWS-S3-2012B
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2014-02-01,S3 Standard,0.085000,USD,GB-month,235.547000,56.666667,48.042783,AWS-M3-2014
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2014-04-01,S3 Standard,0.030000,USD,GB-month,236.468000,20.000000,16.890235,AWS-CUT-2014
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2016-12-01,S3 Standard,0.023000,USD,GB-month,242.637000,15.333333,12.619949,AWS-S3-2016
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2026-08-22,S3 Standard,0.023000,USD,GB-month,332.813000,15.333333,9.200562,LOCAL-AWS-2026
+aws_ebs_ssd,EBS general-purpose SSD capacity,AWS,block storage,2014-06-16,EBS gp2,0.100000,USD,GB-month,237.231000,100.000000,100.000000,AWS-GP2-2014
+aws_ebs_ssd,EBS general-purpose SSD capacity,AWS,block storage,2020-12-01,EBS gp3,0.080000,USD,GB-month,262.045000,80.000000,72.424507,AWS-GP3-2020
+aws_ebs_ssd,EBS general-purpose SSD capacity,AWS,block storage,2026-08-22,EBS gp3,0.080000,USD,GB-month,332.813000,80.000000,57.024455,LOCAL-AWS-2026
+aws_egress,Internet egress marginal rate,AWS,network,2006-03-14,Internet data transfer out,0.200000,USD,GB,199.700000,100.000000,100.000000,AWS-S3-2006
+aws_egress,Internet egress marginal rate,AWS,network,2008-05-01,Internet data transfer out,0.170000,USD,GB,215.208000,85.000000,78.874856,AWS-DT-2008
+aws_egress,Internet egress marginal rate,AWS,network,2010-02-01,Internet data transfer out,0.150000,USD,GB,217.281000,75.000000,68.931476,AWS-DT-2010
+aws_egress,Internet egress marginal rate,AWS,network,2011-07-01,Internet data transfer out,0.120000,USD,GB,225.395000,60.000000,53.160008,AWS-DT-2011
+aws_egress,Internet egress marginal rate,AWS,network,2014-12-01,Internet data transfer out,0.090000,USD,GB,236.252000,45.000000,38.037773,AWS-DT-2014
+aws_egress,Internet egress marginal rate,AWS,network,2026-08-22,Internet data transfer out,0.090000,USD,GB,332.813000,45.000000,27.001650,LOCAL-AWS-2026
+aliyun_compute_monthly,ECS 2C8G monthly,Alibaba Cloud,compute,2016-05-06,n2 2-core,302.000000,CNY,instance-month,117.220567,100.000000,100.000000,ALI-ECS-2016
+aliyun_compute_monthly,ECS 2C8G monthly,Alibaba Cloud,compute,2026-08-22,ecs.g9i.large,238.600000,CNY,instance-month,132.596516,79.006623,69.844981,LOCAL-ALI-2026
+aliyun_compute_payg,ECS 2C8G pay-as-you-go,Alibaba Cloud,compute,2016-05-06,n2 2-core,1.310000,CNY,instance-hour,117.220567,100.000000,100.000000,ALI-ECS-2016
+aliyun_compute_payg,ECS 2C8G pay-as-you-go,Alibaba Cloud,compute,2026-08-22,ecs.g9i.large,0.497100,CNY,instance-hour,132.596516,37.946565,33.546265,LOCAL-ALI-2026
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2014-03-27,OSS Standard LRS,0.300000,CNY,GB-month,113.294060,100.000000,100.000000,ALI-CUT-2014
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2014-04-03,OSS Standard LRS,0.175000,CNY,GB-month,113.294060,58.333333,58.333333,ALI-CUT-2014
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2015-01-28,OSS Standard LRS,0.166250,CNY,GB-month,114.922123,55.416667,54.631598,ALI-OSS-2015
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2017-04-20,OSS Standard LRS,0.148000,CNY,GB-month,119.088050,49.333333,46.933119,ALI-OSS-2017
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2018-06-02,OSS Standard LRS,0.120000,CNY,GB-month,121.558878,40.000000,37.280390,ALI-OSS-2018
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2024-03-01,OSS Standard LRS,0.090000,CNY,GB-month,132.517582,30.000000,25.648082,ALI-CUT-2024-CN
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2026-08-22,OSS Standard LRS,0.090000,CNY,GB-month,132.596516,30.000000,25.632814,ALI-OSS-CURRENT
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2014-03-27,OSS Standard LRS,0.300000,CNY,GB-month,113.294060,100.000000,100.000000,ALI-CUT-2014
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2014-04-03,OSS Standard LRS,0.175000,CNY,GB-month,113.294060,58.333333,58.333333,ALI-CUT-2014
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2015-01-28,OSS Standard LRS,0.166250,CNY,GB-month,114.922123,55.416667,54.631598,ALI-OSS-2015
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2017-04-20,OSS Standard LRS,0.148000,CNY,GB-month,119.088050,49.333333,46.933119,ALI-OSS-2017
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2018-06-02,OSS Standard LRS,0.120000,CNY,GB-month,121.558878,40.000000,37.280390,ALI-OSS-2018
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2026-08-22,OSS Standard LRS,0.120000,CNY,GB-month,132.596516,40.000000,34.177085,ALI-OSS-CURRENT
+aliyun_ssd_capacity,SSD / ESSD PL1 capacity,Alibaba Cloud,block storage,2016-05-06,SSD cloud disk,1.000000,CNY,GB-month,117.220567,100.000000,100.000000,ALI-ECS-2016
+aliyun_ssd_capacity,SSD / ESSD PL1 capacity,Alibaba Cloud,block storage,2026-08-22,ESSD PL1,1.000000,CNY,GiB-month,132.596516,100.000000,88.403958,LOCAL-ALI-2026
+aliyun_ecs_egress,ECS internet egress,Alibaba Cloud,network,2016-05-06,ECS internet egress,0.800000,CNY,GB,117.220567,100.000000,100.000000,ALI-ECS-2016
+aliyun_ecs_egress,ECS internet egress,Alibaba Cloud,network,2026-08-22,ECS internet egress,0.800000,CNY,GB,132.596516,100.000000,88.403958,LOCAL-ALI-2026

@@ -1,0 +1,25 @@
+provider,scenario,year,currency,component,monthly_cost,basket_total,note
+AWS,capacity basket,2008,USD,compute,292.000,486.080,m1.large + 200 GB EBS magnetic + 1 TiB internet egress; EBS I/O requests excluded.
+AWS,capacity basket,2008,USD,block storage,20.000,486.080,m1.large + 200 GB EBS magnetic + 1 TiB internet egress; EBS I/O requests excluded.
+AWS,capacity basket,2008,USD,internet egress,174.080,486.080,m1.large + 200 GB EBS magnetic + 1 TiB internet egress; EBS I/O requests excluded.
+AWS,capacity basket,2008,USD,public IPv4,0.000,486.080,m1.large + 200 GB EBS magnetic + 1 TiB internet egress; EBS I/O requests excluded.
+AWS,capacity basket,2014,USD,compute,102.200,214.270,m3.large + 200 GB gp2 + 1 TiB egress; first 1 GB free.
+AWS,capacity basket,2014,USD,block storage,20.000,214.270,m3.large + 200 GB gp2 + 1 TiB egress; first 1 GB free.
+AWS,capacity basket,2014,USD,internet egress,92.070,214.270,m3.large + 200 GB gp2 + 1 TiB egress; first 1 GB free.
+AWS,capacity basket,2014,USD,public IPv4,0.000,214.270,m3.large + 200 GB gp2 + 1 TiB egress; first 1 GB free.
+AWS,capacity basket,2026,USD,compute,77.263,180.073,m8i.large + 200 GiB gp3 + 1 TiB egress; first 100 GB free; one public IPv4.
+AWS,capacity basket,2026,USD,block storage,16.000,180.073,m8i.large + 200 GiB gp3 + 1 TiB egress; first 100 GB free; one public IPv4.
+AWS,capacity basket,2026,USD,internet egress,83.160,180.073,m8i.large + 200 GiB gp3 + 1 TiB egress; first 100 GB free; one public IPv4.
+AWS,capacity basket,2026,USD,public IPv4,3.650,180.073,m8i.large + 200 GiB gp3 + 1 TiB egress; first 100 GB free; one public IPv4.
+Alibaba Cloud,monthly subscription basket,2016,CNY,compute,302.000,1321.200,n2 2C8G monthly + 200 GB SSD cloud disk + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,monthly subscription basket,2016,CNY,block storage,200.000,1321.200,n2 2C8G monthly + 200 GB SSD cloud disk + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,monthly subscription basket,2016,CNY,internet egress,819.200,1321.200,n2 2C8G monthly + 200 GB SSD cloud disk + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,monthly subscription basket,2026,CNY,compute,238.600,1257.800,g9i.large monthly + 200 GiB ESSD PL1 + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,monthly subscription basket,2026,CNY,block storage,200.000,1257.800,g9i.large monthly + 200 GiB ESSD PL1 + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,monthly subscription basket,2026,CNY,internet egress,819.200,1257.800,g9i.large monthly + 200 GiB ESSD PL1 + 1 TiB ECS egress in Hangzhou.
+Alibaba Cloud,pay-as-you-go basket,2016,CNY,compute,956.300,1979.900,n2 2C8G PAYG + 200 GB SSD cloud disk PAYG + 1 TiB ECS egress.
+Alibaba Cloud,pay-as-you-go basket,2016,CNY,block storage,204.400,1979.900,n2 2C8G PAYG + 200 GB SSD cloud disk PAYG + 1 TiB ECS egress.
+Alibaba Cloud,pay-as-you-go basket,2016,CNY,internet egress,819.200,1979.900,n2 2C8G PAYG + 200 GB SSD cloud disk PAYG + 1 TiB ECS egress.
+Alibaba Cloud,pay-as-you-go basket,2026,CNY,compute,362.883,1488.683,g9i.large PAYG + 200 GiB ESSD PL1 PAYG-equivalent + 1 TiB ECS egress.
+Alibaba Cloud,pay-as-you-go basket,2026,CNY,block storage,306.600,1488.683,g9i.large PAYG + 200 GiB ESSD PL1 PAYG-equivalent + 1 TiB ECS egress.
+Alibaba Cloud,pay-as-you-go basket,2026,CNY,internet egress,819.200,1488.683,g9i.large PAYG + 200 GiB ESSD PL1 PAYG-equivalent + 1 TiB ECS egress.

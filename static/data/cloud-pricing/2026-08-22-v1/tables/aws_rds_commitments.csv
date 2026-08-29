@@ -1,0 +1,6 @@
+provider,service,reference_sku,purchase_option,term_years,payment_option,effective_hourly_usd,rate_factor_vs_ondemand,headline_discount,break_even_utilization_vs_ondemand
+AWS,RDS PostgreSQL,db.m7i.large,on_demand,,,0.178,1.0,0.0,1.0
+AWS,RDS PostgreSQL,db.m7i.large,savings_plan_database,1,no_upfront,0.1424,0.8,0.19999999999999996,0.8
+AWS,RDS PostgreSQL,db.m7i.large,reserved,1,all_upfront,0.11198630136986301,0.6291365245497922,0.3708634754502078,0.6291365245497922
+AWS,RDS PostgreSQL,db.m7i.large,reserved,1,no_upfront,0.119,0.6685393258426966,0.3314606741573034,0.6685393258426966
+AWS,RDS PostgreSQL,db.m7i.large,reserved,1,partial_upfront,0.11599086757990867,0.6516340875275769,0.3483659124724231,0.6516340875275769

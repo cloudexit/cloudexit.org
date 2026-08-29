@@ -1,0 +1,11 @@
+series_id,series_label,provider,resource,start_date,end_date,years,start_value,end_value,unit,nominal_change_pct,nominal_cagr_pct,nominal_halving_years,real_change_pct,real_cagr_pct,real_halving_years,start_source_id,end_source_id
+aws_compute_bundle,Compute: ~2 vCPU / 8 GiB,AWS,compute,2007-10-16,2026-08-22,18.850,0.400000,0.105840,instance-hour,-73.540,-6.810,9.828,-83.369,-9.078,7.284,AWS-EC2-2007,LOCAL-AWS-2026
+aws_s3_standard,S3 Standard capacity,AWS,object storage,2006-03-14,2026-08-22,20.441,0.150000,0.023000,GB-month,-84.667,-8.765,7.556,-90.799,-11.017,5.939,AWS-S3-2006,LOCAL-AWS-2026
+aws_ebs_ssd,EBS general-purpose SSD capacity,AWS,block storage,2014-06-16,2026-08-22,12.184,0.100000,0.080000,GB-month,-20.000,-1.815,37.846,-42.976,-4.506,15.035,AWS-GP2-2014,LOCAL-AWS-2026
+aws_egress,Internet egress marginal rate,AWS,network,2006-03-14,2026-08-22,20.441,0.200000,0.090000,GB,-55.000,-3.831,17.744,-72.998,-6.204,10.822,AWS-S3-2006,LOCAL-AWS-2026
+aliyun_compute_monthly,ECS 2C8G monthly,Alibaba Cloud,compute,2016-05-06,2026-08-22,10.295,302.000000,238.600000,instance-month,-20.993,-2.263,30.282,-30.155,-3.426,19.882,ALI-ECS-2016,LOCAL-ALI-2026
+aliyun_compute_payg,ECS 2C8G pay-as-you-go,Alibaba Cloud,compute,2016-05-06,2026-08-22,10.295,1.310000,0.497100,instance-hour,-62.053,-8.983,7.364,-66.454,-10.066,6.533,ALI-ECS-2016,LOCAL-ALI-2026
+aliyun_oss_standard,OSS Standard LRS capacity,Alibaba Cloud,object storage,2014-03-27,2026-08-22,12.405,0.300000,0.090000,GB-month,-70.000,-9.249,7.142,-74.367,-10.393,6.317,ALI-CUT-2014,ALI-OSS-CURRENT
+aliyun_oss_standard_list,OSS Standard LRS directory price,Alibaba Cloud,object storage,2014-03-27,2026-08-22,12.405,0.300000,0.120000,GB-month,-60.000,-7.120,9.384,-65.823,-8.290,8.009,ALI-CUT-2014,ALI-OSS-CURRENT
+aliyun_ssd_capacity,SSD / ESSD PL1 capacity,Alibaba Cloud,block storage,2016-05-06,2026-08-22,10.295,1.000000,1.000000,GB-month,0.000,0.000,,-11.596,-1.190,57.894,ALI-ECS-2016,LOCAL-ALI-2026
+aliyun_ecs_egress,ECS internet egress,Alibaba Cloud,network,2016-05-06,2026-08-22,10.295,0.800000,0.800000,GB,0.000,0.000,,-11.596,-1.190,57.894,ALI-ECS-2016,LOCAL-ALI-2026

@@ -1,0 +1,4 @@
+provider,service,region,deployment,billed_node_copies,capacity_usd_per_logical_gib_month,extra_iops_usd_per_logical_iops_month,extra_throughput_usd_per_logical_mibps_month,capacity_markup_vs_same_node_count_ebs,iops_markup_vs_same_node_count_ebs,throughput_markup_vs_same_node_count_ebs,source_url
+AWS,RDS PostgreSQL gp3,us-east-1,Single-AZ,1,0.115,0.02,0.08,1.4375,4.0,2.0,https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/20260820203529/us-east-1/index.json
+AWS,RDS PostgreSQL gp3,us-east-1,Multi-AZ one standby,2,0.23,0.04,0.16,1.4375,4.0,2.0,https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/20260820203529/us-east-1/index.json
+AWS,RDS PostgreSQL gp3,us-east-1,Multi-AZ two readable standbys,3,0.345,0.06,0.24,1.4375,4.0,2.0,https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/20260820203529/us-east-1/index.json

@@ -1,0 +1,84 @@
+{
+  "snapshot_date": "2026-08-24",
+  "fx_cny_per_usd": 6.7817,
+  "hours_per_month": 730,
+  "base_life_months": 60,
+  "capital_cost_annual": 0.08,
+  "compute_server": {
+    "key": "dell_r7625_fleet_equivalent",
+    "description": "DHH-like dual EPYC 9454 compute node",
+    "acquisition_cny": 169542.5,
+    "vcpu": 192,
+    "memory_gib": 384,
+    "local_storage_gib": 19200,
+    "rack_u": 2,
+    "avg_watts": 497,
+    "retail_colo_cny_month": 700,
+    "source_note": "37signals fleet and Dell/SPECpower validation; acquisition is USD 500k / 20 nodes"
+  },
+  "database_server": {
+    "key": "inspur_nf5476g7_db_node",
+    "description": "Inspur NF5476G7 database node, 2x24-core, 512 GiB, 3x3.2 TB NVMe",
+    "acquisition_cny": 147000,
+    "vcpu": 96,
+    "memory_gib": 512,
+    "local_storage_gib": 9600,
+    "rack_u": 4,
+    "avg_watts": 750,
+    "retail_colo_cny_month": 1000,
+    "source_note": "Current reseller quote with 3-year vendor warranty; power is a conservative model input"
+  },
+  "storage_nodes": [
+    {
+      "key": "2u12_value",
+      "description": "2U 12-drive value node",
+      "chassis_cny": 45000,
+      "drive_count": 12,
+      "drive_gb": 18000,
+      "drive_cny": 3200,
+      "rack_u": 2,
+      "avg_watts": 300,
+      "source_note": "Estimated chassis anchored to public 2U enterprise-server transactions; 2025 drive quote",
+      "acquisition_cny": 83400,
+      "raw_gb": 216000
+    },
+    {
+      "key": "4u36_enterprise",
+      "description": "4U 36-drive enterprise node",
+      "chassis_cny": 80000,
+      "drive_count": 36,
+      "drive_gb": 18000,
+      "drive_cny": 3200,
+      "rack_u": 4,
+      "avg_watts": 480,
+      "source_note": "Conservative current enterprise chassis assumption; 2025 drive quote",
+      "acquisition_cny": 195200,
+      "raw_gb": 648000
+    },
+    {
+      "key": "4u60_inspur",
+      "description": "4U 60-drive Inspur-class enterprise node",
+      "chassis_cny": 147000,
+      "drive_count": 60,
+      "drive_gb": 18000,
+      "drive_cny": 3200,
+      "rack_u": 4,
+      "avg_watts": 650,
+      "source_note": "Inspur NF5476G7 configured quote plus 60 x 18 TB government transaction price",
+      "acquisition_cny": 339000,
+      "raw_gb": 1080000
+    }
+  ],
+  "compute_target_utilization": 0.7,
+  "database_target_utilization": 0.7,
+  "object_ec_efficiency": 0.75,
+  "object_target_fill": 0.8,
+  "object_monthly_change_rate": 0.05,
+  "volume_discount_schedule_assumption": {
+    "1-4": 1.0,
+    "5-19": 0.98,
+    "20-99": 0.95,
+    "100-999": 0.9,
+    "1000+": 0.85
+  }
+}

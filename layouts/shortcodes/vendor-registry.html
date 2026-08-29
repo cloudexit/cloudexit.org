@@ -1,0 +1,60 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $labels := dict
+  "empty_en" "No provider assessments have been published. Absence means not assessed."
+  "empty_zh" "尚未发布任何厂商评估；没有条目只表示尚未评估。"
+  "provider_en" "Provider / product"
+  "provider_zh" "厂商 / 产品"
+  "scope_en" "Scope"
+  "scope_zh" "范围"
+  "result_en" "C1–C5"
+  "result_zh" "C1–C5"
+  "reviewed_en" "Reviewed / expires"
+  "reviewed_zh" "复核 / 失效"
+-}}
+{{- $suffix := cond (eq $lang "zh") "zh" "en" -}}
+{{- $entries := slice -}}
+{{- with hugo.Data.vendors -}}
+  {{- range $key, $entry := . -}}
+    {{- if and (eq ($entry.kind | default "") "assessment") ($entry.publish | default false) -}}
+      {{- $entries = $entries | append (dict "key" $key "data" $entry) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq (len $entries) 0 -}}
+  <div class="ce-registry-empty" role="status">
+    <strong>{{ index $labels (printf "empty_%s" $suffix) }}</strong>
+  </div>
+{{- else -}}
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{{ index $labels (printf "provider_%s" $suffix) }}</th>
+          <th>{{ index $labels (printf "scope_%s" $suffix) }}</th>
+          <th>{{ index $labels (printf "result_%s" $suffix) }}</th>
+          <th>{{ index $labels (printf "reviewed_%s" $suffix) }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range sort $entries "key" -}}
+          {{- $v := .data -}}
+          <tr>
+            <td>
+              <strong>{{ $v.provider }} · {{ $v.product }}</strong>
+              {{- with $v.record_url }}<br><a href="{{ . | relLangURL }}">{{ $.Page.Title }}</a>{{ end -}}
+            </td>
+            <td>{{ $v.region }} · {{ $v.plan }}</td>
+            <td>
+              {{- range $criterion := slice "c1" "c2" "c3" "c4" "c5" -}}
+                {{- $state := index $v.results $criterion | default "unknown" -}}
+                <span class="ce-status" title="{{ upper $criterion }}">{{ upper $criterion }} {{ $state }}</span>
+              {{- end -}}
+            </td>
+            <td class="ce-registry-meta">{{ $v.reviewed }}<br>{{ $v.expires }}</td>
+          </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+{{- end -}}

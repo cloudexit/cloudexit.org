@@ -1,0 +1,8 @@
+cloud_offer,cloud_straight_cny_per_vcpu_month,cloud_economic_cny_per_vcpu_month,first_cash_crossing_vcpu,durable_cash_crossing_vcpu,first_economic_crossing_vcpu,durable_economic_crossing_vcpu
+AWS EC2 c7a on-demand,254.06689612,254.06689612,14,14,17,17
+AWS EC2 c7a 1y Standard RI proxy,156.81321371136704,163.69122144706049,23,23,26,26
+AWS EC2 c7a 3y Standard RI proxy,100.32113689849444,113.17319313686949,36,36,37,37
+Alibaba ECS c8i on-demand,148.8101197795,148.8101197795,24,24,28,28
+Alibaba ECS c8i 1y public term,63.60125,66.39087390443034,56,167,63,187
+Alibaba ECS c8i 3y public term,42.07458333333333,47.46472271894782,84,555,88,568
+Alibaba ECS c8i 5y public term,29.354333333333333,35.71200220441179,121,2972,116,1627

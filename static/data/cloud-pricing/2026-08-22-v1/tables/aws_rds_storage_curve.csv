@@ -1,0 +1,13 @@
+provider,region,mode,topology,logical_storage_gib,self_hosted_ec2_ebs_usd_month,rds_postgresql_usd_month,rds_vs_self_hosted,scope
+AWS,us-east-1,on_demand,two m7i.large nodes / RDS Multi-AZ one standby,20,150.368,264.48,1.7588848691210899,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,on_demand,two m7i.large nodes / RDS Multi-AZ one standby,200,179.168,305.88,1.7072245043757812,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,on_demand,two m7i.large nodes / RDS Multi-AZ one standby,1000,307.168,489.88,1.5948275862068966,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,on_demand,two m7i.large nodes / RDS Multi-AZ one standby,5000,947.168,1409.88,1.4885215716747189,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_standard_ri_all_upfront,two m7i.large nodes / RDS Multi-AZ one standby,20,94.0339,168.1,1.7876531761417955,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_standard_ri_all_upfront,two m7i.large nodes / RDS Multi-AZ one standby,200,122.8339,209.5,1.7055552253897337,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_standard_ri_all_upfront,two m7i.large nodes / RDS Multi-AZ one standby,1000,250.8339,393.5,1.5687672200607654,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_standard_ri_all_upfront,two m7i.large nodes / RDS Multi-AZ one standby,5000,890.8339,1313.5,1.474461176208045,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_flexible_savings_plan,two m7i.large nodes / RDS Multi-AZ one standby,20,114.2038,212.504,1.8607436880384014,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_flexible_savings_plan,two m7i.large nodes / RDS Multi-AZ one standby,200,143.0038,253.904,1.7755052662936228,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_flexible_savings_plan,two m7i.large nodes / RDS Multi-AZ one standby,1000,271.0038,437.904,1.615859261014052,"compute and baseline gp3 capacity only; excludes operations, backup and network"
+AWS,us-east-1,1y_flexible_savings_plan,two m7i.large nodes / RDS Multi-AZ one standby,5000,911.0038,1357.904,1.4905579976724577,"compute and baseline gp3 capacity only; excludes operations, backup and network"

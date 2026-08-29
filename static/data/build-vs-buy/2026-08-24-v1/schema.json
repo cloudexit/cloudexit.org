@@ -1,0 +1,20 @@
+{
+  "dataset": "build-vs-buy",
+  "version": "2026-08-24-v1",
+  "format": "CSV curves plus JSON assumptions and manifest",
+  "primary_keys": {
+    "compute_scale_curve.csv": ["demand_vcpu"],
+    "compute_breakpoints.csv": ["cloud_offer"],
+    "compute_one_way_sensitivity.csv": ["case", "cloud_offer"],
+    "object_scale_curve.csv": ["topology_key", "logical_tb"],
+    "object_breakpoints.csv": ["topology_key", "cloud_offer"],
+    "object_one_way_sensitivity.csv": ["topology_key", "case", "cloud_offer"],
+    "egress_scale_curve.csv": ["monthly_egress_tb"],
+    "source_ledger.csv": ["source_id"]
+  },
+  "crossing_fields": {
+    "first": "first discrete point below the comparison offer",
+    "durable": "first point after which no modeled capacity step crosses back above"
+  }
+}
+

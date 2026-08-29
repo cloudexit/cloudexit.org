@@ -1,0 +1,7 @@
+provider,product,capacity_gib,target_iops,target_throughput_mibps,monthly_native,currency,monthly_cny,note
+AWS,EBS gp3,200,3000,125,16.0,USD,108.5072,
+Alibaba Cloud,ESSD AutoPL baseline,200,3000,125,200.0,CNY,200.0,Only valid where requested performance is within AutoPL baseline; otherwise add provisioned/burst performance charges.
+AWS,EBS gp3,200,11800,220,63.8,USD,432.67245999999994,
+Alibaba Cloud,ESSD AutoPL baseline,200,11800,220,200.0,CNY,200.0,Only valid where requested performance is within AutoPL baseline; otherwise add provisioned/burst performance charges.
+AWS,EBS gp3,2048,50000,350,407.84000000000003,USD,2765.848528,
+Alibaba Cloud,ESSD AutoPL baseline,2048,50000,350,2048.0,CNY,2048.0,Only valid where requested performance is within AutoPL baseline; otherwise add provisioned/burst performance charges.

@@ -1,0 +1,22 @@
+kind: assessment
+publish: false
+provider: Example Provider
+product: Example Product
+region: example-region
+plan: on-demand
+standard_version: v0.1-draft
+reviewed: 2026-08-28
+expires: 2027-02-24
+record_url: standard/registry/example-provider/
+results:
+  c1: unknown
+  c2: unknown
+  c3: unknown
+  c4: unknown
+  c5: unknown
+evidence:
+  - criterion: c1
+    url: https://example.com/pricing
+    collected: 2026-08-28
+    note: Replace this example; never publish it as an assessment.
+

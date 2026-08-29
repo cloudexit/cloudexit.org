@@ -1,0 +1,7 @@
+factor,numerator,denominator,ratio
+c/m memory-ratio factor,c7i.large,m7i.large,0.8854166666666666
+r/m memory-ratio factor,r7i.large,m7i.large,1.3125
+Graviton/Intel general,m7g.large,m7i.large,0.8095238095238095
+AMD/Intel general,m7a.large,m7i.large,1.15
+Gen8/Gen7 Intel general,m8i.large,m7i.large,1.05
+Gen8/Gen7 Graviton general,m8g.large,m7g.large,1.1

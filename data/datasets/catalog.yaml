@@ -1,0 +1,27 @@
+version: 0.2
+updated: 2026-08-29
+datasets:
+  - id: build-vs-buy-2026
+    title: Cloud build-versus-buy model
+    title_zh: 云基础设施自建与采购模型
+    coverage: Compute, PostgreSQL RDS-like services, object storage, egress, break-even points, and sensitivity.
+    coverage_zh: 计算、类 PostgreSQL RDS、对象存储、出网、盈亏平衡点与敏感性分析。
+    source_window: 2026-08-22—2026-08-24
+    status: released-snapshot
+    url: /data/build-vs-buy/2026-08-24-v1/README.md
+  - id: cloud-pricing-2026
+    title: AWS and Alibaba Cloud pricing model
+    title_zh: AWS 与阿里云价格模型
+    coverage: EC2/ECS, RDS, block storage, object storage, traffic, commitments, and time value.
+    coverage_zh: EC2/ECS、RDS、块存储、对象存储、流量、承诺折扣与资金时间价值。
+    source_window: 2026-08-22—2026-08-24
+    status: released-snapshot
+    url: /data/cloud-pricing/2026-08-22-v1/README.md
+  - id: cloud-price-history-2026
+    title: Cloud price-history model
+    title_zh: 云价格历史模型
+    coverage: Long-run compute, storage, and egress price anchors with physical-input and inflation context.
+    coverage_zh: 长期计算、存储与出网价格锚点，并与硬件投入和通胀背景对照。
+    source_window: 2006—2026; reviewed 2026-08-24
+    status: released-snapshot
+    url: /data/price-history/2026-08-24-v1/README.md

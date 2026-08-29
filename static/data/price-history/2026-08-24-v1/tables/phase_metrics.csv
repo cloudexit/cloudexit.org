@@ -1,0 +1,11 @@
+phase,series_id,start_date,end_date,start_value,end_value,years,cagr_pct,halving_years
+AWS compute before plateau,aws_compute_bundle,2007-10-16,2017-01-09,0.400000,0.108000,9.235,-13.219,4.889
+AWS compute plateau era,aws_compute_bundle,2017-01-09,2026-08-22,0.108000,0.105840,9.616,-0.210,329.905
+AWS S3 rapid pass-through,aws_s3_standard,2006-03-14,2016-12-01,0.150000,0.023000,10.719,-16.049,3.962
+AWS S3 plateau,aws_s3_standard,2016-12-01,2026-08-22,0.023000,0.023000,9.722,0.000,
+AWS egress reduction era,aws_egress,2006-03-14,2014-12-01,0.200000,0.090000,8.717,-8.753,7.567
+AWS egress plateau,aws_egress,2014-12-01,2026-08-22,0.090000,0.090000,11.724,0.000,
+Alibaba OSS rapid pass-through,aliyun_oss_standard,2014-03-27,2018-06-02,0.300000,0.120000,4.184,-19.670,3.165
+Alibaba OSS directory plateau,aliyun_oss_standard_list,2018-06-02,2026-08-22,0.120000,0.120000,8.222,0.000,
+Alibaba OSS effective 2018-24,aliyun_oss_standard,2018-06-02,2024-03-01,0.120000,0.090000,5.747,-4.883,13.847
+Alibaba OSS effective plateau,aliyun_oss_standard,2024-03-01,2026-08-22,0.090000,0.090000,2.475,0.000,

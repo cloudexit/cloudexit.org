@@ -1,0 +1,5 @@
+provider,region,ec2_sku,rds_sku,ec2_hourly_usd,rds_single_hourly_usd,rds_multi_hourly_usd,rds_single_vs_one_ec2,rds_multi_vs_two_ec2,rds_multi_vs_one_ec2_misleading
+AWS,us-east-1,m7g.large,db.m7g.large,0.0816,0.168,0.337,2.0588235294117645,2.064950980392157,4.129901960784314
+AWS,us-east-1,m7i.large,db.m7i.large,0.1008,0.178,0.356,1.7658730158730158,1.7658730158730158,3.5317460317460316
+AWS,us-east-1,r7g.large,db.r7g.large,0.1071,0.239,0.478,2.23155929038282,2.23155929038282,4.46311858076564
+AWS,us-east-1,r7i.large,db.r7i.large,0.1323,0.25,0.5,1.8896447467876039,1.8896447467876039,3.7792894935752077

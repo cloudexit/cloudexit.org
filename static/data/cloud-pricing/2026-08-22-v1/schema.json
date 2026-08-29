@@ -1,0 +1,20 @@
+{
+  "dataset": "cloud-pricing",
+  "version": "2026-08-22-v1",
+  "format": "CSV tables plus JSON manifest",
+  "primary_keys": {
+    "aws_ec2_reference.csv": ["region", "instance_type"],
+    "aliyun_ecs_reference.csv": ["region", "instance_type", "price_kind"],
+    "block_storage_rates.csv": ["provider", "product", "region"],
+    "block_storage_scenarios.csv": ["provider", "product", "capacity_gib", "target_iops", "target_throughput_mibps"],
+    "object_storage_rates.csv": ["provider", "product", "region"],
+    "traffic_rates.csv": ["provider", "service", "path"],
+    "source_ledger.csv": ["source_id"]
+  },
+  "units": {
+    "monthly": "730 hours unless a product-specific term is explicit",
+    "capacity": "GB or GiB exactly as named in each field",
+    "currency": "native currency plus CNY normalization where supplied"
+  }
+}
+

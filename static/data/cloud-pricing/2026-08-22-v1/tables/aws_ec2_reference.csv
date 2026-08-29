@@ -1,0 +1,16 @@
+provider,service,region,instance_type,family,vcpu,memory_gib,memory_per_vcpu,hourly_usd,monthly_usd_730h,usd_per_vcpu_month,cny_per_vcpu_month,source
+AWS,EC2,us-east-1,c7a.large,c7a,2,4.0,2.0,0.10264,74.9272,37.4636,254.06689612,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,c7g.large,c7g,2,4.0,2.0,0.0725,52.925,26.4625,179.46073625,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,c7i.large,c7i,2,4.0,2.0,0.08925,65.1525,32.57625,220.922354625,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,c8g.large,c8g,2,4.0,2.0,0.07976,58.224799999999995,29.112399999999997,197.43156308,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,c8i.large,c8i,2,4.0,2.0,0.09371,68.4083,34.20415,231.962284055,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,m7a.large,m7a,2,8.0,4.0,0.11592,84.6216,42.3108,286.93915236,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,m7g.large,m7g,2,8.0,4.0,0.0816,59.568000000000005,29.784000000000002,201.9861528,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,m7i.large,m7i,2,8.0,4.0,0.1008,73.584,36.792,249.5123064,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,m8g.large,m8g,2,8.0,4.0,0.08976,65.5248,32.7624,222.18476808,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,m8i.large,m8i,2,8.0,4.0,0.10584,77.2632,38.6316,261.98792172,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,r7a.large,r7a,2,16.0,8.0,0.15215,111.0695,55.53475,376.62001407500003,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,r7g.large,r7g,2,16.0,8.0,0.1071,78.183,39.0915,265.10682555,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,r7i.large,r7i,2,16.0,8.0,0.1323,96.57900000000001,48.289500000000004,327.48490215000004,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,r8g.large,r8g,2,16.0,8.0,0.11782,86.0086,43.0043,291.64226131,data/derived/2026-08-22/aws_ec2_price.csv
+AWS,EC2,us-east-1,r8i.large,r8i,2,16.0,8.0,0.13892,101.41159999999999,50.705799999999996,343.87152385999997,data/derived/2026-08-22/aws_ec2_price.csv

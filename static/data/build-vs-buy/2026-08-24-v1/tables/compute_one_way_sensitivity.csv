@@ -1,0 +1,37 @@
+case,cloud_offer,first_crossing_vcpu,durable_crossing_vcpu
+base,AWS EC2 c7a on-demand,14,14
+base,AWS EC2 c7a 3y Standard RI proxy,36,36
+base,Alibaba ECS c8i on-demand,24,24
+base,Alibaba ECS c8i 5y public term,121,2972
+utilization_50pct,AWS EC2 c7a on-demand,14,14
+utilization_50pct,AWS EC2 c7a 3y Standard RI proxy,36,106
+utilization_50pct,Alibaba ECS c8i on-demand,24,24
+utilization_50pct,Alibaba ECS c8i 5y public term,,
+utilization_85pct,AWS EC2 c7a on-demand,14,14
+utilization_85pct,AWS EC2 c7a 3y Standard RI proxy,36,36
+utilization_85pct,Alibaba ECS c8i on-demand,24,24
+utilization_85pct,Alibaba ECS c8i 5y public term,121,984
+hardware_75pct,AWS EC2 c7a on-demand,12,12
+hardware_75pct,AWS EC2 c7a 3y Standard RI proxy,29,29
+hardware_75pct,Alibaba ECS c8i on-demand,19,19
+hardware_75pct,Alibaba ECS c8i 5y public term,97,724
+hardware_125pct,AWS EC2 c7a on-demand,17,17
+hardware_125pct,AWS EC2 c7a 3y Standard RI proxy,43,43
+hardware_125pct,Alibaba ECS c8i on-demand,29,29
+hardware_125pct,Alibaba ECS c8i 5y public term,12634,12634
+life_36m,AWS EC2 c7a on-demand,22,22
+life_36m,AWS EC2 c7a 3y Standard RI proxy,54,162
+life_36m,Alibaba ECS c8i on-demand,37,37
+life_36m,Alibaba ECS c8i 5y public term,,
+life_84m,AWS EC2 c7a on-demand,11,11
+life_84m,AWS EC2 c7a 3y Standard RI proxy,28,28
+life_84m,Alibaba ECS c8i on-demand,19,19
+life_84m,Alibaba ECS c8i 5y public term,93,701
+facility_low,AWS EC2 c7a on-demand,14,14
+facility_low,AWS EC2 c7a 3y Standard RI proxy,36,36
+facility_low,Alibaba ECS c8i on-demand,24,24
+facility_low,Alibaba ECS c8i 5y public term,121,1621
+facility_high,AWS EC2 c7a on-demand,14,14
+facility_high,AWS EC2 c7a 3y Standard RI proxy,36,36
+facility_high,Alibaba ECS c8i on-demand,24,24
+facility_high,Alibaba ECS c8i 5y public term,121,5387

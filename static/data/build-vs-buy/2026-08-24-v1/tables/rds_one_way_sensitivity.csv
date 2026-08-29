@@ -1,0 +1,19 @@
+case,cloud_offer,first_crossing_business_vcpu,durable_crossing_business_vcpu
+base,AWS RDS m7i Multi-AZ 1y all-upfront RI,11,11
+base,Alibaba RDS x86 HA 3y all-upfront Savings Plan,34,34
+utilization_50pct,AWS RDS m7i Multi-AZ 1y all-upfront RI,11,11
+utilization_50pct,Alibaba RDS x86 HA 3y all-upfront Savings Plan,34,51
+utilization_85pct,AWS RDS m7i Multi-AZ 1y all-upfront RI,11,11
+utilization_85pct,Alibaba RDS x86 HA 3y all-upfront Savings Plan,34,34
+hardware_75pct,AWS RDS m7i Multi-AZ 1y all-upfront RI,9,9
+hardware_75pct,Alibaba RDS x86 HA 3y all-upfront Savings Plan,28,28
+hardware_125pct,AWS RDS m7i Multi-AZ 1y all-upfront RI,13,13
+hardware_125pct,Alibaba RDS x86 HA 3y all-upfront Savings Plan,40,40
+life_36m,AWS RDS m7i Multi-AZ 1y all-upfront RI,16,16
+life_36m,Alibaba RDS x86 HA 3y all-upfront Savings Plan,50,75
+life_84m,AWS RDS m7i Multi-AZ 1y all-upfront RI,9,9
+life_84m,Alibaba RDS x86 HA 3y all-upfront Savings Plan,27,27
+facility_low,AWS RDS m7i Multi-AZ 1y all-upfront RI,11,11
+facility_low,Alibaba RDS x86 HA 3y all-upfront Savings Plan,34,34
+facility_high,AWS RDS m7i Multi-AZ 1y all-upfront RI,11,11
+facility_high,Alibaba RDS x86 HA 3y all-upfront Savings Plan,34,34
