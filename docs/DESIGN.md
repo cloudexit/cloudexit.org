@@ -1,7 +1,7 @@
 # cloudexit.org 设计大纲
 
 状态：**v0.1 骨架**  
-主题：Oink 0.8.0（Hugo Module）  
+主题：Oink 1.0.0（Hugo Module）\
 语言：English 默认 + 简体中文  
 部署形态：静态站点；本阶段只交付本地骨架，不声称已经部署
 

@@ -1,7 +1,7 @@
 # Cloud Exit
 
 Local skeleton for [cloudexit.org](https://cloudexit.org/), built with Hugo and
-[Oink 0.8.0](https://github.com/pgsty/oink/releases/tag/v0.8.0).
+[Oink 1.0.0](https://github.com/pgsty/oink/releases/tag/v1.0.0).
 
 > Status: **v0.1 skeleton**. The information architecture, bilingual landing
 > page, editorial contracts, and route placeholders exist. The cost ledger now
@@ -34,7 +34,7 @@ existing research and essay corpus.
 ## Local preview
 
 ```bash
-hugo mod get github.com/pgsty/oink@v0.8.0
+hugo mod get github.com/pgsty/oink@v1.0.0
 hugo server -D
 ```
 

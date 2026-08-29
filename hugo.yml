@@ -78,7 +78,7 @@ languages:
 
 params:
   tdVersion:
-    latest: v0.8.0
+    latest: v1.0.0
   version: v0.1
   hugoMinVersion: 0.160.1
   productionURL: https://cloudexit.org
