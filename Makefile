@@ -1,3 +1,4 @@
+THEME_DIR ?= ../oink
 .PHONY: serve build data check clean
 
 serve:
@@ -14,3 +15,7 @@ check:
 
 clean:
 	rm -rf public resources
+
+.PHONY: dev
+dev:
+	GOWORK=off HUGO_MODULE_WORKSPACE=off HUGO_MODULE_REPLACEMENTS='github.com/pgsty/oink -> $(abspath $(THEME_DIR))' hugo server --bind 127.0.0.1 --renderToMemory

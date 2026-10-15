@@ -1,7 +1,7 @@
 # Cloud Exit
 
 Local skeleton for [cloudexit.org](https://cloudexit.org/), built with Hugo and
-[Oink 1.0.0](https://github.com/pgsty/oink/releases/tag/v1.0.0).
+[Oink 1.3.0](https://github.com/pgsty/oink/releases/tag/v1.3.0).
 
 > Status: **v0.1 skeleton**. The information architecture, bilingual landing
 > page, editorial contracts, and route placeholders exist. The cost ledger now
@@ -34,7 +34,7 @@ existing research and essay corpus.
 ## Local preview
 
 ```bash
-hugo mod get github.com/pgsty/oink@v1.0.0
+hugo mod get github.com/pgsty/oink@v1.3.0
 hugo server -D
 ```
 
@@ -63,3 +63,5 @@ checksums and headline values.
   named commercial tool could benefit.
 - English is the canonical public standard; Chinese is maintained in parity for
   the standard, method, registry, and core playbook.
+
+Local theme regression preview: run `make dev` with the sibling `../oink` checkout, or set `THEME_DIR=/path/to/oink`. This disables both Go and Hugo workspaces and uses the current local theme; the published module pin is unchanged.
