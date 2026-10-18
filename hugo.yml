@@ -78,9 +78,9 @@ languages:
 
 params:
   tdVersion:
-    latest: v1.3.0
+    latest: v1.3.2
   version: v0.1
-  hugoMinVersion: 0.166.0
+  hugoMinVersion: 0.168.0
   productionURL: https://cloudexit.org
   copyright:
     authors: >-
@@ -120,7 +120,7 @@ module:
     - path: github.com/pgsty/oink
   hugoVersion:
     extended: true
-    min: 0.166.0
+    min: 0.168.0
   mounts:
     - source: content
       target: content

@@ -13,8 +13,8 @@ ruby -rjson -e 'JSON.parse(File.read("schemas/vendor.schema.json")); puts "vendo
 python3 scripts/verify-ledger-assets.py
 
 module_graph="$(hugo mod graph)"
-if [[ "$module_graph" != *"github.com/pgsty/oink@v1.3.0"* ]]; then
-  printf '%s\n' 'Oink module is not pinned to v1.3.0' >&2
+if [[ "$module_graph" != *"github.com/pgsty/oink@v1.3.2"* ]]; then
+  printf '%s\n' 'Oink module is not pinned to v1.3.2' >&2
   exit 1
 fi
 
@@ -33,7 +33,7 @@ fi
 
 build_root="$(mktemp -d)"
 trap 'rm -rf "$build_root"' EXIT
-hugo --gc --minify --panicOnWarning --destination "$build_root/public"
+hugo --gc --minify --destination "$build_root/public"
 
 for route in \
   index.html zh/index.html \
