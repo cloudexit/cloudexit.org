@@ -18,6 +18,7 @@ weight: 20
 | Control-plane dependence | Operations require provider-only orchestration | Execute recovery without the original control plane |
 | Commitment lock | Unused spend or credits become stranded | Price exit at multiple dates |
 | Organizational dependency | Skills and procedures exist only inside the provider path | Run an independent recovery drill |
+{.wide .expand}
 
 Records name the mechanism before the vendor. The same provider can reduce one
 kind of lock-in while increasing another, and the same service can behave

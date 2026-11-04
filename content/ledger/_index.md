@@ -61,6 +61,7 @@ while raising stranded-value and exit risk.
 | Object capacity rates have converged | S3 Standard `¥0.156/GB-month`; OSS Standard LRS `¥0.120` | Capacity alone is no longer the whole bill | Requests, retrieval, minimum duration, small objects, or egress are equivalent |
 | Reliable topology sets the self-host threshold | Versus OSS one-year package: 8-node single site `199 TB`; dual site `536 TB`; three-site durable crossing `1,223 TB` | Object-storage break-even is a topology question | A single-site pool equals S3's service level |
 | Mature bills decline slower than compute | AWS capacity basket 2008→2026: `-63.0%`; Alibaba monthly basket 2016→2026: `-4.8%` | Flat storage/egress meters dilute compute gains | The two baskets are performance- or SLA-equivalent |
+{.wide .expand}
 
 ## Three bill surfaces {#surfaces}
 

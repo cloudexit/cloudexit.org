@@ -33,6 +33,7 @@ feature depth, market share, or whether buying the service was a good decision.
 | [C3](/standard/c3-standard-interfaces/) | Standard interfaces | Can core operations be reproduced through public, implementable interfaces? |
 | [C4](/standard/c4-no-commitment-lock/) | No commitment lock | Do commercial commitments preserve a practical path out? |
 | [C5](/standard/c5-accountable-downtime/) | Accountable downtime | Are incidents, remedies, and responsibility auditable? |
+{.wide .expand}
 
 Every criterion uses the same page contract: **definition → verification →
 worked example → boundaries and objections**. A result is scoped to a product,

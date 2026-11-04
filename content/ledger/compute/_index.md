@@ -29,6 +29,7 @@ the minimum reliable pool usefully full for the asset life?”
 | AWS `m8i.large`, 2C8G | On-demand | `$0.10584/h` | `$77.26` | `¥261.99` |
 | Alibaba `g9i.large`, 2C8G | Monthly | — | `¥238.60` | `¥119.30` |
 | Alibaba `g9i.large`, 2C8G | PAYG | `¥0.4971/h` | `¥362.88` | `¥181.44` |
+{.wide .expand}
 
 The raw cash-price ratio is not a procurement conclusion. `m8i` and `g9i` differ
 in CPU, network, storage channel, regional context, tax, and business

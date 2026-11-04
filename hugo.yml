@@ -93,6 +93,7 @@ params:
   offline_search_index: summary
   page_width: normal
   ui:
+    compare: true
     preset: paper
     preset_menu: [paper, slate, ink, terminal]
     typography: technical

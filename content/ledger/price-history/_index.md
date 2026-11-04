@@ -34,6 +34,7 @@ waiting for an old SKU to become cheaper automatically.
 | Alibaba OSS Standard public effective rate | 2014–2026 | `¥0.300 → ¥0.090/GB-month` | `-70.0%` | `7.1 years` |
 | Alibaba SSD / ESSD PL1 capacity | 2016–2026 | `¥1.00 → ¥1.00/GB-month` | `0%` | none |
 | Alibaba ECS internet egress | 2016–2026 | `¥0.80 → ¥0.80/GB` | `0%` | none |
+{.wide .expand}
 
 The values come from
 [`long_run_metrics.csv`](/data/price-history/2026-08-24-v1/tables/long_run_metrics.csv).
@@ -90,6 +91,7 @@ IPv4. It is a capacity comparison, not a performance or SLA comparison.
 | AWS 2008 → 2026 | `$486.08/month` | `$180.07/month` | `-63.0%` | `12.6 years` |
 | Alibaba monthly 2016 → 2026 | `¥1,321.20/month` | `¥1,257.80/month` | `-4.8%` | `141.0 years` |
 | Alibaba PAYG 2016 → 2026 | `¥1,979.90/month` | `¥1,488.68/month` | `-24.8%` | `24.3 years` |
+{.wide .expand}
 
 ![Stacked bill baskets show storage and egress diluting compute savings.](/data/price-history/2026-08-24-v1/charts/basket_composition.png)
 {caption="Capacity-equivalent monthly bill composition. Static storage and egress rates dilute compute savings."}

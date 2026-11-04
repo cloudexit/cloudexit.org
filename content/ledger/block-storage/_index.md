@@ -82,6 +82,7 @@ attached instance can impose the lower I/O ceiling.
 | ESSD PL1 / AutoPL | `¥1.00/GiB-month` | capacity-coupled to 50K / 350 | `¥1.533` | `¥0.85` | `¥0.50` | `¥0.50` |
 | ESSD PL2 | `¥2.00/GiB-month` | higher level; minimum 461 GiB | `¥3.066` | `¥1.70` | `¥1.00` | `¥1.00` |
 | ESSD PL3 | `¥4.00/GiB-month` | higher level; minimum 1,261 GiB | `¥6.132` | `¥3.40` | `¥2.00` | `¥2.00` |
+{.wide .expand}
 
 At this layer, gp3 is near PL0 and about 54% of PL1/AutoPL. That statement is
 true but incomplete.
@@ -93,6 +94,7 @@ true but incomplete.
 | 200 GiB · 3K IOPS · 125 MiB/s | `¥108.51/month` | `¥200.00/month` | `0.54×` | gp3 baseline is cheaper |
 | 200 GiB · 11.8K IOPS · 220 MiB/s | `¥432.67/month` | `¥200.00/month` | `2.16×` | AutoPL capacity baseline is cheaper |
 | 2,048 GiB · 50K IOPS · 350 MiB/s | `¥2,765.85/month` | `¥2,048.00/month` | `1.35×` | AutoPL remains cheaper at its baseline ceiling |
+{.wide .expand}
 
 This is the core block-storage insight: **the answer flips because one product
 charges extra performance separately while the other bundles a capacity-driven

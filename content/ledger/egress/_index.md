@@ -58,6 +58,7 @@ rate. This is a procurement anchor, not a universal market price.
 | 50 TB | 1 | `¥12,500` | `¥0.250` | `¥30,518` | `¥40,000` | `¥25,000` |
 | 100 TB | 1 | `¥12,500` | `¥0.125` | `¥61,035` | `¥80,000` | `¥50,000` |
 | 500 TB | 5 | `¥62,500` | `¥0.125` | `¥305,177` | `¥400,000` | `¥250,000` |
+{.wide .expand}
 
 Break-even volume is:
 

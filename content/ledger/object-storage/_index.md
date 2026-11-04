@@ -137,6 +137,7 @@ per 100 TB/month of remote replication.
 | Eight-node dual site | 16 / two sites | Complete remote copy plus replication network |
 | Eight-node three site | 24 / three sites | Conservative multi-failure-domain approximation |
 | Backblaze-style Vault | 20 / 20 racks | 17+3 erasure coding across rack failure domains |
+{.wide .expand}
 
 None is automatically equivalent to S3 Standard's service level. Durability,
 availability, API semantics, operations, audit, and recovery must be tested
@@ -153,6 +154,7 @@ separately.
 | 2 PB | `¥0.0145` | `¥0.0346` | `¥0.0550` | `¥0.0500` |
 | 5 PB | `¥0.0113` | `¥0.0301` | `¥0.0481` | `¥0.0254` |
 | 10 PB | `¥0.0111` | `¥0.0280` | `¥0.0451` | `¥0.0181` |
+{.wide .expand}
 
 At 100 TB the eight-node pool is mostly empty. Around 200 TB it approaches an
 OSS one-year package; at 1 PB its single-site capacity cost is about one fifth
@@ -168,6 +170,7 @@ network are duplicated.
 | Eight-node dual site | `310 TB` | `402 TB` | `536 TB` |
 | Eight-node three site, first / durable | `498 / 498 TB` | `647 / 647 TB` | `863 / 1,223 TB` |
 | 20-node / 20-rack Vault | `642 TB` | `834 TB` | `1,112 TB` |
+{.wide .expand}
 
 These are **capacity plus replication-network material crossings**. S3/OSS
 requests, retrieval, and small-object overhead are excluded on the cloud side;
