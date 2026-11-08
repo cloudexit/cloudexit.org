@@ -15,24 +15,37 @@ cascade:
   theme_color_dark: '#c0abe9'
   type: docs
   navbar_autohide: false
-  footer_style: slim
+  footer_style: fat
   comments: false
   feedback: false
 ---
+Exit capability is not a reckless leap off a cliff; it is an escape parachute you pack carefully and test regularly.
 
-The playbook supports an operational conclusion: **cloud exit is a staged,
-reversible engineering capability, not a leap into the dark.** Begin by
-measuring recovery somewhere else; decide whether to migrate only after the
-constraints are visible.
+You do not need to greenlight a massive architectural overhaul, nor do you need to purchase a fleet of servers upfront. **Next Monday afternoon, run a four-hour exit drill**:
+Spin up a single clean machine outside your primary cloud, restore your core database from cold backup, time the operation to the second, and log every proprietary cloud API that throws an error.
 
-## Five practices {#practices}
+The time it takes to restore is your real recovery capability; the point where it crashes is your actual vendor lock-in.
 
-1. [Exit drill](/playbook/exit-drill/) — restore a complete critical dataset elsewhere and time it.
-2. [Data first](/playbook/data-first/) — separate custody and recoverability from application migration.
-3. [Inventory](/playbook/inventory/) — map dependencies, semantics, contracts, and owners.
-4. [Staging](/playbook/staging/) — move through replay, shadow, partial traffic, and reversible cutover.
-5. [Negotiation](/playbook/negotiation/) — turn measured exit options into better contract terms.
+## Five Practical Disciplines {#practices}
 
-The call to action is the first drill. It is useful even when the final decision
-is to stay with the current provider.
+{{< cards >}}
+  {{< card title="1 · Exit Drill" link="/playbook/exit-drill/" icon="fa-solid fa-stopwatch" badge="First Step" >}}
+Restore an authoritative snapshot on neutral compute, measure actual RTO, and document breaking proprietary dependencies.
+  {{< /card >}}
+  {{< card title="2 · Data First" link="/playbook/data-first/" icon="fa-solid fa-database" badge="Decoupling" >}}
+Establish independent custody and external recovery pipelines for databases before touching stateless application workloads.
+  {{< /card >}}
+  {{< card title="3 · Dependency Inventory" link="/playbook/inventory/" icon="fa-solid fa-list-check" badge="Auditing" >}}
+Map proprietary message brokers, custom authorization layers, hosted filers, and operational runbooks against open alternatives.
+  {{< /card >}}
+  {{< card title="4 · Staged Cutover" link="/playbook/staging/" icon="fa-solid fa-layer-group" badge="Safe Rollout" >}}
+Plan shadow traffic or staged cutovers, verify consistency, and measure rollback time before touching production.
+  {{< /card >}}
+  {{< card title="5 · Contract Negotiation" link="/playbook/negotiation/" icon="fa-solid fa-handshake" badge="Commercials" >}}
+Translate verified recovery drills into credible commercial leverage to eliminate punitive renewal terms and extract discounts.
+  {{< /card >}}
+{{< /cards >}}
+
+> [!TIP]
+> Even if your organization ultimately decides to remain on public cloud, this drill is profoundly valuable: **staying is only a genuine strategic choice if leaving remains an operational reality.**
 

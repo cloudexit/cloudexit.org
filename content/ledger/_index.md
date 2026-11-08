@@ -15,20 +15,37 @@ cascade:
   theme_color_dark: '#e3a15f'
   type: docs
   navbar_autohide: false
-  footer_style: slim
+  footer_style: fat
   comments: false
   feedback: false
 ---
+Cloud bills combine resource prices, performance tiers, topology, utilization, and commercial terms. The ledger compares these components under explicit assumptions rather than treating one price ratio as a universal cloud premium.
 
-Cloud bills are not one price. They are a stack of resource meters, topology,
-activity, time commitments, and commercial terms. The ledger makes that stack
-visible and then asks where the money actually goes.
+The **Cloud Ledger** grounds infrastructure economics in verifiable public price snapshots, reproducible SQL pipelines, and open CSV datasets. We deconstruct the cloud billing black box into simple, reproducible arithmetic: where your capital actually goes, what is genuine compute, and where managed markups turn into pure toll collection.
+
+<div class="ce-metric-grid">
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--cyan">2.16×</div>
+    <div class="ce-metric-card__label">gp3 / AutoPL Price Ratio</div>
+    <div class="ce-metric-card__desc">At 200 GiB, 11.8K IOPS and 220 MiB/s, the snapshot prices gp3 at ¥432.67/month and AutoPL at ¥200/month. <a href="/ledger/block-storage/#matched">Compare the scenarios</a>.</div>
+  </div>
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--copper">24 vCPU</div>
+    <div class="ce-metric-card__label">Modeled PAYG Crossing</div>
+    <div class="ce-metric-card__desc">The baseline owned-compute material-cost model crosses Alibaba c8i PAYG at 24 vCPU; this is not a payback period or a full-TCO result. <a href="/ledger/compute/#crossings">Read the assumptions</a>.</div>
+  </div>
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--emerald">$0.09/GB</div>
+    <div class="ce-metric-card__label">AWS Egress Snapshot</div>
+    <div class="ce-metric-card__desc">AWS internet egress reference rate in the 2014–2026 history anchors; free allowances and volume tiers affect actual bills. <a href="/ledger/price-history/">Read the price history</a>.</div>
+  </div>
+</div>
 
 > [!IMPORTANT]
 > **Price snapshot:** 2026-08-22 · **Research completed:** 2026-08-24 ·
 > **Primary regions:** AWS `us-east-1`, Alibaba Cloud `cn-hangzhou` ·
-> **FX:** 1 USD = 6.7817 CNY · **Month:** 730 hours. All amounts below are
-> dated public-price or scenario values, not live quotes or enterprise net prices.
+> **FX:** 1 USD = 6.7817 CNY · **Month:** 730 hours.
+> All amounts below are dated public-price or scenario values, not live quotes or enterprise net prices.
 
 ## The bill in one formula {#formula}
 

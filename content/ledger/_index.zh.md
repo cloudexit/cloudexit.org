@@ -15,19 +15,37 @@ cascade:
   theme_color_dark: '#e3a15f'
   type: docs
   navbar_autohide: false
-  footer_style: slim
+  footer_style: fat
   comments: false
   feedback: false
 ---
+云账单由资源价格、性能档位、拓扑、利用率与商业条款共同决定。账本在明确假设下比较这些项目，不把某个场景的价格比推广为普遍的云溢价。
 
-云账单不是一个价格，而是一组资源计量项、拓扑、活动费、时间承诺与商务条款叠起来的结果。
-这份账本先把这套堆栈摊开，再回答钱到底花在了哪里。
+**云成本账本 (Cloud Ledger)** 基于公开价格快照、可复现的 SQL 流水线与原始 CSV 账本，把复杂的云账单黑盒拆成最质朴的算术题：钱到底花在了哪里，哪些是真实的计算消耗，哪些是人为构筑的托管暴利。
+
+<div class="ce-metric-grid">
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--cyan">2.16×</div>
+    <div class="ce-metric-card__label">gp3 / AutoPL 价格比</div>
+    <div class="ce-metric-card__desc">200 GiB、11.8K IOPS、220 MiB/s 场景下，快照中的 gp3 为 ¥432.67/月，AutoPL 为 ¥200/月。<a href="/zh/ledger/block-storage/#matched">查看场景比较</a>。</div>
+  </div>
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--copper">24 vCPU</div>
+    <div class="ce-metric-card__label">按量对比模型交点</div>
+    <div class="ce-metric-card__desc">基线自建算力物料模型在 24 vCPU 与阿里 c8i 按量价相交；这不是回本周期，也不是完整 TCO 结论。<a href="/zh/ledger/compute/#crossings">查看模型假设</a>。</div>
+  </div>
+  <div class="ce-metric-card">
+    <div class="ce-metric-card__value ce-metric-card__value--emerald">$0.09/GB</div>
+    <div class="ce-metric-card__label">AWS 出网价格快照</div>
+    <div class="ce-metric-card__desc">2014–2026 历史锚点中的 AWS 公网出流参考价；免费额度与阶梯价格会影响实际账单。<a href="/zh/ledger/price-history/">查看价格历史</a>。</div>
+  </div>
+</div>
 
 > [!IMPORTANT]
 > **价格快照：** 2026-08-22 · **研究完成：** 2026-08-24 ·
 > **主样本地域：** AWS `us-east-1`、阿里云 `cn-hangzhou` ·
 > **汇率：** 1 USD = 6.7817 CNY · **月时数：** 730。
-> 以下都是带日期的公开价或情景值，不是实时报价，也不是企业合同净价。
+> 以下金额均为带日期的公开价或场景值，不是实时询价或企业折后净价。
 
 ## 一条公式看懂账单 {#formula}
 

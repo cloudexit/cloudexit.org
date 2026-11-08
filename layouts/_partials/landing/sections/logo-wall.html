@@ -1,0 +1,58 @@
+{{- $page := .page -}}
+{{- $data := .data -}}
+{{- $id := .id -}}
+{{- $items := $data.items | default (slice) -}}
+{{- with $data.rows -}}
+  {{- if reflect.IsSlice . -}}
+    {{- range . -}}
+      {{- range . -}}
+        {{- $items = $items | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $layout := lower (strings.TrimSpace (printf "%v" ($data.layout | default "grid"))) -}}
+{{- if not (in (slice "grid" "marquee") $layout) }}{{ warnf "%s: logo-wall.layout must be grid or marquee; using grid" $page.Path }}{{ $layout = "grid" }}{{ end -}}
+<section id="{{ $id }}" class="td-landing-section td-landing-logo-wall-section ce-landing-scope-section{{ with $data.class }} {{ . }}{{ end }}"{{ with $data.title }} aria-labelledby="{{ $id }}-title"{{ end }}>
+  <div class="td-site-container">
+    {{- partial "landing/heading.html" (dict "page" $page "data" $data "id" $id) }}
+    {{- with $items }}
+    {{- if eq $layout "marquee" }}
+      {{- partial "landing/marquee.html" (dict "page" $page "data" $data "items" . "template" "landing/items/logo.html" "direction" $data.direction "speed" $data.speed "rows" $data.rows) }}
+    {{- else }}
+    <div class="td-landing-logo-wall ce-scope-grid" style="--td-columns: {{ $data.columns | default 2 }}">
+      {{- range $idx, $item := . }}
+      {{- $url := $item.url | default $item.href }}
+      {{- $isTarget := or (eq $item.title "射程内") (eq (lower $item.title) "in scope") }}
+      <article class="ce-scope-card ce-scope-card--{{ if $isTarget }}danger{{ else }}ally{{ end }}">
+        <div class="ce-scope-card__badge">
+          {{- if $isTarget }}
+          <span class="ce-scope-pill ce-scope-pill--danger"><i class="fa-solid fa-crosshairs"></i> {{ if eq $page.Language.Lang "zh" }}靶向判定{{ else }}Lock-in Target{{ end }}</span>
+          {{- else }}
+          <span class="ce-scope-pill ce-scope-pill--ally"><i class="fa-solid fa-handshake"></i> {{ if eq $page.Language.Lang "zh" }}生态合作{{ else }}Open Ecosystem{{ end }}</span>
+          {{- end }}
+        </div>
+        <div class="ce-scope-card__header">
+          <div class="ce-scope-card__icon-wrap">
+            {{- if $item.icon }}<i class="{{ $item.icon }}" aria-hidden="true"></i>{{ else if or $item.image $item.logo }}{{ partial "landing/media.html" (dict "page" $page "item" $item) }}{{ end }}
+          </div>
+          <h3 class="ce-scope-card__title">{{ partial "landing/markdown.html" (dict "page" $page "value" ($item.title | default $item.name)) }}</h3>
+        </div>
+        <div class="ce-scope-card__body">
+          <p>{{ partial "landing/markdown.html" (dict "page" $page "value" ($item.desc | default $item.text)) }}</p>
+        </div>
+        {{- if $url }}
+        <div class="ce-scope-card__footer">
+          <a class="ce-card-link" href="{{ $url | relLangURL }}"{{ if $item.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <span>{{ if eq $page.Language.Lang "zh" }}查看判定说明{{ else }}View Scope Criteria{{ end }}</span>
+            <i class="fa-solid fa-arrow-right ce-card-link__arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- end }}
+  </div>
+</section>

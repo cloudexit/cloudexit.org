@@ -7,6 +7,12 @@ Keep CI and local builds on this baseline. Do not enable `--panicOnWarning`
 or `HUGO_PANICONWARNING`; keep warnings visible and review them. The upstream
 LibSass deprecation warning is accepted. No external Sass compiler is required.
 
+Use Go 1.27.3. `make check` validates the published module with both workspaces
+and local replacements disabled; select a non-default Hugo with `HUGO=/path/to/hugo`.
+Site-owned landing overrides live in `layouts/_partials/landing/sections/`;
+`taxonomy-label.html` and `blog-columns.html` supply the archive's column labels
+and navigation. These are site extensions, not OINK APIs.
+
 ## Git 内容与大文件规则
 
 用户于 2026-10-10 明确的通用仓库规则：

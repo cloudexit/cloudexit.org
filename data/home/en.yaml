@@ -8,188 +8,182 @@ sections:
   - cta
 
 hero:
-  eyebrow: CLOUD EXIT · OPEN STANDARD · PUBLIC EVIDENCE
+  eyebrow: CLOUD EXIT · OPEN STANDARDS · PUBLIC EVIDENCE
   title_lines:
     - Cloud exit is a capability,
     - not an event.
   title_size: 4.35rem
   align: center
   lead: >-
-    Keep the ability to move your data, workloads, and operations before you
-    need it. Measure that ability with tests, prices, records, and drills.
-  note: Version 0.1 defines the method. No provider has been rated yet.
-  note_icon: fa-solid fa-flask
+    If your data can't leave, your workloads are locked, and costs can't be audited, cloud was never a choice—it was a trap.
+    Measure your actual exit capability with reproducible criteria, raw cost ledgers, and recovery drills.
+  note: Draft Standard · Dated Price Snapshots · Disclosed Conflicts
+  note_icon: fa-solid fa-shield-halved
   actions:
-    - { label: Read the standard, url: standard/, icon: fa-solid fa-scale-balanced, style: primary }
-    - { label: Check the registry, url: standard/registry/, icon: fa-solid fa-list-check, style: ghost }
+    - { label: Read the Criteria, url: standard/, icon: fa-solid fa-scale-balanced, style: primary }
+    - { label: Check the Registry, url: standard/registry/, icon: fa-solid fa-list-check, style: ghost }
 
 capabilities:
-  eyebrow: The argument
-  title: Five questions, in the order a decision needs them
-  text: >-
-    These are not five independent content buckets. Each answer earns the
-    right to ask the next question.
+  eyebrow: Decision Chain
+  title: Five practical questions every team must answer
+  text: Cut through marketing rhetoric. Audit real exit tolls, verified hardware costs, public outages, and hands-on drills.
   items:
     - ref: 01 / STANDARD
-      title: Who is charging an exit toll?
+      title: 'Unmasking Lock-in: How Cloud Vendors Trap You'
       url: standard/
-      motto: Judge behavior, not company identity
+      motto: Audit actual billing and architecture, not marketing claims
       bullets:
-        - 'Five public tests cover [egress](standard/c1-no-exit-toll/), [export](standard/c2-whole-data-export/), [interfaces](standard/c3-standard-interfaces/), [commitments](standard/c4-no-commitment-lock/), and [downtime](standard/c5-accountable-downtime/).'
-        - 'Every result must show evidence, review date, scope, and uncertainty.'
-        - 'Vendors can challenge facts through a documented appeal process.'
-      value: A disagreement becomes a testable claim instead of a tribal argument.
+        - 'Prohibitive egress fees, proprietary runtime APIs, dark-pattern export traps, and multi-year contract lock.'
+        - '5 reproducible criteria (C1–C5) covering network egress, whole data export, open protocols, and downtime liability.'
+        - 'Full raw evidence and review dates published openly—any engineering team can test their own stack.'
+      value: Replace corporate marketing with verifiable technical criteria that can be checked with cURL and simple scripts.
       visual:
         type: card
         icon: fa-solid fa-scale-balanced
-        title: C1–C5
-        lines: [No exit toll, Whole-data export, Standard interfaces, No commitment lock, Accountable downtime]
+        title: C1–C5 Core Criteria
+        lines: [No Exit Tolls, Full Data Export, Open API Standards, No Lock-in Contracts, Transparent Downtime]
 
     - ref: 02 / LEDGER
-      title: How much rent is in the bill?
+      title: 'True Hardware Costs: How Much Cloud Rent Are You Paying?'
       url: ledger/
-      motto: Premium is arithmetic, not rhetoric
+      motto: Pricing is pure arithmetic—run the spreadsheets yourself
       bullets:
-        - 'At 200 GiB, gp3 is cheaper at baseline—but costs 2.16× AutoPL when 11.8K IOPS and 220 MiB/s are matched.'
-        - 'Owned compute crosses modeled PAYG material cost around 14–24 stable vCPU; deep five-year terms move the durable crossing into the thousands.'
-        - 'Against an OSS one-year package, reliable-topology object crossings move from 199 TB single-site to 1,223 TB three-site.'
-      value: Every headline now links to the dated table, assumptions, full report, and checksum.
+        - 'At 200 GiB, 11.8K IOPS and 220 MiB/s, snapshot gp3 pricing is 2.16× AutoPL pricing; see the block-storage ledger.'
+        - 'The baseline material-cost model crosses Alibaba c8i PAYG at 24 vCPU; utilization, topology and purchase term change the result.'
+        - 'Open pricing snapshots, reproducible SQL pipelines, and open CSV ledgers with SHA-256 checksums.'
+      value: 'Every dollar accounted for: identify exactly where managed service markups turn into pure unearned rent.'
       visual:
         type: code
         title: ledger.snapshot
         lines:
-          - { class: c, prefix: '# ', text: '2026-08-22 public-price snapshot' }
-          - { class: p, prefix: 'EBS/ESSD ', text: '0.54× baseline → 2.16× matched' }
-          - { class: p, prefix: 'S3/OSS   ', text: '¥0.156 / ¥0.120 per GB-month' }
-          - { class: ok, prefix: '✓ ', text: 'reports + CSV + sources + SHA-256' }
+          - { class: c, prefix: '# ', text: '2026-08-22 Public Price Snapshot' }
+          - { class: p, prefix: 'EBS/ESSD ', text: 'Baseline 0.54× → Parity 2.16×' }
+          - { class: p, prefix: 'S3/OSS   ', text: '¥0.156 / ¥0.120 per GB-Mo' }
+          - { class: ok, prefix: '✓ ', text: 'SQL Pipeline + CSV + SHA-256' }
 
     - ref: 03 / EVIDENCE
-      title: What risk is already on record?
+      title: 'Documented Failures: Concentration Risk in the Real World'
       url: evidence/
-      motto: Concentration risk is a record before it is a forecast
+      motto: Outage risk is not theoretical—it happens on public record every quarter
       bullets:
-        - 'A dated outage chronology separates primary sources from commentary.'
-        - 'A lock-in catalog names the mechanism and the escape test.'
-        - 'A claims ledger compares public statements with observable results.'
-      value: Risk discussions start from records that can be checked and corrected.
+        - 'The outage collection defines fields for duration, impact, sources and SLA remedies; incident records are not yet published.'
+        - 'Proprietary lock-in catalog: mapping custom data formats, message brokers, and IAM traps.'
+        - 'Press audit: juxtaposing vendor PR assurances directly against observable production outage reports.'
+      value: 'Learn from historical reality: use documented incidents to evaluate the true limits of "five-nines" promises.'
       visual:
         type: components
         items:
-          - { icon: fa-solid fa-triangle-exclamation, title: OUTAGES, detail: dated records }
-          - { icon: fa-solid fa-link, title: LOCK-IN, detail: mechanism catalog }
-          - { icon: fa-solid fa-quote-right, title: CLAIMS, detail: claim vs evidence }
-          - { icon: fa-solid fa-clock-rotate-left, title: REVISIONS, detail: visible history }
+          - { icon: fa-solid fa-triangle-exclamation, title: Outage Log, detail: Timestamped records }
+          - { icon: fa-solid fa-link, title: Lock-in Map, detail: Categorized mechanisms }
+          - { icon: fa-solid fa-quote-right, title: PR vs Reality, detail: Claims vs evidence }
+          - { icon: fa-solid fa-clock-rotate-left, title: Audit History, detail: Revision history }
 
     - ref: 04 / CASES
-      title: Has anyone actually done it?
+      title: 'Field Case Studies: Who Succeeded, Who Stumbled, Who Went Back'
       url: cases/
-      motto: Success and failure get the same template
+      motto: No uncritical hype, no hidden pitfalls—raw engineering retrospectives
       bullets:
-        - 'What moved, what stayed, what it cost, and how long it took.'
-        - 'Where the migration failed or was abandoned.'
-        - 'What the team would do differently with hindsight.'
-      value: Readers can recognize when a case applies to them—and when it does not.
+        - '37signals, Tantan and Ahrefs are calibration candidates; completed case assessments are not yet published.'
+        - 'Partial, abandoned and reversed migrations will use the same evidence requirements as successful exits.'
+        - 'Unified 6-question framework: what moved, what stayed, total expenses, time to break even, and lessons learned.'
+      value: 'Avoid survivorship bias: understand why pioneers succeeded, and know when staying on cloud is the wiser choice.'
       visual:
         type: card
         icon: fa-solid fa-route
-        title: Six questions
-        lines: [Moved, Stayed, Cost, Duration, Failure, Do-over]
+        title: 6-Question Framework
+        lines: [What Moved, What Stayed, Financial Cost, Timeline, Failure Points, If Doing It Again]
 
     - ref: 05 / PLAYBOOK
-      title: What should we do on Monday?
+      title: 'Monday Morning Drill: Testing Your Escape Hatch in an Afternoon'
       url: playbook/
-      motto: Start with one reversible drill
+      motto: Exit capability is not a reckless leap—it is a parachute you test regularly
       bullets:
-        - 'Restore a complete copy of critical data somewhere else.'
-        - 'Time the recovery and record every missing dependency.'
-        - 'Turn that number into a repeatable exit capability.'
-      value: The first action is an afternoon exercise, not a migration program.
+        - 'Do not touch production app code first: spin up a spare machine and restore your core database.'
+        - 'Time the recovery and log missing dependencies: identify proprietary services that break immediately.'
+        - 'Turn recovery into a quarterly routine: the measured restore time is your actual exit capability.'
+      value: 'Start with a bounded recovery exercise; record what finishes and what remains unresolved within the time available.'
       visual:
         type: code
-        title: exit-drill.log
+        title: exit-drill.example
         lines:
-          - { class: p, prefix: '$ ', text: restore --somewhere-else }
-          - { class: ok, prefix: '✓ ', text: data verified }
-          - { class: ok, prefix: '✓ ', text: dependencies recorded }
-          - { class: p, prefix: 'T+ ', text: your exit capability }
+          - { class: p, prefix: '# ', text: 'Example checklist, not a measured run' }
+          - { class: ok, prefix: '1. ', text: 'Restore and verify a chosen dataset' }
+          - { class: ok, prefix: '2. ', text: 'Record missing dependencies' }
+          - { class: p, prefix: '3. ', text: 'Measure elapsed time and remaining work' }
 
 criteria:
-  eyebrow: The five tests
-  title: A standard people can inspect themselves
-  text: 'Each criterion page follows the same contract: definition → verification → worked example → boundaries and objections.'
+  eyebrow: Five Criteria
+  title: An open standard any engineer can independently verify
+  text: 'Every criterion follows the same engineering structure: clear definition → verification command → real calculations → edge cases.'
   columns: 3
-  link_label: Inspect the test
+  link_label: View Criteria
   items:
-    - { title: C1 · No exit toll, meta: Economics, icon: fa-solid fa-arrow-right-from-bracket, desc: Leaving must not trigger punitive transfer or extraction charges., url: standard/c1-no-exit-toll/ }
-    - { title: C2 · Whole-data export, meta: Data, icon: fa-solid fa-box-archive, desc: A customer can export the complete usable dataset in bounded time., url: standard/c2-whole-data-export/ }
-    - { title: C3 · Standard interfaces, meta: Portability, icon: fa-solid fa-plug, desc: 'Core operations use documented, broadly implementable interfaces.', url: standard/c3-standard-interfaces/ }
-    - { title: C4 · No commitment lock, meta: Contract, icon: fa-solid fa-file-signature, desc: Discounts do not become a practical penalty for leaving., url: standard/c4-no-commitment-lock/ }
-    - { title: C5 · Accountable downtime, meta: Reliability, icon: fa-solid fa-clock-rotate-left, desc: 'Incidents, remedies, and responsibility remain auditable.', url: standard/c5-accountable-downtime/ }
-    - { title: Provider registry, meta: Results, icon: fa-solid fa-list-check, desc: Published ratings appear only after evidence review and carry an expiry date., url: standard/registry/ }
+    - { title: 'C1 · No Exit Tolls', meta: Economics, icon: fa-solid fa-arrow-right-from-bracket, desc: 'Leaving should never incur punitive bandwidth egress tolls or data extraction ransom.', url: standard/c1-no-exit-toll/ }
+    - { title: 'C2 · Whole Data Export', meta: Data, icon: fa-solid fa-box-archive, desc: 'Teams must be able to export complete data in standard formats within bounded time.', url: standard/c2-whole-data-export/ }
+    - { title: 'C3 · Open Standards', meta: Portability, icon: fa-solid fa-plug, desc: 'Test whether required operations and semantics work through documented, independently implementable interfaces.', url: standard/c3-standard-interfaces/ }
+    - { title: 'C4 · No Commitment Lock', meta: Contract, icon: fa-solid fa-file-signature, desc: 'Volume discounts must not become legal prison terms with punitive early exit penalties.', url: standard/c4-no-commitment-lock/ }
+    - { title: 'C5 · Accountable Downtime', meta: Reliability, icon: fa-solid fa-clock-rotate-left, desc: 'Outages, root-cause analyses, and financial SLA penalties must be auditable.', url: standard/c5-accountable-downtime/ }
+    - { title: 'Compliance Registry', meta: Results, icon: fa-solid fa-list-check, desc: 'No ratings published yet. The registry defines evidence, review dates, expiry, and appeals.', url: standard/registry/ }
 
 scope:
   eyebrow: Scope
-  title: The line follows behavior, not logos
-  text: Selling infrastructure is a trade. Pricing the fact that a customer cannot leave is rent extraction.
+  title: Judged by technical behavior, not company branding
+  text: Selling compute is an honest trade; engineering artificial lock-in to charge toll fees is the real danger.
   layout: grid
   columns: 2
   items:
-    - title: In scope
+    - title: In Scope
       icon: fa-solid fa-crosshairs
-      desc: Exit fees, proprietary export barriers, interface lock-in, coercive commitments, and unaccountable service failure.
+      desc: Punitive egress fees, proprietary export barriers, private APIs, predatory lock-in contracts, and unaccountable downtime.
       url: standard/scope/
-    - title: Potential allies
+    - title: Potential Allies
       icon: fa-solid fa-handshake
-      desc: Compute vendors, CDNs, colocation, managed services, and clouds that make portability real and measurable.
+      desc: Infrastructure, CDNs, colocation facilities, and open cloud providers committed to open protocols and transparent pricing.
       url: standard/scope/
 
 actions:
-  eyebrow: Choose an entry point
-  title: Five minutes, thirty minutes, or one afternoon
-  text: Start with the smallest action that produces a fact about your own position.
+  eyebrow: Action Plan
+  title: Pick a starting point to assess your actual position
+  text: Stop debating hypotheticals. Take one small, concrete step to verify your infrastructure sovereignty today.
   columns: 3
-  link_label: Start here
+  link_label: Start Here
   items:
-    - { title: Check a provider, meta: 5 minutes, icon: fa-solid fa-magnifying-glass, desc: Apply C1–C5 and see which evidence is still missing., url: standard/registry/ }
-    - { title: Price a workload, meta: 30 minutes, icon: fa-solid fa-calculator, desc: 'Make units, terms, utilization, and exit charges explicit.', url: ledger/model/ }
-    - { title: Run an exit drill, meta: One afternoon, icon: fa-solid fa-stopwatch, desc: 'Restore critical data elsewhere, verify it, and record elapsed time.', url: playbook/exit-drill/ }
+    - { title: 'Audit Vendor Lock-in', meta: '5 Minutes', icon: fa-solid fa-magnifying-glass, desc: 'Run C1–C5 baseline checks against your current cloud architecture to list proprietary blockers.', url: standard/registry/ }
+    - { title: 'Calculate True Costs', meta: '30 Minutes', icon: fa-solid fa-calculator, desc: 'Plug your real vCPU, IOPS, and network egress into the model to uncover cloud rent markups.', url: ledger/model/ }
+    - { title: 'Run an Exit Drill', meta: 'One Afternoon', icon: fa-solid fa-stopwatch, desc: 'Restore your primary database onto a clean machine outside your current cloud and time the result.', url: playbook/exit-drill/ }
 
 faq:
-  eyebrow: Direct answers
-  title: Objections the project must answer in public
+  eyebrow: Direct Answers
+  title: Frequently asked questions addressed with candid engineering reality
   items:
-    - question: Is this an anti-cloud campaign?
+    - question: Is this an uncritical anti-cloud campaign?
       answer: >-
-        No. Cloud services can be the right operating choice and can strengthen
-        exit capability. The target is measurable lock-in behavior, not a
-        provider category or company size.
+        Absolutely not. Public cloud offers unmatched initial speed and elasticity for early-stage teams.
+        However, once workloads reach steady state and monthly bills scale into hundreds of thousands of dollars,
+        paying compounding premiums for unused elasticity is engineering malpractice. We oppose artificial lock-in, not cloud computing itself.
       open: true
-    - question: Does every company need to leave the cloud?
+    - question: Should every organization exit the cloud?
       answer: >-
-        No. The claim is narrower: every organization should know whether it
-        can leave, how long it would take, and what would prevent it. Staying is
-        a choice only when leaving remains possible.
-    - question: What counts as evidence?
+        No. Self-hosting requires baseline systems engineering, automation, and operational discipline.
+        Blindly moving to bare metal without the right team can lead to operational headaches.
+        Our goal is ensuring every team understands their options: knowing whether they can leave, how long it takes, and what it costs. Staying is only a strategic choice if leaving remains possible.
+    - question: How do you ensure datasets and benchmarks remain objective?
       answer: >-
-        Official price pages and incident reports come first; contracts,
-        reproducible measurements, and first-party operating accounts follow.
-        Commentary is labeled as commentary, and uncertainty remains visible.
-    - question: Can a provider challenge a result?
+        All pricing snapshots are scraped directly from public vendor documentation, official calculators, and CSV price exports.
+        The entire calculation pipeline is open source with verifiable SHA-256 checksums. Outage collections currently contain record templates; publication requires checkable sources and explicit uncertainty.
+    - question: Can cloud vendors appeal or correct published information?
       answer: >-
-        Yes. The method records the exact claim, source window, reviewer, and
-        expiry date. Factual corrections change the record with a visible
-        revision; pressure without contrary evidence does not.
-    - question: Does the initiator have a commercial conflict of interest?
+        Yes. The method requires each future assessment to publish its evidence, collection date, and reviewer.
+        If a vendor lowers prices, adopts open standards, or identifies factual errors, they can submit evidence through our documented appeal workflow. Changes to published assessments must retain a revision history.
+    - question: Does the creator have commercial conflicts of interest?
       answer: >-
-        Yes. Ruohang Feng sells commercial support for Pigsty, a
-        self-hosted PostgreSQL platform, and may benefit when organizations
-        choose self-hosting. That conflict is disclosed because readers should
-        weigh it. The defense is not a claim of neutrality; it is open methods,
-        reproducible data, named sources, and appealable results.
+        Yes. Initiator Ruohang Feng maintains Pigsty, an open-source PostgreSQL distribution, and provides enterprise support.
+        Organizations choosing self-hosted database infrastructure might evaluate or use Pigsty.
+        We disclose this relationship and publish sources, assumptions, and calculation methods so readers can challenge the conclusions.
 
 cta:
-  title: Measure your exit capability once.
-  text: Restore the data somewhere else. Time it. Record what breaks. That number is your starting point.
-  label: Run the exit drill
+  title: Next Monday, test your escape hatch once.
+  text: Spin up a spare machine, restore your core database backup, time the operation, and catalog every service that breaks. That measured time is your real exit capability.
+  label: Start the Exit Drill
   url: playbook/exit-drill/
   style: primary

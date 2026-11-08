@@ -1,0 +1,25 @@
+brand:
+  name: Cloud Exit
+  tagline: Standards, evidence and practice for cloud exit
+columns:
+  - title: "Read"
+    links:
+      - { label: "Standard", url: "standard/" }
+      - { label: "Playbook", url: "playbook/" }
+      - { label: "Cases", url: "cases/" }
+      - { label: "Essays", url: "blog/" }
+  - title: "Databases"
+    links:
+      - { label: "PG Center", url: "https://pg.center/docs/reference/", external: true }
+      - { label: "PGSQL.CC", url: "https://pgsql.cc/docs/", external: true }
+      - { label: "Pigsty", url: "https://pigsty.io/", external: true }
+  - title: "Tools"
+    links:
+      - { label: "SILO", url: "https://silo.pgsty.com/", external: true }
+      - { label: "Farrow", url: "https://farrow.pgsty.com/", external: true }
+      - { label: "SOW", url: "https://sow.pgsty.com/", external: true }
+  - title: "Project"
+    links:
+      - { label: "PGSTY", url: "https://pgsty.com/", external: true }
+      - { label: "Ruohang Feng", url: "https://vonng.com/en/", external: true }
+      - { label: "GitHub", url: "https://github.com/pgsty", external: true }

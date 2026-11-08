@@ -1,0 +1,220 @@
+{{- $page := .page -}}
+{{- $hero := .data -}}
+{{- $id := .id -}}
+{{- $titleLines := index $hero "title_lines" -}}
+{{- $lead := $hero.lead | default $hero.desc | default $hero.text -}}
+{{- $image := $hero.image -}}
+{{- $imageLight := "" -}}
+{{- $imageDark := "" -}}
+{{- $imageAlt := "" -}}
+{{- if reflect.IsMap $image -}}
+  {{- $imageLight = $image.light | default $image.src | default $image.dark -}}
+  {{- $imageDark = $image.dark | default $image.src | default $image.light -}}
+  {{- $imageAlt = $image.alt | default "" -}}
+{{- else -}}
+  {{- with $image -}}
+    {{- $imageLight = . -}}
+    {{- $imageDark = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $hasImage := and $imageLight $imageDark -}}
+{{- $imageStyle := "" -}}
+{{- $heroStyle := "" -}}
+{{- if isset $hero "title_size" -}}
+  {{- $titleSize := "" -}}
+  {{- if ne (printf "%T" $hero.title_size) "string" -}}
+    {{- warnf "%s: hero.title_size must be a CSS length string; using the default size" $page.Path -}}
+  {{- else -}}
+    {{- $titleSize = strings.TrimSpace $hero.title_size -}}
+    {{- if not (findRE `^[0-9]+(?:[.][0-9]+)?(?:rem|em|px)$` $titleSize) -}}
+      {{- warnf "%s: hero.title_size must be a CSS length in rem, em, or px; using the default size" $page.Path -}}
+      {{- $titleSize = "" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $titleSize }}{{ $heroStyle = printf "%s --td-hero-title-size: %s;" $heroStyle . }}{{ end -}}
+{{- end -}}
+{{- $align := lower (strings.TrimSpace (printf "%v" ($hero.align | default "start"))) -}}
+{{- if not (in (slice "start" "center") $align) }}{{ warnf "%s: hero.align must be start or center; using start" $page.Path }}{{ $align = "start" }}{{ end -}}
+{{- if and (eq $align "center") $hero.image }}{{ warnf "%s: hero.align center is a text-only layout; using align start so the image is kept" $page.Path }}{{ $align = "start" }}{{ end -}}
+{{- $media := $hero.media | default dict -}}
+{{- if and $media (not (reflect.IsMap $media)) }}{{ warnf "%s: hero.media must be a map; dropping the media" $page.Path }}{{ $media = dict }}{{ end -}}
+{{- $breakpoint := strings.TrimSpace (printf "%v" ($media.hide_below | default "")) -}}
+{{- if and $breakpoint (not (in (slice "sm" "md" "lg" "xl") $breakpoint)) }}{{ warnf "%s: hero.media.hide_below must be sm, md, lg, or xl; ignoring it" $page.Path }}{{ $breakpoint = "" }}{{ end -}}
+{{- with $media.ratio -}}
+  {{- $ratio := strings.TrimSpace (printf "%v" .) -}}
+  {{- if findRE `^[0-9]+(\.[0-9]+)?(fr|px|rem|em|%)\s+[0-9]+(\.[0-9]+)?(fr|px|rem|em|%)$` $ratio -}}
+    {{- $heroStyle = printf "%s --td-hero-columns: %s;" $heroStyle $ratio -}}
+  {{- else -}}
+    {{- warnf "%s: hero.media.ratio must be two space-separated track sizes, each a number with fr, px, rem, em, or %%; ignoring it" $page.Path -}}
+  {{- end -}}
+{{- end -}}
+{{- with $media.max_width -}}
+  {{- $maxWidth := partial "validate.html" (dict
+      "value" . "kind" "length" "fallback" ""
+      "key" "hero.media.max_width" "where" $page.Path) -}}
+  {{- with $maxWidth }}{{ $heroStyle = printf "%s --td-hero-media-max: %s;" $heroStyle . }}{{ end -}}
+{{- end -}}
+{{- if $hasImage -}}
+  {{- $imageStyle = printf "--td-hero-image-light: url(%q); --td-hero-image-dark: url(%q);" ($imageLight | relURL) ($imageDark | relURL) -}}
+{{- end -}}
+{{- $isZh := eq $page.Language.Lang "zh" -}}
+<section id="{{ $id }}" class="td-landing-hero ce-landing-hero{{ if $hasImage }} td-landing-hero--with-media{{ end }}{{ if eq $align "center" }} td-landing-hero--center{{ end }}{{ with $breakpoint }} td-landing-hero--hide-media-below-{{ . }}{{ end }}{{ with $hero.class }} {{ . }}{{ end }}"{{ with $heroStyle }} style="{{ . | safeCSS }}"{{ end }} aria-labelledby="{{ $id }}-title">
+  <div class="td-landing-hero__glow ce-hero-ambient-glow" aria-hidden="true"></div>
+  <div class="td-site-container ce-hero-container">
+    <div class="td-landing-hero__copy ce-hero-copy">
+      {{- with $hero.eyebrow }}
+      <p class="td-landing-hero__eyebrow ce-hero-eyebrow">
+        <span class="ce-status-beacon" aria-hidden="true"><span class="ce-status-beacon__dot"></span></span>
+        <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+      </p>
+      {{- end }}
+      <h1 class="td-landing-hero__title ce-hero-title" id="{{ $id }}-title">
+        {{- with $titleLines -}}
+          {{- range $idx, $line := . }}
+        <span class="ce-hero-title__line{{ if eq $idx 1 }} ce-hero-title__highlight{{ end }}">
+            {{- if reflect.IsMap $line -}}
+              {{- range $word := $line.words -}}
+                {{- with $word.mark }}<b class="td-landing-initial{{ with $word.color }} td-landing-initial--{{ . }}{{ end }}">{{ . }}</b>{{ end -}}
+                {{- partial "landing/markdown.html" (dict "page" $page "value" $word.text) -}}{{ " " -}}
+              {{- end -}}
+            {{- else -}}
+              {{- partial "landing/markdown.html" (dict "page" $page "value" $line) -}}
+            {{- end -}}
+        </span>
+          {{- end -}}
+        {{- else -}}
+          {{- partial "landing/markdown.html" (dict "page" $page "value" ($hero.title | default $page.Site.Title)) -}}
+        {{- end -}}
+      </h1>
+      {{- with $lead }}<p class="td-landing-hero__lead ce-hero-lead">{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</p>{{ end }}
+      {{- with $hero.actions }}
+      <div class="td-landing-hero__actions ce-hero-actions">
+        {{- range . }}
+          {{- $url := .url | default .href -}}
+          {{- if $url }}
+        <a class="td-landing-button ce-btn ce-btn--{{ .style | default "ghost" }}" href="{{ $url | relLangURL }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          {{- with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
+          <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .label) }}</span>
+          {{- if eq (.style | default "ghost") "primary" }}<i class="fa-solid fa-arrow-right ce-btn__arrow" aria-hidden="true"></i>{{ end }}
+        </a>
+          {{- else }}
+        <span class="td-landing-button ce-btn ce-btn--{{ .style | default "ghost" }}">
+          {{- with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
+          <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .label) }}</span>
+        </span>
+          {{- end }}
+        {{- end }}
+      </div>
+      {{- end }}
+      {{- with $hero.note }}
+      <p class="td-landing-hero__note ce-hero-note">
+        <i class="{{ $hero.note_icon | default "fa-solid fa-flask" }}" aria-hidden="true"></i>
+        <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+      </p>
+      {{- end }}
+    </div>
+
+    {{- /* Cloud Exit Evidence & Architecture Console */ -}}
+    <div class="ce-hero-console">
+      <div class="ce-console-chrome">
+        <div class="ce-console-dots" aria-hidden="true">
+          <span class="ce-console-dot ce-console-dot--red"></span>
+          <span class="ce-console-dot ce-console-dot--yellow"></span>
+          <span class="ce-console-dot ce-console-dot--green"></span>
+        </div>
+        <div class="ce-console-title">
+          <span>{{ if $isZh }}CLOUD EXIT // 开放判据与下云架构控制台{{ else }}CLOUD EXIT // EVIDENCE & ARCHITECTURE CONSOLE{{ end }}</span>
+        </div>
+        <div class="ce-console-badge">
+          <span class="ce-beacon-dot"></span>
+          <span>{{ if $isZh }}v0.1 标准草案{{ else }}Draft Standard v0.1{{ end }}</span>
+        </div>
+      </div>
+
+      <div class="ce-console-grid">
+        <!-- Pillar 1: Standard -->
+        <a class="ce-console-card ce-console-card--copper" href="{{ "standard/" | relLangURL }}">
+          <div class="ce-console-card__head">
+            <span class="ce-console-card__icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
+            <span class="ce-console-card__step">{{ if $isZh }}01 / 标准{{ else }}01 / STANDARD{{ end }}</span>
+          </div>
+          <h4 class="ce-console-card__title">{{ if $isZh }}C1–C5 开放判据{{ else }}C1–C5 Open Criteria{{ end }}</h4>
+          <p class="ce-console-card__desc">{{ if $isZh }}按行为界定退出壁垒：出网、导出、接口、承诺与责任{{ else }}Behavior-based tests for egress, export, standard APIs & SLAs{{ end }}</p>
+          <div class="ce-console-card__chips">
+            <span class="ce-chip">{{ if $isZh }}无退出罚金{{ else }}0 Exit Toll{{ end }}</span>
+            <span class="ce-chip">{{ if $isZh }}整体导出{{ else }}Full Export{{ end }}</span>
+            <span class="ce-chip">{{ if $isZh }}标准接口{{ else }}Open API{{ end }}</span>
+          </div>
+        </a>
+
+        <!-- Pillar 2: Ledger -->
+        <a class="ce-console-card ce-console-card--cyan" href="{{ "ledger/" | relLangURL }}">
+          <div class="ce-console-card__head">
+            <span class="ce-console-card__icon"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></span>
+            <span class="ce-console-card__step">{{ if $isZh }}02 / 账本{{ else }}02 / LEDGER{{ end }}</span>
+          </div>
+          <h4 class="ce-console-card__title">{{ if $isZh }}公共成本账本{{ else }}Public Cost Ledger{{ end }}</h4>
+          <p class="ce-console-card__desc">{{ if $isZh }}按容量、性能与购买期限比较价格，保留日期、来源与校验和{{ else }}Dated price snapshots with capacity, performance and term assumptions{{ end }}</p>
+          <div class="ce-console-card__chips">
+            <span class="ce-chip">{{ if $isZh }}2026-08-22{{ else }}2026-08-22{{ end }}</span>
+            <span class="ce-chip">EBS/ESSD</span>
+            <span class="ce-chip">S3/OSS</span>
+          </div>
+        </a>
+
+        <!-- Pillar 3: Evidence -->
+        <a class="ce-console-card ce-console-card--rose" href="{{ "evidence/" | relLangURL }}">
+          <div class="ce-console-card__head">
+            <span class="ce-console-card__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            <span class="ce-console-card__step">{{ if $isZh }}03 / 档案{{ else }}03 / EVIDENCE{{ end }}</span>
+          </div>
+          <h4 class="ce-console-card__title">{{ if $isZh }}集中度与风险档案{{ else }}Risk & Outage Archive{{ end }}</h4>
+          <p class="ce-console-card__desc">{{ if $isZh }}事故、锁定与声明的记录模板，正式档案待发布{{ else }}Templates for outages, lock-in and claims; records pending review{{ end }}</p>
+          <div class="ce-console-card__chips">
+            <span class="ce-chip">{{ if $isZh }}故障编年{{ else }}Outages{{ end }}</span>
+            <span class="ce-chip">{{ if $isZh }}锁定图鉴{{ else }}Lock-in Map{{ end }}</span>
+            <span class="ce-chip">{{ if $isZh }}事实证据{{ else }}Audit Logs{{ end }}</span>
+          </div>
+        </a>
+
+        <!-- Pillar 4: Playbook -->
+        <a class="ce-console-card ce-console-card--emerald" href="{{ "playbook/" | relLangURL }}">
+          <div class="ce-console-card__head">
+            <span class="ce-console-card__icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+            <span class="ce-console-card__step">{{ if $isZh }}04 / 手册{{ else }}04 / PLAYBOOK{{ end }}</span>
+          </div>
+          <h4 class="ce-console-card__title">{{ if $isZh }}可回退下云演练{{ else }}Reversible Exit Drill{{ end }}</h4>
+          <p class="ce-console-card__desc">{{ if $isZh }}安排一次范围有限的异地恢复，计时并记录缺失依赖{{ else }}Attempt a bounded recovery elsewhere and record the result{{ end }}</p>
+          <div class="ce-console-card__chips">
+            <span class="ce-chip">restore</span>
+            <span class="ce-chip">{{ if $isZh }}计时校验{{ else }}Time Metric{{ end }}</span>
+            <span class="ce-chip">{{ if $isZh }}闭环演练{{ else }}Drill Ready{{ end }}</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ce-console-footer">
+        <div class="ce-proof-badge">
+          <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+          <span>{{ if $isZh }}5 项公开检验判据{{ else }}5 Public Criteria{{ end }}</span>
+        </div>
+        <div class="ce-proof-badge">
+          <i class="fa-solid fa-database" aria-hidden="true"></i>
+          <span>{{ if $isZh }}3 份可复算价格数据集{{ else }}3 Verifiable Datasets{{ end }}</span>
+        </div>
+        <div class="ce-proof-badge">
+          <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
+          <span>{{ if $isZh }}1 个下午开始首次演练{{ else }}1 Afternoon Exit Drill{{ end }}</span>
+        </div>
+        <div class="ce-proof-badge">
+          <i class="fa-solid fa-shield" aria-hidden="true"></i>
+          <span>{{ if $isZh }}来源与边界公开{{ else }}Draft Standard v0.1{{ end }}</span>
+        </div>
+      </div>
+    </div>
+
+    {{- if $hasImage }}
+    <div class="td-landing-hero__media" style="{{ $imageStyle | safeCSS }}"{{ with $imageAlt }} role="img" aria-label="{{ . | markdownify | plainify }}"{{ else }} aria-hidden="true"{{ end }}></div>
+    {{- end }}
+  </div>
+</section>

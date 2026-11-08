@@ -1,0 +1,58 @@
+{{- $page := .page -}}
+{{- $data := .data -}}
+{{- $id := .id -}}
+<section id="{{ $id }}" class="td-landing-section td-landing-cards-section ce-landing-cards-section ce-cards--{{ $id }}{{ with $data.class }} {{ . }}{{ end }}"{{ with $data.title }} aria-labelledby="{{ $id }}-title"{{ end }}>
+  <div class="td-site-container">
+    {{- partial "landing/heading.html" (dict "page" $page "data" $data "id" $id) }}
+    {{- with $data.items }}
+    <div class="td-landing-card-grid ce-card-grid" style="--td-columns: {{ $data.columns | default 3 }}">
+      {{- range . }}
+      {{- $url := .url | default .href }}
+      {{- $external := .external }}
+      <article class="td-landing-card ce-bento-card{{ with .class }} {{ . }}{{ end }}">
+        <div class="ce-bento-card__top">
+          {{- if or .image .logo .icon }}
+          <div class="ce-bento-card__icon-box">
+            {{- if .icon }}<i class="{{ .icon }}" aria-hidden="true"></i>{{ else }}{{ partial "landing/media.html" (dict "page" $page "item" .) }}{{ end }}
+          </div>
+          {{- end }}
+          {{- with .meta }}
+          {{- $metaClass := "default" -}}
+          {{- if or (eq . "经济性") (eq . "Economics") }}{{ $metaClass = "economics" }}{{ end -}}
+          {{- if or (eq . "数据") (eq . "Data") }}{{ $metaClass = "data" }}{{ end -}}
+          {{- if or (eq . "可移植性") (eq . "Portability") }}{{ $metaClass = "portability" }}{{ end -}}
+          {{- if or (eq . "合同") (eq . "Contract") }}{{ $metaClass = "contract" }}{{ end -}}
+          {{- if or (eq . "可靠性") (eq . "Reliability") }}{{ $metaClass = "reliability" }}{{ end -}}
+          {{- if or (eq . "结果") (eq . "Results") }}{{ $metaClass = "results" }}{{ end -}}
+          {{- if or (in . "分钟") (in . "minutes") (in . "下午") (in . "afternoon") }}{{ $metaClass = "time" }}{{ end -}}
+          <span class="ce-meta-badge ce-meta-badge--{{ $metaClass }}">
+            {{ partial "landing/markdown.html" (dict "page" $page "value" .) }}
+          </span>
+          {{- end }}
+        </div>
+        {{- with (.title | default .name) }}
+        <h3 class="ce-bento-card__title">
+          {{- if $url }}<a href="{{ $url | relLangURL }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ end -}}
+          {{ partial "landing/markdown.html" (dict "page" $page "value" .) }}
+          {{- if $url }}</a>{{ end -}}
+        </h3>
+        {{- end }}
+        {{- with (.desc | default .text) }}
+        <div class="ce-bento-card__desc">
+          {{ partial "landing/markdown-block.html" (dict "page" $page "value" .) }}
+        </div>
+        {{- end }}
+        {{- if $url }}
+        <div class="ce-bento-card__footer">
+          <a class="ce-card-link" href="{{ $url | relLangURL }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            <span>{{ partial "landing/markdown.html" (dict "page" $page "value" ($data.link_label | default "查看详情")) }}</span>
+            <i class="fa-solid fa-arrow-right ce-card-link__arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+</section>

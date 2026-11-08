@@ -1,0 +1,25 @@
+brand:
+  name: Cloud Exit
+  tagline: 下云的标准、证据与实践
+columns:
+  - title: "阅读"
+    links:
+      - { label: "标准", url: "standard/" }
+      - { label: "实践手册", url: "playbook/" }
+      - { label: "案例", url: "cases/" }
+      - { label: "文章", url: "blog/" }
+  - title: "数据库"
+    links:
+      - { label: "PG 中文文档", url: "https://pgsql.cc/docs/", external: true }
+      - { label: "PG 知识图谱", url: "https://pg.center/docs/reference/", external: true }
+      - { label: "Pigsty", url: "https://pigsty.cc/", external: true }
+  - title: "基础设施"
+    links:
+      - { label: "SILO", url: "https://silo.pgsty.com/zh/", external: true }
+      - { label: "Farrow", url: "https://farrow.pgsty.com/zh/", external: true }
+      - { label: "SOW", url: "https://sow.pgsty.com/zh/", external: true }
+  - title: "项目"
+    links:
+      - { label: "PGSTY", url: "https://pgsty.com/zh/", external: true }
+      - { label: "冯若航 / Vonng", url: "https://vonng.com/", external: true }
+      - { label: "GitHub", url: "https://github.com/pgsty", external: true }

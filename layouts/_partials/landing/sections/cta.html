@@ -1,0 +1,35 @@
+{{- $page := .page -}}
+{{- $data := .data -}}
+{{- $id := .id -}}
+{{- $description := $data.desc | default $data.text -}}
+<section id="{{ $id }}" class="td-landing-section td-landing-cta-section ce-landing-cta-section{{ with $data.class }} {{ . }}{{ end }}" aria-label="{{ $data.title | default $page.Site.Title | markdownify | plainify }}">
+  <div class="td-site-container">
+    <div class="ce-cta-box">
+      <div class="ce-cta-glow" aria-hidden="true"></div>
+      <div class="ce-cta-content">
+        <div class="ce-cta-header">
+          {{- with $data.title }}<h2 class="ce-cta-title">{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</h2>{{ end }}
+          {{- with $description }}<p class="ce-cta-desc">{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</p>{{ end }}
+        </div>
+        <div class="ce-cta-actions">
+          {{- with $data.actions }}
+            {{- range . }}
+              {{- $url := .url | default .href -}}
+              {{- if $url }}<a class="td-landing-button ce-btn ce-btn--{{ .style | default "ghost" }}" href="{{ $url | relLangURL }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ else }}<span class="td-landing-button ce-btn ce-btn--{{ .style | default "ghost" }}">{{ end -}}
+              {{ with .icon }}<i class="{{ . }}" aria-hidden="true"></i>{{ end }}
+              <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .label) }}</span>
+              <i class="fa-solid fa-arrow-right ce-btn__arrow" aria-hidden="true"></i>
+              {{- if $url }}</a>{{ else }}</span>{{ end -}}
+            {{- end }}
+          {{- else }}
+            {{- $url := $data.url | default $data.href -}}
+            {{- if $url }}<a class="td-landing-button ce-btn ce-btn--{{ $data.style | default "primary" }}" href="{{ $url | relLangURL }}"{{ if $data.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ else }}<span class="td-landing-button ce-btn ce-btn--{{ $data.style | default "primary" }}">{{ end -}}
+            <span>{{ partial "landing/markdown.html" (dict "page" $page "value" $data.label) }}</span>
+            <i class="{{ $data.icon | default "fa-solid fa-arrow-right" }} ce-btn__arrow" aria-hidden="true"></i>
+            {{- if $url }}</a>{{ else }}</span>{{ end -}}
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

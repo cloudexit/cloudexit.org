@@ -15,30 +15,37 @@ cascade:
   theme_color_dark: '#ef9aaa'
   type: docs
   navbar_autohide: false
-  footer_style: slim
+  footer_style: fat
   comments: false
   feedback: false
 ---
 
-The archive supports a bounded claim: **concentration and lock-in risk already
-have an observable record.** It is not a prediction that every centralized
-service will fail, and it is not a feed of every technology incident.
+> [!NOTE]
+> The collection templates are ready. Structured incident, lock-in, and claim records have not yet been published. Source commentary is available in the [essay archive](/blog/).
 
-## Three collections {#collections}
+Outages are not anomalies; they are the unavoidable physics of centralized infrastructure.
 
-- [Outages](/evidence/outages/) — incident chronology with source, impact, uncertainty, and follow-up.
-- [Lock-in](/evidence/lock-in/) — mechanisms, affected layer, exit symptom, and verification test.
-- [Claims](/evidence/claims/) — a public statement placed beside observable evidence and status.
+When thousands of mission-critical systems depend on a shared, proprietary control plane, "five-nines availability" often shrinks into SLA credit coupons when disaster strikes. A token discount on next month's invoice cannot offset catastrophic downtime, corrupted data, or eroded customer trust.
 
-## Evidence discipline {#discipline}
+The **Evidence Archive** maintains a timestamped, peer-verifiable record of public cloud failure modes, proprietary lock-in mechanisms, and marketing claims contrasted directly against observable production reality.
 
-Every record separates occurrence date from publication date, observed fact
-from inference, and primary source from commentary. Corrections append a
-revision note. Disputed or unknown facts remain visible instead of being forced
-into a confident narrative.
+## Three Core Collections {#collections}
 
-The existing Chinese essay archive at
-[vonng.com/cloud](https://vonng.com/cloud/) is a seed source, not the database
-itself. Records are extracted, normalized, linked back to the original, and
-given an English abstract before publication here.
+{{< cards >}}
+  {{< card title="Outage Chronology" link="/evidence/outages/" icon="fa-solid fa-triangle-exclamation" badge="Incidents" >}}
+Timestamped records of major cloud outages, cascading blast radiuses, first-party RCA audits, and long-term remediation tracking.
+  {{< /card >}}
+  {{< card title="Lock-in Map" link="/evidence/lock-in/" icon="fa-solid fa-link" badge="Architecture" >}}
+Technical deconstruction of proprietary storage formats, message queues, bespoke control planes, and IAM dependency traps.
+  {{< /card >}}
+  {{< card title="Claims vs Reality" link="/evidence/claims/" icon="fa-solid fa-quote-right" badge="Audit" >}}
+Juxtaposing vendor marketing promises of infinite elasticity directly alongside observable production downtime and throttle limits.
+  {{< /card >}}
+{{< /cards >}}
+
+## Evidence Discipline {#discipline}
+
+- **Primary Sources First**: Every entry distinguishes observed timestamps, verified first-party postmortems, and community audits from speculative commentary.
+- **Auditable & Dynamic**: Disputed or unverified details remain transparently noted; as cloud providers release technical fixes or reduce egress tolls, records are updated with public changelogs.
+- **Curated Foundations**: Structured and synthesized from the extensive research archive at [vonng.com/cloud](https://vonng.com/cloud/) and global infrastructure postmortems.
 

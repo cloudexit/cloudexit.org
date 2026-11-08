@@ -1,0 +1,115 @@
+{{- $page := .page -}}
+{{- $data := .data -}}
+{{- $id := .id -}}
+{{- $interactive := eq (lower ($page.Store.Get "tdOutputFormat" | default "html")) "html" -}}
+<section id="{{ $id }}" class="td-landing-section td-landing-capabilities ce-landing-capabilities{{ with $data.class }} {{ . }}{{ end }}"{{ with $data.title }} aria-labelledby="{{ $id }}-title"{{ end }}>
+  <div class="td-site-container">
+    {{- partial "landing/heading.html" (dict "page" $page "data" $data "id" $id) }}
+    <div class="ce-capabilities-list">
+    {{- range $index, $module := $data.items }}
+    {{- $url := $module.url | default $module.href }}
+    <article class="td-landing-module ce-capability-module{{ if eq (mod $index 2) 1 }} td-landing-module--reverse ce-capability-module--reverse{{ end }}">
+      <div class="td-landing-module__copy ce-capability-copy">
+        {{- with $module.ref }}
+        <div class="ce-step-badge">
+          <span class="ce-step-badge__dot"></span>
+          <span class="ce-step-badge__text">{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+        </div>
+        {{- end }}
+        <h3 class="ce-capability-title">
+          {{- if $url }}<a href="{{ $url | relLangURL }}"{{ if $module.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ end -}}
+          {{- partial "landing/markdown.html" (dict "page" $page "value" ($module.title | default $module.name)) -}}
+          {{- if $url }}<i class="fa-solid fa-arrow-up-right-from-square ce-title-arrow" aria-hidden="true"></i></a>{{ end -}}
+        </h3>
+        {{- with $module.motto }}
+        <p class="td-landing-module__motto ce-capability-motto">
+          <span class="ce-motto-icon">◇</span>
+          <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+        </p>
+        {{- end }}
+        {{- with $module.bullets }}
+        <ul class="ce-capability-bullets">
+          {{- range . }}
+          <li>
+            <i class="fa-solid fa-check ce-bullet-check" aria-hidden="true"></i>
+            <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+          </li>
+          {{- end }}
+        </ul>
+        {{- end }}
+        {{- with $module.value }}
+        <div class="ce-value-takeaway">
+          <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+          <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+        </div>
+        {{- end }}
+      </div>
+
+      {{- with $module.visual }}
+        {{- $visualType := lower (strings.TrimSpace (printf "%v" (.type | default ""))) -}}
+        {{- if eq $visualType "code" }}
+      <div class="td-landing-codeplate ce-codeplate" data-bs-theme="dark" aria-label="{{ .aria_label | default .title }}">
+        <div class="td-landing-codeplate__head ce-codeplate__head">
+          <span class="ce-codeplate__dots"><i></i><i></i><i></i></span>
+          <b class="ce-codeplate__title"><i class="fa-solid fa-terminal" aria-hidden="true"></i> {{ .title }}</b>
+        </div>
+        <pre class="ce-codeplate__pre"><code>{{ partial "landing/code-lines.html" (dict "lines" .lines "position" (printf "%s: capabilities item %d visual" $page.Path (add $index 1))) }}</code></pre>
+      </div>
+        {{- else if eq $visualType "components" }}
+        {{- $interactive := false }}
+        {{- range .items }}
+          {{- if or .url .href }}{{ $interactive = true }}{{ end }}
+        {{- end }}
+        {{- $columns := partial "validate.html" (dict
+            "value" .columns "kind" "int" "min" 1 "fallback" 2
+            "key" "capabilities visual columns" "where" $page.Path) }}
+        {{- if gt $columns 4 }}{{ $columns = 4 }}{{ end }}
+      <div class="td-landing-component-board ce-component-board{{ if $interactive }} td-landing-component-board--nav{{ end }}{{ if .compact }} td-landing-component-board--compact{{ end }}"
+           style="--td-component-columns: {{ $columns }}"
+           {{- if $interactive }} role="navigation" aria-label="{{ .aria_label | default $module.title }}"{{ else }} aria-hidden="true"{{ end }}>
+        {{- range .items }}
+          {{- $itemURL := .url | default .href }}
+          {{- if $itemURL }}
+        <a class="ce-component-cell" href="{{ $itemURL | relLangURL }}"{{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          <span class="ce-component-icon"><i class="{{ .icon }}" aria-hidden="true"></i></span>
+          <div class="ce-component-info">
+            <b>{{ .title }}</b>
+            {{ with .detail }}<small>{{ . }}</small>{{ end }}
+          </div>
+        </a>
+          {{- else }}
+        <div class="ce-component-cell">
+          <span class="ce-component-icon"><i class="{{ .icon }}" aria-hidden="true"></i></span>
+          <div class="ce-component-info">
+            <b>{{ .title }}</b>
+            {{ with .detail }}<small>{{ . }}</small>{{ end }}
+          </div>
+        </div>
+          {{- end }}
+        {{- end }}
+      </div>
+        {{- else if eq $visualType "card" }}
+          {{- $title := strings.TrimSpace (printf "%v" (.title | default "")) -}}
+      <aside class="td-landing-visual-card ce-visual-card" aria-label="{{ $title | plainify }}">
+        <div class="ce-visual-card__header">
+          {{- with .icon }}<span class="ce-visual-card__icon"><i class="{{ . }}" aria-hidden="true"></i></span>{{ end }}
+          <h4>{{ partial "landing/markdown.html" (dict "page" $page "value" $title) }}</h4>
+        </div>
+        {{- with .lines }}{{ if reflect.IsSlice . }}
+        <ul class="ce-visual-card__list">
+          {{- range . }}
+          <li>
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            <span>{{ partial "landing/markdown.html" (dict "page" $page "value" .) }}</span>
+          </li>
+          {{- end }}
+        </ul>
+        {{- end }}{{ end }}
+      </aside>
+        {{- end }}
+      {{- end }}
+    </article>
+    {{- end }}
+    </div>
+  </div>
+</section>

@@ -15,33 +15,33 @@ cascade:
   theme_color_dark: '#9bd096'
   type: docs
   navbar_autohide: false
-  footer_style: slim
+  footer_style: fat
   comments: false
   feedback: false
 ---
+Cloud exit is not a religious ideology; it is a pragmatic engineering trade-off grounded in economics and operational capabilities.
 
-The case library supports a qualified conclusion: **cloud exit can work, but
-not for every workload, organization, or moment.** Success stories, partial
-moves, abandoned migrations, and returns to managed services receive the same
-template and visual weight.
+Public discourse often oscillates between two extreme caricatures: the sensationalist promise that "anyone can self-host and immediately save millions," or the vendor scare tactic that "bare metal will consume all your engineering headcount." Production engineering is far more nuanced.
 
-## Six required questions {#six}
+The **Case Library** provides a common review template for successful, partial, abandoned, and reversed migrations. Completed case assessments have not yet been published; the essay archive preserves source commentary for future review.
 
-1. **What moved?** Data, compute, storage, network, control plane, and operations.
-2. **What stayed?** Services deliberately retained and why.
-3. **What did it cost?** Cash, labor, interruption, and stranded commitments.
-4. **How long did it take?** Decision, build, migration, stabilization, and payback.
-5. **Where did it fail?** Surprises, reversals, abandoned scope, and lasting trade-offs.
-6. **What would change next time?** The team's own hindsight, not the editor's guess.
+## The Six Essential Questions {#six}
 
-## Evidence labels {#labels}
+Every rigorous postmortem must answer these six fundamental dimensions:
 
-Every case distinguishes **reported** facts, **modeled** values, **verified**
-artifacts, and **editorial inference**. A modeled saving is not renamed as an
-audited saving. A first-party story is valuable evidence, but its applicability
-boundary must travel with it.
+| Dimension | Focus Area | Observable Facts |
+| :--- | :--- | :--- |
+| **1. What Moved?** | Migration Scope | Database, object storage, Kubernetes clusters, or stateful data? Which layers decoupled first? |
+| **2. What Stayed?** | Deliberate Retention | Which managed primitives (e.g. edge CDN, Anycast DNS, IAM) were retained, and why? |
+| **3. What Did It Cost?** | Total TCO | Server procurement, colocation power/space, cross-connects, labor, and parallel transition burn. |
+| **4. How Long Did It Take?** | Realistic Timelines | Time elapsed from initial RFC to proof-of-concept, canary cutover, and final payback break-even. |
+| **5. Where Did It Stumble?** | Friction & Failures | Unexpected hardware bottlenecks, automation gaps, team skill deficits, and scoped-down goals. |
+| **6. What Would Change?** | Team Hindsight | The engineering team's unfiltered retrospective on what they would do differently today. |
+{.wide .expand}
 
-The first calibration candidates are the DHH/37signals exit, Tantan's
-infrastructure economics, Ahrefs, and publicly documented partial exits. They
-will not appear as completed cases until sources and timelines are reconciled.
+## Evidence Labels & Calibration Candidates {#labels}
+
+Every case study explicitly labels its verification rigor: **First-Party Engineering Report**, **Audited Financial Statements**, **Reproducible Cost Models**, or **Editorial Architecture Analysis**. Modeled projections are never conflated with realized accounting savings.
+
+Initial calibration candidates are 37signals, Ahrefs, Tantan, and publicly documented partial or reversed exits. Sources, cost definitions, and timelines must be reconciled before any candidate becomes a completed case. Reported savings and hypothetical cloud costs will remain distinct.
 
