@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-10-14",
+  "scope": "Authors with articles in the existing Cloud Exit essay archive. Source-account avatars are labeled as such on the author pages.",
+  "authors": [
+    {
+      "author": "aike",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "程序员Aike",
+      "account_username": "gh_2aa74fefa269",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=Mzg3MjY4MTk1Mw%3D%3D&mid=2247484659&idx=1&sn=c2526c1e21bac17fb8fc280de479a46f",
+      "republication_url": "https://mp.weixin.qq.com/s/HFKWZqE9jwMhf5X_yjb13A",
+      "byline": "程序员Aike",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/dxKEsjQBP4SewpicfiaE8MTN5oXyX4yfnmfYH44vGH2uwyOGW0V9CccvMqFM37R7SlUibhmNchicsX4/0",
+      "path": "assets/img/aike.jpg",
+      "bytes": 22652,
+      "sha256": "8163e43f7d6fc1afc73c1fbe20787d36d30578356c516bb24c8534c0b4d7d43b",
+      "dimensions": [
+        840,
+        840
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "boji",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "会说话的波吉",
+      "account_username": "gh_901266027a80",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=Mzg3NjcyNDk3MQ%3D%3D&mid=2247487026&idx=1&sn=cbcbf432ec72d83fae50f546ad8fa8d6",
+      "republication_url": "https://mp.weixin.qq.com/s/BYu8nZjqAQbWc2yT8K_pFQ",
+      "byline": "会说话的波吉",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM4Zia0lFsp8Wy8RzIqGg8WgOpF6ZQBUWQKAsSgmQbxvcGQ/0",
+      "path": "assets/img/boji.jpg",
+      "bytes": 67460,
+      "sha256": "bee0664d5845176cb70c081211f0a95f3790a243767a6aa30ef91a214d1bb064",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "cold-tech",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "冷技术热思考",
+      "account_username": "gh_eb8c77c9a83b",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzIwNjg0NjU4OQ%3D%3D&mid=2247484231&idx=1&sn=12aa811622c6d6fd88e72bb031940a6d",
+      "republication_url": "https://mp.weixin.qq.com/s/YtuJGDP1FgTVJnMlOCgsmQ",
+      "byline": "冷技术热思考",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/aXUpZVUYfjzogTulZf3lg5AXnmEFB3S198yepHicZzicia2Yv5dCXmyKicOgSW7t1kyHKNrOJicSahpo/0",
+      "path": "assets/img/cold-tech.jpg",
+      "bytes": 78011,
+      "sha256": "a7bae4e9bc973859f95129895c3ea07bc106db880ffbb55cd7127bf44c50b1d8",
+      "dimensions": [
+        575,
+        575
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "efim-mirochnik",
+      "kind": "public_profile_avatar",
+      "path": "assets/img/efim-mirochnik.jpg",
+      "sha256": "268cd2a39b9911a72b1d83bd02428a03c597ae27fe2242bc5eb0804d7b93a729",
+      "bytes": 19098,
+      "source_url": "https://miro.medium.com/v2/resize:fill:400:400/1*C0_feDVw6kW9I2VwYD35nA.jpeg",
+      "source_page": "https://medium.com/@mirochnik/about",
+      "dimensions": [
+        400,
+        400
+      ]
+    },
+    {
+      "author": "leo",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "思维南人",
+      "account_username": "gh_23062020d736",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzkwMzQ3NjY5NQ%3D%3D&mid=2247483754&idx=1&sn=7d79548ae9e1e4b12a4afcc8c3122ac5",
+      "republication_url": "https://mp.weixin.qq.com/s/qSTEf9txjHNTHeEFv3NkWg",
+      "byline": "思维南人",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM6LHnIhvhlLILwJwECFRKU2MyVib8y6YybZYJ8icDsvkubg/0",
+      "path": "assets/img/siwei-nanren.jpg",
+      "bytes": 44549,
+      "sha256": "9fdeebae799e6faa59094e4dad8d28a0f6c57653208ca3d1695dcb0ae66b715f",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "li-linghui",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "ClapDB",
+      "account_username": "gh_a99521b8b167",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=Mzg2MDYzOTUzMA%3D%3D&mid=2247483754&idx=1&sn=2f76719c05f486a44d07339100219b19",
+      "republication_url": "https://mp.weixin.qq.com/s/vceZUVrVTIEljVDNkuY47w",
+      "byline": "李令辉",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/6XFhg7ldObywdIxruh3vw8sVdVQia07Vp3Ab6ibzfzKlE4zCZ2FXqtpkwibIXD3548ibPHb1Xj9h9Cs/0",
+      "path": "assets/img/li-linghui.jpg",
+      "bytes": 4805,
+      "sha256": "36fe4e805422ce521cf2b4d9eea741c3c7a508e22bfdf0c6464e523b1ccfcad8",
+      "dimensions": [
+        111,
+        111
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "liu-junxia",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "云原生运维圈",
+      "account_username": "gh_27a16fd125a0",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzUxNTg5NTQ0NA%3D%3D&mid=2247489630&idx=1&sn=685ba711f30cdcbe9221f0553b3973d3",
+      "republication_url": "https://mp.weixin.qq.com/s/p5DTvpaubWXYnw1wx30K9g",
+      "byline": "刘俊夏",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/ps68icnpRvDUuo2HhSpKgOBCnm7ib9bFLibszC8pJJzIgOxVGbZSgA29wG3dUY2ia6ciczFQV3KwEkQE/0",
+      "path": "assets/img/liu-junxia.jpg",
+      "bytes": 32750,
+      "sha256": "a3231baa5c77ef7939337b5f7289d58be660c8a5b28bfcc9337febf1d5b10ad9",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "ma-gong",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "瑞典马工",
+      "account_username": "gh_f9cb1a185724",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzkwODMyMDE2NQ%3D%3D&mid=2247484204&idx=1&sn=e3f183420dbb799b51b22b264f4640f2",
+      "republication_url": "https://mp.weixin.qq.com/s/1dse1KSCq2xG-QaL1JzZ8Q",
+      "byline": "马工在瑞典",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM4ibGTaxs9sX48B5E3Se5aKeicqLwkcqicsAZFC5zI0YiaCOQ/0",
+      "path": "assets/img/ma-gong.jpg",
+      "bytes": 15452,
+      "sha256": "72d435fb21f02cf266e50774031c24b331823ddf47316c621d3b023141319eac",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "maciej-pocwierz",
+      "kind": "public_profile_avatar",
+      "path": "assets/img/maciej-pocwierz.jpg",
+      "sha256": "827be27315165494ce593cbcf34321c90e44b398ec2e92a3ed4571febbce3469",
+      "bytes": 19675,
+      "source_url": "https://miro.medium.com/v2/resize:fill:400:400/1*rxc9iAV1V1h8OBSmiddCog.jpeg",
+      "source_page": "https://medium.com/@maciej.pocwierz/followers",
+      "dimensions": [
+        400,
+        400
+      ]
+    },
+    {
+      "author": "paul-copplestone",
+      "kind": "public_profile_avatar",
+      "path": "assets/img/paul-copplestone.png",
+      "sha256": "79e4a3349e4c9cff17e7afb620922430984d77620d870f2f3631e11e4c9d560a",
+      "bytes": 138178,
+      "source_url": "https://avatars.githubusercontent.com/u/10214025?v=4&s=400",
+      "source_page": "https://github.com/kiwicopple",
+      "dimensions": [
+        400,
+        400
+      ]
+    },
+    {
+      "author": "shiyu",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "薇晓朵",
+      "account_username": "gh_68e3a594bfff",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzA4NzMwNTUyMA%3D%3D&mid=2247484749&idx=1&sn=681b244b79b08e798c70238e97028d45",
+      "republication_url": "https://mp.weixin.qq.com/s/0Wnv1B80Tk4J03X3uAm4Ww",
+      "byline": "诗语",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM7HicG7eYXajd8xlp7m2PHcqqhfbiaRiadSZxIRBOtpGzPDQ/0",
+      "path": "assets/img/shiyu.jpg",
+      "bytes": 23045,
+      "sha256": "56aee6a2354e64862da0d7113ae8bec1ad4d7785bc1936eb5edf066a9b887455",
+      "dimensions": [
+        500,
+        500
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "siwei-nanren",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "思维南人",
+      "account_username": "gh_23062020d736",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzkwMzQ3NjY5NQ%3D%3D&mid=2247483805&idx=1&sn=19e8d8d7c8c6a5ea9d7fe711cda757df",
+      "republication_url": "https://mp.weixin.qq.com/s/9AEJZ4GumaHtK_Yeh0n-Yw",
+      "byline": "思维男人",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM6LHnIhvhlLILwJwECFRKU2MyVib8y6YybZYJ8icDsvkubg/0",
+      "path": "assets/img/siwei-nanren.jpg",
+      "bytes": 44549,
+      "sha256": "9fdeebae799e6faa59094e4dad8d28a0f6c57653208ca3d1695dcb0ae66b715f",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "titi",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "云原生Lab",
+      "account_username": "gh_d1e350569715",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=Mzg4MDA5NzM4Nw%3D%3D&mid=2247486181&idx=1&sn=2fb61a808ed0b42daa99469a69c074f7",
+      "republication_url": "https://mp.weixin.qq.com/s/NIAv9ul3bCCcuqwyPwHO-g",
+      "byline": "titi",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM672KPfkauK8qXNoSBZQpUbRymgOTuibO5jib6Nu8XMGYZg/0",
+      "path": "assets/img/titi.jpg",
+      "bytes": 16214,
+      "sha256": "1de522324fae093556d0bf28da2969871bcb0716c00048d7bb331674c1846f0d",
+      "dimensions": [
+        400,
+        400
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "vage",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "IT知识刺客",
+      "account_username": "gh_57c3d2438168",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzkyMjQzOTkyMQ%3D%3D&mid=2247484072&idx=1&sn=b453663ccfad7cbc8de8716fc263655c",
+      "republication_url": "https://mp.weixin.qq.com/s/ZEH_yjs0zrJIOG-iNRMf1A",
+      "byline": "vage_lv",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Q3auHgzwzM5rlcJianOibzgqqjKMNl1pnHOzibicC3j7VtrIWiaxZibENexQ/0",
+      "path": "assets/img/vage.jpg",
+      "bytes": 3009,
+      "sha256": "db59ce82e4bd3d3a53cefae94bcc2e8761de484371fd8bc4b830d8f27342f79b",
+      "dimensions": [
+        116,
+        116
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "wang-xiaorui",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "AutoMQ",
+      "account_username": "gh_270bc4fe88c6",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MzkxNzY0ODE2Ng%3D%3D&mid=2247484663&idx=1&sn=1af3d991197ab49f861fbaf09a1c1a2d",
+      "republication_url": "https://mp.weixin.qq.com/s/FKNavZROB4inrtBnAUxjJg",
+      "byline": "王小瑞",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/ZMdxSDafpxS9doTmicyc3qGnM2sSBpLXDcRLo6TW2lvC6yroIiaHs6GGT87DZVYDBRuxMpjvsfSD8/0",
+      "path": "assets/img/wang-xiaorui.jpg",
+      "bytes": 16510,
+      "sha256": "385e849199161b486b9a9977ecbf447c55f9d9bd3a707cb1c9cede718fab1765",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    },
+    {
+      "author": "zhou-xinyu",
+      "kind": "wechat_source_account_avatar",
+      "account_name": "InfoQ",
+      "account_username": "gh_b443474846ae",
+      "source_article_url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA%3D%3D&mid=2651202054&idx=2&sn=d076e3f0308c4f31ede8e4035ff73e39",
+      "republication_url": "https://mp.weixin.qq.com/s/_2luIza-Yr09EVlqZ8MJfw",
+      "byline": "周新宇",
+      "avatar_url": "https://wx.qlogo.cn/mmhead/Xmnun9Io49S6LMTz6n8ibw0ey6eLFwEGIqMTvLBoqZvSoxG02kuJYicZjRNofpiazBRDKdic5OvdIia4/0",
+      "path": "assets/img/zhou-xinyu.jpg",
+      "bytes": 21860,
+      "sha256": "447f29cba8393fd34c0ee58f4a26be4b485334a79b213ffa3f0f4f2c608c3fc4",
+      "dimensions": [
+        640,
+        640
+      ],
+      "evidence": "Original-source attribution card and source_headimg in the archived WeChat article HTML; publisher avatar was not used."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://huacnlee.github.io/autocorrect/schema.json
+
+rules:
+  # Technical prose contains many project and product names; this pass is for
+  # spacing and punctuation, not dictionary-driven renaming.
+  spellcheck: 0
+
+context:
+  # Commands, SQL, configuration, and logs must remain byte-for-byte stable.
+  codeblock: 0

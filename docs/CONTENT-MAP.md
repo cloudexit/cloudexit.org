@@ -29,10 +29,22 @@ contract.
 | 数据主权宣言 | https://vonng.com/cloud/data-sovereignty-manifesto/ | Site principles, `/playbook/data-first/` | Values source; not evidence for a provider result |
 | 下云数据库自建：从手艺活到工业化 | https://vonng.com/cloud/self-hosting-industrialized/ | `/playbook/staging/`, cases | Operational pattern and conflict disclosure required |
 
-The full [cloud essay index](https://vonng.com/cloud/) already provides a large
-seed corpus for outages, migration, cost, sovereignty, and lock-in. Import is
-selective: extract a record, retain the original URL, add an English abstract,
-and label observation versus commentary.
+The full [cloud essay index](https://vonng.com/cloud/) provides a large seed
+corpus for outages, migration, cost, sovereignty, and lock-in. It is mirrored
+in `/blog/` as authored commentary, together with 35 reviewed cross-column
+essays on local AI and sovereignty, open data and local-first software,
+self-hosted data stacks, infrastructure capability, PostgreSQL platforms, and
+Pigsty self-hosting.
+
+The exact snapshot is recorded in `data/blog/imports.json`: 123 Cloud-column
+articles plus 35 cross-column articles, with the source commit, source URLs,
+language coverage, copied files, byte counts, and SHA-256 digests. The selection
+and transformation logic lives in `scripts/import-vonng-blog.py`.
+
+Archive inclusion is not evidence normalization. When an essay supports a
+Standard, Ledger, Evidence, Case, or Playbook claim, extract a record, retain
+the original URL, add an English abstract where needed, and label observation
+versus commentary.
 
 ## Initial case candidates
 

@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "reviewed_at": "2026-10-14",
+  "source_repository": "https://github.com/Vonng/vonng.com",
+  "source_audit": "data/editorial/non-author-audit.json",
+  "decision": "Keep the existing Cloud Exit selection; do not add the 35 non-cloud articles outside it.",
+  "counts": {
+    "removed_from_personal_blog": 64,
+    "already_retained_here": 29,
+    "cloud_column_retained": 25,
+    "other_selected_articles_retained": 4,
+    "outside_existing_selection": 35,
+    "unchanged_site_articles": 158,
+    "matched_media_files": 141
+  },
+  "verification": {
+    "method": "Matched the removal audit by bundle slug; verified the existing import inventory; compared media SHA-256 with the pre-deletion backup. Article Markdown has prior formatting and link edits, so it is not byte-identical.",
+    "articles_unchanged_in_this_pass": true,
+    "missing_media_files": 0
+  },
+  "articles": [
+    {
+      "title": "记一次阿里云 DCDN 加速仅 32 秒就欠了 1600 的问题处理（扯皮）。",
+      "source_path": "content/cloud/aliyun-dcdn-bill/index.md",
+      "source_sha256": "cb06cae8bb746c5aabf1482ce8e545deb02dbb2367dad8aeba0d0580302fd107",
+      "destination_path": "content/blog/aliyun-dcdn-bill/index.zh.md",
+      "media_count": 11,
+      "media_sha256_match": true
+    },
+    {
+      "title": "卡在政企客户门口的阿里云",
+      "source_path": "content/cloud/aliyun-enterprise-market/index.md",
+      "source_sha256": "62d54fb4d20db8c55433fdb55e802242016a2ae457b40d55233220b2576c007e",
+      "destination_path": "content/blog/aliyun-enterprise-market/index.zh.md",
+      "media_count": 5,
+      "media_sha256_match": true
+    },
+    {
+      "title": "硬编码密码泄漏，阿里云的软件工程也太差了",
+      "source_path": "content/cloud/aliyun-hardcoded-password/index.md",
+      "source_sha256": "1c61c92316b5e97b3b5f0213f015f5306a1253c4b2378b22863c14233a4967a0",
+      "destination_path": "content/blog/aliyun-hardcoded-password/index.zh.md",
+      "media_count": 6,
+      "media_sha256_match": true
+    },
+    {
+      "title": "阿里云降价背后折射出的绝望",
+      "source_path": "content/cloud/aliyun-price-cut-despair/index.md",
+      "source_sha256": "28532907c4d71f3e81562fdf774bcdd1157e3fe69e1bd7f24b94f0ec02cc5e67",
+      "destination_path": "content/blog/aliyun-price-cut-despair/index.zh.md",
+      "media_count": 4,
+      "media_sha256_match": true
+    },
+    {
+      "title": "互联网故障背后的草台班子们",
+      "source_path": "content/cloud/amateur-internet-outages/index.md",
+      "source_sha256": "253f8b0da78361ffacc01cdbe28264248508be013660a07ecb97c2e144eca67f",
+      "destination_path": "content/blog/amateur-internet-outages/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "API 是云服务的灵魂",
+      "source_path": "content/cloud/api-soul-of-cloud/index.md",
+      "source_sha256": "8c731c047e8788413d6f66a542ea1e77d64d4ab5f3710de0dd33dcf7ebbfd246",
+      "destination_path": "content/blog/api-soul-of-cloud/index.zh.md",
+      "media_count": 5,
+      "media_sha256_match": true
+    },
+    {
+      "title": "云计算不能做成云算计之一：云行贿必须清理",
+      "source_path": "content/cloud/cloud-bribery/index.md",
+      "source_sha256": "794967a1c181d255eafc3ff476595e672b30086b18d47decd4a0f4e32341b57c",
+      "destination_path": "content/blog/cloud-bribery/index.zh.md",
+      "media_count": 3,
+      "media_sha256_match": true
+    },
+    {
+      "title": "云厂商眼中的客户：又穷又闲又缺爱",
+      "source_path": "content/cloud/cloud-customers-poor-bored-lonely/index.md",
+      "source_sha256": "2eb3fa4911d618795117577107d993f205ed865cec0398425e1f36a3aebde8e2",
+      "destination_path": "content/blog/cloud-customers-poor-bored-lonely/index.zh.md",
+      "media_count": 12,
+      "media_sha256_match": true
+    },
+    {
+      "title": "云计算：菜就是一种原罪",
+      "source_path": "content/cloud/cloud-incompetence/index.md",
+      "source_sha256": "69d093f4e421b259b67dad1f7f8cad2329eca1c11e0a5815246e9ff019de9745",
+      "destination_path": "content/blog/cloud-incompetence/index.zh.md",
+      "media_count": 5,
+      "media_sha256_match": true
+    },
+    {
+      "title": "腾讯云/阿里云故障背后：投入不足",
+      "source_path": "content/cloud/cloud-outage-underinvestment/index.md",
+      "source_sha256": "205f1407b21cbc8bc4495860e8cedaad5cd30bb729ed1d3524b0c0ad32b8064f",
+      "destination_path": "content/blog/cloud-outage-underinvestment/index.zh.md",
+      "media_count": 11,
+      "media_sha256_match": true
+    },
+    {
+      "title": "为什么这两年的舆论战，云厂商总是节节败退",
+      "source_path": "content/cloud/cloud-pr-war/index.md",
+      "source_sha256": "0797fc0c630c41d3b02fbb9954c8395fe7b83a2bc1558c9172320373cb293c34",
+      "destination_path": "content/blog/cloud-pr-war/index.zh.md",
+      "media_count": 7,
+      "media_sha256_match": true
+    },
+    {
+      "title": "为什么云厂商销售只会打折？",
+      "source_path": "content/cloud/cloud-sales-discount/index.md",
+      "source_sha256": "392af603f36422a53ba5d2361498e42eec77cfb288c7b43d9bac5b11a80c9697",
+      "destination_path": "content/blog/cloud-sales-discount/index.zh.md",
+      "media_count": 6,
+      "media_sha256_match": true
+    },
+    {
+      "title": "数据库的“萝卜快跑”时刻已到，DBA 请下车",
+      "source_path": "content/cloud/dba-get-off/index.md",
+      "source_sha256": "ba9e5e91008613120c76fb4c561856316217d559e6765d70344a698776ec4bd5",
+      "destination_path": "content/blog/dba-get-off/index.zh.md",
+      "media_count": 1,
+      "media_sha256_match": true
+    },
+    {
+      "title": "Gojek 搬家记：腾讯云产品团队的缺位",
+      "source_path": "content/cloud/gojek-leaves-tencent-cloud/index.md",
+      "source_sha256": "20b6219f23ab98769ce7227d810ce599858cdafbb695c0b471fb79317ea9cecd",
+      "destination_path": "content/blog/gojek-leaves-tencent-cloud/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "如何通过远离 AWS 将年服务器费用从 100 万降至 20 万",
+      "source_path": "content/cloud/leave-aws-save-80-percent/index.md",
+      "source_sha256": "82beaa4bcc0ee770d431364c2b0e618d2d9c7eaddd1e6d26e636779c0664e069",
+      "destination_path": "content/blog/leave-aws-save-80-percent/index.zh.md",
+      "media_count": 5,
+      "media_sha256_match": true
+    },
+    {
+      "title": "迷失在阿里云的年轻人",
+      "source_path": "content/cloud/lost-youth-at-aliyun/index.md",
+      "source_sha256": "2c774da4c730e2dffe01c558a473f014febe5736f58c5e222de02b4a5bf03607",
+      "destination_path": "content/blog/lost-youth-at-aliyun/index.zh.md",
+      "media_count": 1,
+      "media_sha256_match": true
+    },
+    {
+      "title": "你怎么还在招聘DBA?",
+      "source_path": "content/cloud/no-more-dba/index.md",
+      "source_sha256": "751b859c6efd0f969cfd20badd81251885f1610448f8ce97e3699f52e014bad3",
+      "destination_path": "content/blog/no-more-dba/index.zh.md",
+      "media_count": 3,
+      "media_sha256_match": true
+    },
+    {
+      "title": "包年包月的云还能叫云原生吗？",
+      "source_path": "content/cloud/prepaid-cloud-native/index.md",
+      "source_sha256": "1eab7334e509aab4c943288fe80be3faaf8b34aabd8c2e4db7d288865f66d27d",
+      "destination_path": "content/blog/prepaid-cloud-native/index.zh.md",
+      "media_count": 10,
+      "media_sha256_match": true
+    },
+    {
+      "title": "你用的公有云都没做过测试",
+      "source_path": "content/cloud/public-cloud-untested/index.md",
+      "source_sha256": "11c7e4b8e7cf4bcd313521ddc004bc281415930864d4b14d76b9ed792c835d08",
+      "destination_path": "content/blog/public-cloud-untested/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "云厂商需要有人管起来，CloudFlare又宕机了",
+      "source_path": "content/cloud/regulate-cloudflare/index.md",
+      "source_sha256": "bc235ebfbab18bc6f59bbe3e8ced3f14ba2065455e7daa22bf9217d0ef4d3b1e",
+      "destination_path": "content/blog/regulate-cloudflare/index.zh.md",
+      "media_count": 1,
+      "media_sha256_match": true
+    },
+    {
+      "title": "门内的国企如何看门外的云厂商",
+      "source_path": "content/cloud/state-owned-enterprise-cloud-view/index.md",
+      "source_sha256": "1cd87ca7291e5e0b9dafc1d6ff3b672bc554867f62683b2f8398dc743408aee0",
+      "destination_path": "content/blog/state-owned-enterprise-cloud-view/index.zh.md",
+      "media_count": 1,
+      "media_sha256_match": true
+    },
+    {
+      "title": "腾讯真的走通云原生之路了吗？",
+      "source_path": "content/cloud/tencent-cloud-native/index.md",
+      "source_sha256": "4495cf5c99535ea53da236e6a1ef9e290f9658a212fc5366c8463eeef412a390",
+      "destination_path": "content/blog/tencent-cloud-native/index.zh.md",
+      "media_count": 8,
+      "media_sha256_match": true
+    },
+    {
+      "title": "牙膏云？您可别吹捧云厂商了",
+      "source_path": "content/cloud/toothpaste-cloud/index.md",
+      "source_sha256": "bcad094b9463465a032537013e07f5a61edab770748684dd4e7341328255c381",
+      "destination_path": "content/blog/toothpaste-cloud/index.zh.md",
+      "media_count": 12,
+      "media_sha256_match": true
+    },
+    {
+      "title": "公有云厂商卖的云计算到底是什么玩意？",
+      "source_path": "content/cloud/what-public-cloud-sells/index.md",
+      "source_sha256": "334f31a0f13749980ce6f5c6fb72fd265a748a7c2cfcf93d1a57fabdc490183b",
+      "destination_path": "content/blog/what-public-cloud-sells/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "为什么我们的云老是故障",
+      "source_path": "content/cloud/why-cloud-keeps-failing/index.md",
+      "source_sha256": "cf0cd60595606b1e41322a23fe2a246f961cbaead34dabebcffdc60d85cd0457",
+      "destination_path": "content/blog/why-cloud-keeps-failing/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "基础架构部需要先进技术吗？",
+      "source_path": "content/misc/infra-needs-advanced-tech/index.md",
+      "source_sha256": "640612d4500200dd6ecd7bc3bfa4be3f7fbb905c32cc25d4f7c628cdea6af71e",
+      "destination_path": "content/blog/infra-needs-advanced-tech/index.zh.md",
+      "media_count": 8,
+      "media_sha256_match": true
+    },
+    {
+      "title": "基础架构，路在何方？",
+      "source_path": "content/misc/infra-road-ahead/index.md",
+      "source_sha256": "76413b030a80baf16eca5f47355b5a79f55e9a55cd826e8e07612e8b124ad115",
+      "destination_path": "content/blog/infra-road-ahead/index.zh.md",
+      "media_count": 2,
+      "media_sha256_match": true
+    },
+    {
+      "title": "基础架构部，真的没有必要了么？",
+      "source_path": "content/misc/infra-team-needed/index.md",
+      "source_sha256": "9ff209df55c8161ffa5772e78dcf4ea3d5db1edc2739966c66f2d045f7c910aa",
+      "destination_path": "content/blog/infra-team-needed/index.zh.md",
+      "media_count": 3,
+      "media_sha256_match": true
+    },
+    {
+      "title": "SRE过气了吗",
+      "source_path": "content/misc/sre-outdated/index.md",
+      "source_sha256": "ca35f93a1afb9308e7c81363954d91c00a459ef728e81d9c2def996a19d5356f",
+      "destination_path": "content/blog/sre-outdated/index.zh.md",
+      "media_count": 1,
+      "media_sha256_match": true
+    }
+  ]
+}

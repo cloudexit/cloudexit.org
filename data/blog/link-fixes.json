@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "generated_at": "2026-08-29T10:43:24.031091+00:00",
+  "source_audit": "data/blog/external-link-audit.json",
+  "policy": "Only deterministic spelling corrections with a verified live replacement, plus legacy 404s whose exact local article target exists.",
+  "fix_counts": {
+    "spelling": 5,
+    "internalize-404": 2
+  },
+  "fixes": [
+    {
+      "id": "basecamp-cloud-exit-slash-hyphen",
+      "kind": "spelling",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://basecamp.com/cloud/-exit"
+      ],
+      "replacement": "https://basecamp.com/cloud-exit",
+      "replacement_verification": {
+        "method": "GET range",
+        "status": 200
+      },
+      "reason": "Extraneous slash splits the cloud-exit path component.",
+      "occurrences": [
+        {
+          "file": "content/blog/odyssey/index.zh.md",
+          "line": 86
+        }
+      ]
+    },
+    {
+      "id": "uptime-cloud-slas-slash-hyphen",
+      "kind": "spelling",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://journal.uptimeinstitute.com/cloud/-slas-punish-not-compensate/"
+      ],
+      "replacement": "https://journal.uptimeinstitute.com/cloud-slas-punish-not-compensate/",
+      "replacement_verification": {
+        "method": "GET range",
+        "status": 200
+      },
+      "reason": "Extraneous slash splits the cloud-slas path component.",
+      "occurrences": [
+        {
+          "file": "content/blog/sla/index.md",
+          "line": 125
+        }
+      ]
+    },
+    {
+      "id": "aws-cloudtrail-path",
+      "kind": "spelling",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloud/trail-logging.html"
+      ],
+      "replacement": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging.html",
+      "replacement_verification": {
+        "method": "GET range",
+        "status": 206
+      },
+      "reason": "AWS documentation page uses cloudtrail as one path component.",
+      "occurrences": [
+        {
+          "file": "content/blog/s3-scam/index.md",
+          "line": 31
+        },
+        {
+          "file": "content/blog/s3-scam/index.zh.md",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "id": "github-cloud-native-path",
+      "kind": "spelling",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://github.com/lipingtababa/cloud/-native-best-practices/blob/main/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%8E%8B%E5%9B%9B%E6%9D%A1.md",
+        "https://github.com/lipingtababa/cloud/-native-best-practices/blob/main/云原生王四条.md"
+      ],
+      "replacement": "https://github.com/lipingtababa/cloud-native-best-practices/blob/main/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%8E%8B%E5%9B%9B%E6%9D%A1.md",
+      "replacement_verification": {
+        "method": "GET range",
+        "status": 206
+      },
+      "reason": "Repository name is cloud-native-best-practices; the old URL inserts a slash inside the repository name.",
+      "occurrences": [
+        {
+          "file": "content/blog/ebs/index.md",
+          "line": 102
+        },
+        {
+          "file": "content/blog/ebs/index.zh.md",
+          "line": 99
+        }
+      ]
+    },
+    {
+      "id": "hey-cloud-exit-path-normalization",
+      "kind": "spelling",
+      "confidence": "certain",
+      "source_classification": "live-fallback",
+      "old_urls": [
+        "https://world.hey.com/dhh/cloud/-exit-pays-off-in-performance-too-4c53b697"
+      ],
+      "replacement": "https://world.hey.com/dhh/cloud-exit-pays-off-in-performance-too-4c53b697",
+      "replacement_verification": {
+        "method": "GET range",
+        "status": 200
+      },
+      "reason": "Canonical article slug is cloud-exit-pays-off-in-performance-too; the malformed URL currently receives a site fallback response but is not canonical.",
+      "occurrences": [
+        {
+          "file": "content/blog/odyssey/index.zh.md",
+          "line": 442
+        }
+      ]
+    },
+    {
+      "id": "internalize-old-odyssey-url",
+      "kind": "internalize-404",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://pigsty.io/zh/cloud//odyssey/"
+      ],
+      "target_slug": "odyssey",
+      "replacement_by_language": {
+        "en": "/zh/blog/odyssey/",
+        "zh": "/zh/blog/odyssey/"
+      },
+      "reason": "The external legacy route is GET-confirmed 404 and the imported bilingual article exists locally.",
+      "occurrences": [
+        {
+          "file": "content/blog/rds-scam/index.md",
+          "line": 113
+        },
+        {
+          "file": "content/blog/rds-scam/index.zh.md",
+          "line": 113
+        }
+      ]
+    },
+    {
+      "id": "internalize-old-ecs-url",
+      "kind": "internalize-404",
+      "confidence": "certain",
+      "source_classification": "hard-404",
+      "old_urls": [
+        "https://pigsty.io/zh/cloud//ecs/#%E4%BA%91%E5%AD%98%E5%82%A8%E5%AF%B9%E5%8D%95%E4%BB%B7%E7%9A%84%E5%BD%B1%E5%93%8D",
+        "https://pigsty.io/zh/cloud//ecs/#云存储对单价的影响"
+      ],
+      "target_slug": "ecs",
+      "replacement_by_language": {
+        "en": "/blog/ecs/#cloud-storages-impact-on-unit-prices",
+        "zh": "/zh/blog/ecs/#%E4%BA%91%E5%AD%98%E5%82%A8%E5%AF%B9%E5%8D%95%E4%BB%B7%E7%9A%84%E5%BD%B1%E5%93%8D"
+      },
+      "rendered_anchor_verification": {
+        "en": "cloud-storages-impact-on-unit-prices",
+        "zh": "云存储对单价的影响"
+      },
+      "reason": "The external legacy route is GET-confirmed 404; both local language pages and their rendered heading anchors exist.",
+      "occurrences": [
+        {
+          "file": "content/blog/rds-scam/index.md",
+          "line": 279
+        },
+        {
+          "file": "content/blog/rds-scam/index.zh.md",
+          "line": 279
+        }
+      ]
+    }
+  ]
+}

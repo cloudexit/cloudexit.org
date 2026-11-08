@@ -1,0 +1,1311 @@
+schema: 1
+policy:
+  category_cardinality: 1
+  tags_per_article:
+    min: 4
+    max: 8
+  entity_tags_per_article:
+    min: 0
+    max: 3
+  resource_or_topic_tags_per_article:
+    min: 1
+    max: 3
+  tone_tags_per_article:
+    min: 0
+    max: 1
+  canonical_ids_in_all_languages: true
+  primary_form_required: true
+articles:
+  16b-credentials-leak:
+    category: security-control-risks
+    tags:
+    - org-apple
+    - org-google
+    - org-meta
+    - topic-credential-security
+    - topic-data-breach
+    - form-incident-report
+    - tone-cautionary
+  ahrefs-saving:
+    category: cloud-exit-economics
+    tags:
+    - org-ahrefs
+    - vendor-aws
+    - resource-bare-metal-datacenter
+    - service-block-storage
+    - topic-cloud-exit
+    - form-case-study
+    - form-translation
+  ali-scam:
+    category: security-control-risks
+    tags:
+    - org-alibaba-group
+    - org-ant-group
+    - service-payment-platform
+    - topic-phishing-fraud
+    - topic-platform-risk
+    - form-case-study
+    - tone-cautionary
+  alipay-crash:
+    category: failures-postmortems
+    tags:
+    - org-ant-group
+    - service-payment-platform
+    - service-message-queue
+    - topic-reliability
+    - form-incident-report
+  alipay-subsidy-bug:
+    category: failures-postmortems
+    tags:
+    - org-ant-group
+    - service-payment-platform
+    - topic-software-quality
+    - topic-platform-risk
+    - form-incident-report
+    - tone-cautionary
+  aliyun:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-iam-control-plane
+    - service-object-storage
+    - topic-reliability
+    - form-postmortem
+  aliyun-cdn-sla:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-cdn-edge
+    - topic-reliability
+    - topic-sla
+    - form-incident-report
+  aliyun-dcdn-bill:
+    category: security-control-risks
+    tags:
+    - vendor-alibaba-cloud
+    - service-cdn-edge
+    - topic-billing-risk
+    - topic-platform-risk
+    - form-case-study
+    - tone-cautionary
+  aliyun-dns:
+    category: cloud-exit-economics
+    tags:
+    - vendor-alibaba-cloud
+    - vendor-cloudflare
+    - service-dns-domain
+    - topic-migration
+    - topic-cloud-exit
+    - form-case-study
+  aliyun-domain-seized:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-dns-domain
+    - service-object-storage
+    - topic-reliability
+    - form-incident-report
+  aliyun-drive-bug:
+    category: security-control-risks
+    tags:
+    - vendor-alibaba-cloud
+    - service-consumer-cloud-storage
+    - topic-privacy
+    - topic-data-breach
+    - form-incident-report
+  aliyun-enterprise-market:
+    category: cloud-business
+    tags:
+    - vendor-alibaba-cloud
+    - topic-cloud-business
+    - topic-public-sector
+    - topic-sales-marketing-pr
+    - form-commentary
+  aliyun-fiber-cut:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-networking
+    - topic-reliability
+    - topic-centralization-risk
+    - form-incident-report
+    - tone-cautionary
+  aliyun-ha:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-backup-dr
+    - topic-reliability
+    - topic-high-availability
+    - form-postmortem
+  aliyun-hardcoded-password:
+    category: security-control-risks
+    tags:
+    - vendor-alibaba-cloud
+    - service-ai-platform
+    - topic-credential-security
+    - topic-software-quality
+    - form-case-study
+  aliyun-price-cut-despair:
+    category: cloud-business
+    tags:
+    - vendor-alibaba-cloud
+    - topic-cloud-business
+    - topic-cloud-economics
+    - topic-competition
+    - form-data-analysis
+    - tone-polemic
+  aliyun-rotten:
+    category: cloud-databases
+    tags:
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - tech-postgresql
+    - topic-service-quality
+    - form-commentary
+    - tone-polemic
+  aliyun-solutions-team:
+    category: cloud-business
+    tags:
+    - vendor-alibaba-cloud
+    - topic-sales-marketing-pr
+    - topic-cloud-business
+    - topic-service-quality
+    - form-commentary
+    - tone-satire
+  aliyun-supabase:
+    category: sovereignty-open-ecosystems
+    tags:
+    - vendor-alibaba-cloud
+    - product-supabase
+    - service-managed-database
+    - topic-open-source
+    - form-commentary
+  aliyun-weekly-crash:
+    category: failures-postmortems
+    tags:
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - service-iam-control-plane
+    - topic-reliability
+    - form-incident-report
+  amateur-internet-outages:
+    category: failures-postmortems
+    tags:
+    - topic-reliability
+    - topic-infrastructure-capability
+    - topic-software-quality
+    - form-commentary
+    - tone-polemic
+  api-soul-of-cloud:
+    category: infrastructure-engineering
+    tags:
+    - service-api
+    - topic-developer-experience
+    - topic-service-quality
+    - form-essay
+  apple-music-cert:
+    category: failures-postmortems
+    tags:
+    - org-apple
+    - topic-certificates
+    - topic-reliability
+    - topic-software-quality
+    - form-incident-report
+    - tone-satire
+  aws-dns-failure:
+    category: failures-postmortems
+    tags:
+    - vendor-aws
+    - service-dns-domain
+    - service-iam-control-plane
+    - topic-reliability
+    - form-postmortem
+  aws-me-bomb:
+    category: security-control-risks
+    tags:
+    - vendor-aws
+    - resource-bare-metal-datacenter
+    - topic-geopolitical-risk
+    - topic-centralization-risk
+    - form-incident-report
+    - tone-cautionary
+  aws-postmotem:
+    category: failures-postmortems
+    tags:
+    - vendor-aws
+    - service-managed-database
+    - service-dns-domain
+    - topic-reliability
+    - form-postmortem
+  aws-tokyo-outage:
+    category: failures-postmortems
+    tags:
+    - vendor-aws
+    - service-compute
+    - topic-reliability
+    - topic-centralization-risk
+    - form-incident-report
+  azure-openai-audit:
+    category: sovereignty-open-ecosystems
+    tags:
+    - vendor-microsoft-azure
+    - org-openai
+    - service-ai-platform
+    - topic-data-sovereignty
+    - topic-regulation
+    - form-case-study
+    - tone-cautionary
+  baidu-cloud-bill:
+    category: security-control-risks
+    tags:
+    - vendor-baidu-ai-cloud
+    - service-object-storage
+    - topic-billing-risk
+    - topic-platform-risk
+    - form-incident-report
+    - tone-cautionary
+  better-rds-alternative:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-talk
+  bonus:
+    category: infrastructure-engineering
+    tags:
+    - resource-hardware
+    - service-compute
+    - service-block-storage
+    - form-data-analysis
+  bsod-friday:
+    category: failures-postmortems
+    tags:
+    - org-crowdstrike
+    - org-microsoft
+    - topic-supply-chain-risk
+    - topic-centralization-risk
+    - topic-reliability
+    - form-postmortem
+    - tone-cautionary
+  cdn:
+    category: security-control-risks
+    tags:
+    - vendor-tencent-cloud
+    - vendor-cloudflare
+    - service-cdn-edge
+    - topic-billing-risk
+    - topic-platform-risk
+    - form-case-study
+    - tone-polemic
+  cf-ck-down:
+    category: failures-postmortems
+    tags:
+    - vendor-cloudflare
+    - tech-clickhouse
+    - service-cdn-edge
+    - topic-reliability
+    - form-postmortem
+  cf-interview:
+    category: cloud-business
+    tags:
+    - vendor-cloudflare
+    - topic-cloud-business
+    - topic-developer-experience
+    - topic-data-sovereignty
+    - form-interview
+  cheap-ecs:
+    category: self-hosting
+    tags:
+    - vendor-alibaba-cloud
+    - service-compute
+    - service-vps
+    - topic-self-hosting
+    - form-tutorial
+  cheap-polar:
+    category: cloud-databases
+    tags:
+    - product-polardb
+    - service-managed-database
+    - resource-database
+    - form-data-analysis
+  cheap-vps:
+    category: self-hosting
+    tags:
+    - service-vps
+    - topic-self-hosting
+    - topic-cloud-economics
+    - form-guide
+    - form-comparison
+  china-4b-data-leak:
+    category: security-control-risks
+    tags:
+    - org-alibaba-group
+    - org-ant-group
+    - service-payment-platform
+    - topic-data-breach
+    - topic-privacy
+    - form-incident-report
+    - tone-cautionary
+  claude-outage:
+    category: failures-postmortems
+    tags:
+    - org-anthropic
+    - product-claude
+    - service-ai-platform
+    - topic-reliability
+    - form-postmortem
+  clawcloud-gone:
+    category: security-control-risks
+    tags:
+    - vendor-clawcloud
+    - service-vps
+    - topic-vendor-lock-in
+    - topic-platform-risk
+    - form-guide
+    - tone-cautionary
+  cloud-agent:
+    category: sovereignty-open-ecosystems
+    tags:
+    - service-ai-agents
+    - service-ai-platform
+    - topic-privacy
+    - form-commentary
+  cloud-bribery:
+    category: cloud-business
+    tags:
+    - topic-cloud-business
+    - topic-regulation
+    - topic-sales-marketing-pr
+    - form-commentary
+    - tone-polemic
+  cloud-customers-poor-bored-lonely:
+    category: cloud-business
+    tags:
+    - topic-cloud-business
+    - topic-sales-marketing-pr
+    - topic-developer-experience
+    - form-commentary
+    - tone-satire
+  cloud-exit-2026:
+    category: cloud-exit-economics
+    tags:
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - topic-data-sovereignty
+    - form-commentary
+    - tone-polemic
+  cloud-exit-faq:
+    category: cloud-exit-economics
+    tags:
+    - person-dhh
+    - org-37signals
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - topic-migration
+    - form-faq
+    - form-translation
+  cloud-incompetence:
+    category: failures-postmortems
+    tags:
+    - org-alibaba-group
+    - topic-certificates
+    - topic-reliability
+    - topic-infrastructure-capability
+    - form-commentary
+    - tone-satire
+  cloud-outage-underinvestment:
+    category: failures-postmortems
+    tags:
+    - vendor-tencent-cloud
+    - vendor-alibaba-cloud
+    - topic-infrastructure-investment
+    - topic-reliability
+    - topic-cloud-business
+    - form-commentary
+  cloud-pr-war:
+    category: cloud-business
+    tags:
+    - topic-cloud-business
+    - topic-sales-marketing-pr
+    - topic-community-trust
+    - form-commentary
+    - tone-polemic
+  cloud-rebels:
+    category: sovereignty-open-ecosystems
+    tags:
+    - vendor-aws
+    - topic-cloud-exit
+    - topic-open-source
+    - topic-vendor-lock-in
+    - form-commentary
+    - tone-satire
+  cloud-sales-discount:
+    category: cloud-business
+    tags:
+    - topic-cloud-business
+    - topic-sales-marketing-pr
+    - topic-cloud-economics
+    - form-commentary
+    - tone-satire
+  cloudflare:
+    category: cloud-business
+    tags:
+    - vendor-cloudflare
+    - service-cdn-edge
+    - service-edge-computing
+    - topic-developer-experience
+    - form-guide
+  cvv-leak:
+    category: security-control-risks
+    tags:
+    - service-payment-platform
+    - topic-data-breach
+    - topic-credential-security
+    - form-incident-report
+    - tone-cautionary
+  data-sovereignty-manifesto:
+    category: sovereignty-open-ecosystems
+    tags:
+    - topic-data-sovereignty
+    - topic-local-first
+    - topic-open-source
+    - form-manifesto
+  dba-get-off:
+    category: cloud-databases
+    tags:
+    - resource-database
+    - service-managed-database
+    - topic-automation
+    - form-commentary
+    - tone-polemic
+  dba-vs-rds:
+    category: cloud-databases
+    tags:
+    - service-managed-database
+    - resource-database
+    - topic-careers-organization
+    - form-commentary
+  debris:
+    category: cloud-exit-economics
+    tags:
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - topic-vendor-lock-in
+    - form-data-analysis
+    - tone-polemic
+  deepseek-cert-error:
+    category: failures-postmortems
+    tags:
+    - org-deepseek
+    - topic-certificates
+    - topic-security
+    - topic-software-quality
+    - form-incident-report
+    - tone-satire
+  developers-are-db-users:
+    category: cloud-databases
+    tags:
+    - resource-database
+    - tech-oracle-database
+    - topic-developer-experience
+    - form-commentary
+  dhh-s3-migration:
+    category: cloud-exit-economics
+    tags:
+    - person-dhh
+    - org-37signals
+    - vendor-aws
+    - service-object-storage
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-case-study
+    - form-translation
+  dify-setup:
+    category: self-hosting
+    tags:
+    - product-dify
+    - product-pigsty
+    - tech-postgresql
+    - form-tutorial
+  digoal-leave-aliyun:
+    category: cloud-databases
+    tags:
+    - person-digoal
+    - vendor-alibaba-cloud
+    - tech-postgresql
+    - service-managed-database
+    - topic-postgres-ecosystem
+    - form-commentary
+  dior-leak:
+    category: security-control-risks
+    tags:
+    - org-dior
+    - resource-database
+    - topic-data-breach
+    - topic-security
+    - form-case-study
+    - tone-cautionary
+  drop-rds:
+    category: cloud-databases
+    tags:
+    - service-managed-database
+    - tech-postgresql
+    - service-backup-dr
+    - form-case-study
+  ebs:
+    category: cloud-exit-economics
+    tags:
+    - vendor-aws
+    - service-block-storage
+    - topic-cloud-economics
+    - topic-vendor-lock-in
+    - form-data-analysis
+    - tone-polemic
+  ecs:
+    category: cloud-exit-economics
+    tags:
+    - vendor-alibaba-cloud
+    - service-compute
+    - resource-hardware
+    - topic-cloud-economics
+    - form-data-analysis
+  entrepreneur-vs-rds:
+    category: cloud-business
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-interview
+  exit:
+    category: cloud-exit-economics
+    tags:
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - topic-data-sovereignty
+    - form-essay
+  fastjson-boom:
+    category: infrastructure-engineering
+    tags:
+    - org-alibaba-group
+    - tech-fastjson
+    - topic-software-quality
+    - topic-supply-chain-risk
+    - form-commentary
+    - tone-cautionary
+  finops:
+    category: cloud-exit-economics
+    tags:
+    - topic-finops
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-talk
+    - tone-polemic
+  gcp-cf-outage:
+    category: failures-postmortems
+    tags:
+    - vendor-google-cloud
+    - vendor-cloudflare
+    - service-iam-control-plane
+    - topic-reliability
+    - topic-centralization-risk
+    - form-postmortem
+  gcp-unisuper:
+    category: security-control-risks
+    tags:
+    - vendor-google-cloud
+    - org-unisuper
+    - service-iam-control-plane
+    - service-backup-dr
+    - topic-data-loss
+    - form-case-study
+    - tone-cautionary
+  github-outage:
+    category: failures-postmortems
+    tags:
+    - org-github
+    - resource-database
+    - topic-reliability
+    - topic-software-quality
+    - form-incident-report
+  gojek-leaves-tencent-cloud:
+    category: cloud-business
+    tags:
+    - org-gojek
+    - vendor-tencent-cloud
+    - topic-migration
+    - topic-service-quality
+    - topic-developer-experience
+    - form-case-study
+  goodbye-gpl:
+    category: sovereignty-open-ecosystems
+    tags:
+    - person-martin-kleppmann
+    - topic-open-source
+    - topic-licensing-governance
+    - topic-local-first
+    - form-commentary
+    - form-translation
+  huawei-iam:
+    category: failures-postmortems
+    tags:
+    - vendor-huawei-cloud
+    - service-iam-control-plane
+    - topic-reliability
+    - topic-software-quality
+    - form-incident-report
+  infra-needs-advanced-tech:
+    category: infrastructure-engineering
+    tags:
+    - topic-infrastructure-capability
+    - topic-careers-organization
+    - topic-architecture
+    - form-commentary
+  infra-road-ahead:
+    category: infrastructure-engineering
+    tags:
+    - topic-infrastructure-capability
+    - topic-cloud-exit
+    - topic-architecture
+    - form-commentary
+  infra-team-needed:
+    category: infrastructure-engineering
+    tags:
+    - topic-infrastructure-capability
+    - topic-careers-organization
+    - topic-architecture
+    - form-commentary
+  is-dba-good-job:
+    category: cloud-databases
+    tags:
+    - resource-database
+    - service-managed-database
+    - topic-careers-organization
+    - form-commentary
+  jiangxi-drop-db:
+    category: failures-postmortems
+    tags:
+    - resource-database
+    - service-backup-dr
+    - topic-data-loss
+    - form-incident-report
+    - tone-cautionary
+  kubesphere-rugpull:
+    category: sovereignty-open-ecosystems
+    tags:
+    - product-kubesphere
+    - service-containers
+    - topic-open-source
+    - form-case-study
+    - tone-cautionary
+  leave-aws-save-80-percent:
+    category: cloud-exit-economics
+    tags:
+    - org-prerender
+    - vendor-aws
+    - resource-bare-metal-datacenter
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-case-study
+    - form-translation
+  local-200b:
+    category: self-hosting
+    tags:
+    - resource-hardware
+    - service-ai-models
+    - topic-self-hosting
+    - form-case-study
+  local-ai-inference:
+    category: sovereignty-open-ecosystems
+    tags:
+    - resource-hardware
+    - service-ai-models
+    - topic-local-first
+    - form-data-analysis
+  lost-youth-at-aliyun:
+    category: cloud-business
+    tags:
+    - vendor-alibaba-cloud
+    - topic-careers-organization
+    - topic-infrastructure-capability
+    - topic-software-quality
+    - form-commentary
+    - tone-polemic
+  luo-live:
+    category: cloud-business
+    tags:
+    - person-luo-yonghao
+    - vendor-alibaba-cloud
+    - topic-sales-marketing-pr
+    - topic-cloud-business
+    - form-commentary
+    - tone-satire
+  meituan-cvv-complaint:
+    category: security-control-risks
+    tags:
+    - org-meituan
+    - service-payment-platform
+    - topic-data-breach
+    - topic-security
+    - form-commentary
+  meituan-purge-photo:
+    category: security-control-risks
+    tags:
+    - org-meituan
+    - service-consumer-cloud-storage
+    - topic-privacy
+    - topic-platform-risk
+    - form-incident-report
+    - tone-cautionary
+  minio-alternative:
+    category: self-hosting
+    tags:
+    - product-minio
+    - service-object-storage
+    - topic-self-hosting
+    - form-guide
+    - form-comparison
+  minio-is-dead:
+    category: sovereignty-open-ecosystems
+    tags:
+    - product-minio
+    - service-object-storage
+    - topic-open-source
+    - form-commentary
+    - tone-polemic
+  monitor-existing-pg:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-tutorial
+  netease:
+    category: failures-postmortems
+    tags:
+    - org-netease
+    - service-saas
+    - topic-reliability
+    - topic-software-quality
+    - form-postmortem
+    - tone-satire
+  no-dba-bullshit:
+    category: cloud-databases
+    tags:
+    - resource-database
+    - service-managed-database
+    - topic-careers-organization
+    - form-rebuttal
+    - tone-polemic
+  no-more-dba:
+    category: cloud-databases
+    tags:
+    - resource-database
+    - service-managed-database
+    - topic-automation
+    - form-commentary
+    - tone-polemic
+  odyssey:
+    category: cloud-exit-economics
+    tags:
+    - person-dhh
+    - org-37signals
+    - vendor-aws
+    - topic-cloud-exit
+    - topic-migration
+    - form-case-study
+    - form-translation
+  odyssey-done:
+    category: cloud-exit-economics
+    tags:
+    - person-dhh
+    - org-37signals
+    - vendor-aws
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-case-study
+    - form-translation
+  ontology-again:
+    category: sovereignty-open-ecosystems
+    tags:
+    - org-palantir
+    - tech-olap
+    - topic-data-sovereignty
+    - topic-sales-marketing-pr
+    - form-commentary
+    - tone-polemic
+  open-data-standard:
+    category: sovereignty-open-ecosystems
+    tags:
+    - tech-postgresql
+    - tech-opentelemetry
+    - tech-iceberg
+    - form-data-analysis
+  open-weight:
+    category: sovereignty-open-ecosystems
+    tags:
+    - person-jensen-huang
+    - service-ai-models
+    - topic-open-source
+    - topic-ai-sovereignty
+    - form-commentary
+  openai-failure:
+    category: failures-postmortems
+    tags:
+    - org-openai
+    - service-ai-platform
+    - tech-kubernetes
+    - service-observability
+    - form-postmortem
+  openclaw-drama:
+    category: failures-postmortems
+    tags:
+    - product-openclaw
+    - service-ai-agents
+    - topic-testing-release
+    - form-postmortem
+    - tone-cautionary
+  oracle-cloud-leak:
+    category: security-control-risks
+    tags:
+    - vendor-oracle-cloud
+    - service-iam-control-plane
+    - topic-data-breach
+    - topic-security
+    - form-incident-report
+    - tone-cautionary
+  paradigm:
+    category: sovereignty-open-ecosystems
+    tags:
+    - service-managed-database
+    - topic-local-first
+    - topic-open-source
+    - form-essay
+  patsy:
+    category: cloud-exit-economics
+    tags:
+    - service-managed-database
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-case-study
+    - tone-satire
+  pigsty-intro:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-talk
+  pigsty-relicense:
+    category: sovereignty-open-ecosystems
+    tags:
+    - product-pigsty
+    - topic-open-source
+    - topic-licensing-governance
+    - form-commentary
+  prepaid-cloud-native:
+    category: cloud-business
+    tags:
+    - vendor-aws
+    - topic-cloud-native
+    - topic-cloud-business
+    - topic-cloud-economics
+    - form-commentary
+  profit:
+    category: cloud-business
+    tags:
+    - resource-hardware
+    - topic-cloud-business
+    - topic-cloud-economics
+    - form-data-analysis
+  proprity-pg:
+    category: sovereignty-open-ecosystems
+    tags:
+    - tech-postgresql
+    - product-pigsty
+    - topic-postgres-ecosystem
+    - form-essay
+  public-cloud-untested:
+    category: failures-postmortems
+    tags:
+    - vendor-tencent-cloud
+    - topic-testing-release
+    - topic-reliability
+    - topic-software-quality
+    - form-commentary
+    - tone-polemic
+  qcloud:
+    category: failures-postmortems
+    tags:
+    - vendor-tencent-cloud
+    - service-iam-control-plane
+    - topic-reliability
+    - topic-architecture
+    - form-postmortem
+  qwen-leave:
+    category: cloud-business
+    tags:
+    - person-justin-lin
+    - vendor-alibaba-cloud
+    - product-qwen
+    - service-ai-models
+    - topic-careers-organization
+    - form-incident-report
+  rds:
+    category: cloud-databases
+    tags:
+    - vendor-aws
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - topic-cloud-economics
+    - topic-vendor-lock-in
+    - form-data-analysis
+    - tone-polemic
+  rds-castrates-pg:
+    category: cloud-databases
+    tags:
+    - tech-postgresql
+    - service-managed-database
+    - topic-postgres-ecosystem
+    - form-commentary
+    - tone-polemic
+  rds-duckdb:
+    category: sovereignty-open-ecosystems
+    tags:
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - tech-postgresql
+    - tech-duckdb
+    - form-commentary
+    - tone-polemic
+  rds-failure:
+    category: cloud-databases
+    tags:
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - tech-postgresql
+    - topic-high-availability
+    - form-case-study
+    - tone-cautionary
+  rds-mysql-crash:
+    category: cloud-databases
+    tags:
+    - vendor-alibaba-cloud
+    - service-managed-database
+    - tech-mysql
+    - topic-reliability
+    - form-case-study
+    - tone-cautionary
+  rds-scam:
+    category: cloud-databases
+    tags:
+    - service-managed-database
+    - topic-cloud-economics
+    - topic-vendor-lock-in
+    - form-data-analysis
+    - tone-polemic
+  redis-oss:
+    category: sovereignty-open-ecosystems
+    tags:
+    - tech-redis
+    - topic-open-source
+    - topic-licensing-governance
+    - form-commentary
+    - tone-polemic
+  rednote-cloud-exit:
+    category: cloud-exit-economics
+    tags:
+    - org-rednote
+    - vendor-alibaba-cloud
+    - topic-cloud-exit
+    - topic-migration
+    - topic-infrastructure-capability
+    - form-case-study
+  regulate-cloudflare:
+    category: failures-postmortems
+    tags:
+    - vendor-cloudflare
+    - service-cdn-edge
+    - topic-reliability
+    - topic-regulation
+    - form-commentary
+    - tone-cautionary
+  robo-clog:
+    category: security-control-risks
+    tags:
+    - service-ai-platform
+    - topic-centralization-risk
+    - topic-platform-risk
+    - form-case-study
+    - tone-cautionary
+  s3:
+    category: cloud-exit-economics
+    tags:
+    - vendor-aws
+    - service-object-storage
+    - topic-cloud-economics
+    - topic-vendor-lock-in
+    - form-data-analysis
+    - tone-polemic
+  s3-scam:
+    category: security-control-risks
+    tags:
+    - vendor-aws
+    - service-object-storage
+    - topic-billing-risk
+    - topic-security
+    - form-case-study
+    - tone-cautionary
+  self-hosting-industrialized:
+    category: infrastructure-engineering
+    tags:
+    - product-pigsty
+    - service-managed-database
+    - topic-self-hosting
+    - form-essay
+  single-tenant-saas:
+    category: sovereignty-open-ecosystems
+    tags:
+    - person-dhh
+    - org-37signals
+    - service-saas
+    - topic-local-first
+    - topic-data-sovereignty
+    - form-commentary
+    - form-translation
+  sla:
+    category: cloud-exit-economics
+    tags:
+    - topic-sla
+    - topic-reliability
+    - topic-cloud-business
+    - form-data-analysis
+    - tone-polemic
+  slack-exit:
+    category: sovereignty-open-ecosystems
+    tags:
+    - product-slack
+    - service-saas
+    - topic-vendor-lock-in
+    - form-case-study
+    - tone-cautionary
+  smile:
+    category: cloud-exit-economics
+    tags:
+    - vendor-alibaba-cloud
+    - topic-finops
+    - topic-cloud-exit
+    - topic-cloud-economics
+    - form-commentary
+  sre-outdated:
+    category: infrastructure-engineering
+    tags:
+    - topic-infrastructure-capability
+    - topic-careers-organization
+    - topic-architecture
+    - form-commentary
+  state-owned-enterprise-cloud-view:
+    category: cloud-business
+    tags:
+    - topic-public-sector
+    - topic-cloud-business
+    - topic-regulation
+    - form-commentary
+  supabase:
+    category: self-hosting
+    tags:
+    - product-supabase
+    - tech-postgresql
+    - service-managed-database
+    - form-tutorial
+  supabase-series-c:
+    category: cloud-business
+    tags:
+    - product-supabase
+    - tech-postgresql
+    - topic-postgres-ecosystem
+    - form-commentary
+  telecom-outage:
+    category: failures-postmortems
+    tags:
+    - service-networking
+    - topic-reliability
+    - topic-centralization-risk
+    - form-incident-report
+    - tone-cautionary
+  tencent-2yuan:
+    category: security-control-risks
+    tags:
+    - vendor-tencent-cloud
+    - service-saas
+    - topic-billing-risk
+    - topic-data-loss
+    - form-case-study
+    - tone-cautionary
+  tencent-cloud-native:
+    category: infrastructure-engineering
+    tags:
+    - vendor-tencent-cloud
+    - service-containers
+    - tech-kubernetes
+    - topic-cloud-native
+    - form-data-analysis
+  tencent-disgrace:
+    category: failures-postmortems
+    tags:
+    - vendor-tencent-cloud
+    - topic-reliability
+    - topic-sales-marketing-pr
+    - topic-community-trust
+    - form-commentary
+    - tone-polemic
+  tencent-epic-fail-2:
+    category: failures-postmortems
+    tags:
+    - vendor-tencent-cloud
+    - service-iam-control-plane
+    - topic-reliability
+    - topic-architecture
+    - form-incident-report
+    - tone-cautionary
+  tencent-openclaw:
+    category: sovereignty-open-ecosystems
+    tags:
+    - vendor-tencent-cloud
+    - product-openclaw
+    - service-ai-agents
+    - topic-open-source
+    - form-commentary
+    - tone-polemic
+  toothpaste-cloud:
+    category: cloud-business
+    tags:
+    - vendor-alibaba-cloud
+    - topic-cloud-business
+    - topic-sales-marketing-pr
+    - topic-service-quality
+    - form-commentary
+    - tone-satire
+  uptime:
+    category: infrastructure-engineering
+    tags:
+    - topic-reliability
+    - topic-high-availability
+    - topic-architecture
+    - form-essay
+    - tone-polemic
+  v1.4-preview:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-announcement
+  v2.0:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-announcement
+  v2.0-launch:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-talk
+  v2.0-outlook:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-announcement
+  v2.4:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-announcement
+  v3.0:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-announcement
+  v3.1:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - product-supabase
+    - form-announcement
+  v3.6:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - product-supabase
+    - form-announcement
+  waste:
+    category: infrastructure-engineering
+    tags:
+    - topic-careers-organization
+    - topic-infrastructure-capability
+    - topic-cloud-native
+    - form-essay
+    - tone-polemic
+  what-is-pg-distro:
+    category: self-hosting
+    tags:
+    - tech-postgresql
+    - product-pigsty
+    - topic-postgres-ecosystem
+    - form-guide
+  what-is-pigsty:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - service-managed-database
+    - form-guide
+  what-public-cloud-sells:
+    category: cloud-business
+    tags:
+    - service-api
+    - topic-cloud-business
+    - topic-architecture
+    - form-essay
+  why-cloud-keeps-failing:
+    category: failures-postmortems
+    tags:
+    - topic-reliability
+    - topic-infrastructure-investment
+    - topic-cloud-business
+    - form-commentary
+  wordpress-drama:
+    category: sovereignty-open-ecosystems
+    tags:
+    - product-wordpress
+    - topic-open-source
+    - topic-licensing-governance
+    - form-commentary
+  year-2024:
+    category: self-hosting
+    tags:
+    - product-pigsty
+    - tech-postgresql
+    - topic-self-hosting
+    - form-retrospective
+  zhihu-outage:
+    category: failures-postmortems
+    tags:
+    - org-zhihu
+    - service-cdn-edge
+    - topic-certificates
+    - topic-reliability
+    - form-incident-report

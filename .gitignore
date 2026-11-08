@@ -3,3 +3,15 @@
 /.hugo_build.lock
 .DS_Store
 
+# Local workspaces, Python caches, and import staging.
+/go.work
+/go.work.sum
+/hugo.work
+/hugo.work.sum
+__pycache__/
+
+# Local design previews and one-off development helpers.
+/cloudexit_*.png
+/generate_css.sh
+/test-dark.js
+

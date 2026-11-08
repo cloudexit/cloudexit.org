@@ -1,0 +1,1009 @@
+schema: 1
+categories:
+  cloud-exit-economics:
+    kind: category
+    zh: 云成本与下云
+    en: Cloud Exit Economics
+    aliases:
+    - 下云经济
+    - 云成本
+  failures-postmortems:
+    kind: category
+    zh: 故障与复盘
+    en: Failures & Postmortems
+    aliases:
+    - 云故障
+    - 事故复盘
+  security-control-risks:
+    kind: category
+    zh: 安全、隐私与控制风险
+    en: Security, Privacy & Control Risks
+    aliases:
+    - 安全与隐私
+    - 平台风险
+  cloud-business:
+    kind: category
+    zh: 云产业与商业评论
+    en: Cloud Business & Industry
+    aliases:
+    - 云产业
+    - 商业评论
+  cloud-databases:
+    kind: category
+    zh: 云数据库
+    en: Cloud Databases
+    aliases:
+    - RDS
+    - 托管数据库
+  self-hosting:
+    kind: category
+    zh: 自建实践
+    en: Self-Hosting Playbooks
+    aliases:
+    - 自托管
+    - 自建指南
+  sovereignty-open-ecosystems:
+    kind: category
+    zh: 数据主权与开放生态
+    en: Data Sovereignty & Open Ecosystems
+    aliases:
+    - 数据主权
+    - 开放生态
+  infrastructure-engineering:
+    kind: category
+    zh: 基础设施工程与组织
+    en: Infrastructure Engineering & Organizations
+    aliases:
+    - 基础设施工程
+    - 基础架构组织
+tags:
+  vendor-aws:
+    kind: entity.provider
+    zh: AWS
+    en: AWS
+    aliases:
+    - Amazon Web Services
+    - 亚马逊云
+    - 亚马逊 AWS
+  vendor-alibaba-cloud:
+    kind: entity.provider
+    zh: 阿里云
+    en: Alibaba Cloud
+    aliases:
+    - Aliyun
+    - aliyun
+    - Alibaba Cloud
+  vendor-tencent-cloud:
+    kind: entity.provider
+    zh: 腾讯云
+    en: Tencent Cloud
+    aliases:
+    - QCloud
+    - qcloud
+  vendor-cloudflare:
+    kind: entity.provider
+    zh: Cloudflare
+    en: Cloudflare
+    aliases:
+    - CloudFlare
+    - CF
+  vendor-google-cloud:
+    kind: entity.provider
+    zh: Google Cloud
+    en: Google Cloud
+    aliases:
+    - GCP
+    - Google 云
+    - Google Cloud Platform
+  vendor-microsoft-azure:
+    kind: entity.provider
+    zh: Microsoft Azure
+    en: Microsoft Azure
+    aliases:
+    - Azure
+    - 微软云
+  vendor-oracle-cloud:
+    kind: entity.provider
+    zh: Oracle Cloud
+    en: Oracle Cloud
+    aliases:
+    - OCI
+    - Oracle 云
+  vendor-huawei-cloud:
+    kind: entity.provider
+    zh: 华为云
+    en: Huawei Cloud
+    aliases:
+    - Huawei Cloud
+  vendor-baidu-ai-cloud:
+    kind: entity.provider
+    zh: 百度智能云
+    en: Baidu AI Cloud
+    aliases:
+    - 百度云
+    - Baidu Cloud
+  vendor-clawcloud:
+    kind: entity.provider
+    zh: ClawCloud
+    en: ClawCloud
+    aliases:
+    - 阿爪云
+  org-ahrefs:
+    kind: entity.organization
+    zh: Ahrefs
+    en: Ahrefs
+    aliases: []
+  org-alibaba-group:
+    kind: entity.organization
+    zh: 阿里巴巴
+    en: Alibaba Group
+    aliases:
+    - 阿里
+    - Alibaba
+  org-ant-group:
+    kind: entity.organization
+    zh: 蚂蚁集团
+    en: Ant Group
+    aliases:
+    - 支付宝
+    - Alipay
+    - 蚂蚁金服
+  org-37signals:
+    kind: entity.organization
+    zh: 37signals
+    en: 37signals
+    aliases:
+    - Basecamp
+    - HEY
+  org-openai:
+    kind: entity.organization
+    zh: OpenAI
+    en: OpenAI
+    aliases: []
+  org-anthropic:
+    kind: entity.organization
+    zh: Anthropic
+    en: Anthropic
+    aliases: []
+  org-apple:
+    kind: entity.organization
+    zh: Apple
+    en: Apple
+    aliases:
+    - 苹果
+  org-google:
+    kind: entity.organization
+    zh: Google
+    en: Google
+    aliases:
+    - 谷歌
+  org-meta:
+    kind: entity.organization
+    zh: Meta
+    en: Meta
+    aliases:
+    - Facebook
+    - FB
+  org-github:
+    kind: entity.organization
+    zh: GitHub
+    en: GitHub
+    aliases: []
+  org-crowdstrike:
+    kind: entity.organization
+    zh: CrowdStrike
+    en: CrowdStrike
+    aliases: []
+  org-microsoft:
+    kind: entity.organization
+    zh: Microsoft
+    en: Microsoft
+    aliases:
+    - 微软
+  org-meituan:
+    kind: entity.organization
+    zh: 美团
+    en: Meituan
+    aliases: []
+  org-netease:
+    kind: entity.organization
+    zh: 网易
+    en: NetEase
+    aliases:
+    - 网易云音乐
+  org-rednote:
+    kind: entity.organization
+    zh: 小红书
+    en: RedNote
+    aliases:
+    - Xiaohongshu
+  org-deepseek:
+    kind: entity.organization
+    zh: DeepSeek
+    en: DeepSeek
+    aliases:
+    - 深度求索
+  org-dior:
+    kind: entity.organization
+    zh: 迪奥
+    en: Dior
+    aliases: []
+  org-unisuper:
+    kind: entity.organization
+    zh: UniSuper
+    en: UniSuper
+    aliases: []
+  org-gojek:
+    kind: entity.organization
+    zh: Gojek
+    en: Gojek
+    aliases: []
+  org-palantir:
+    kind: entity.organization
+    zh: Palantir
+    en: Palantir
+    aliases: []
+  org-prerender:
+    kind: entity.organization
+    zh: Prerender.io
+    en: Prerender.io
+    aliases:
+    - Prerender
+  org-zhihu:
+    kind: entity.organization
+    zh: 知乎
+    en: Zhihu
+    aliases: []
+  person-dhh:
+    kind: entity.person
+    zh: DHH
+    en: DHH
+    aliases:
+    - David Heinemeier Hansson
+  person-martin-kleppmann:
+    kind: entity.person
+    zh: Martin Kleppmann
+    en: Martin Kleppmann
+    aliases: []
+  person-jensen-huang:
+    kind: entity.person
+    zh: 黄仁勋
+    en: Jensen Huang
+    aliases:
+    - Jensen Huang
+    - 老黄
+  person-digoal:
+    kind: entity.person
+    zh: 德哥（Digoal）
+    en: Digoal
+    aliases:
+    - 德哥
+  person-luo-yonghao:
+    kind: entity.person
+    zh: 罗永浩
+    en: Luo Yonghao
+    aliases:
+    - 老罗
+  person-justin-lin:
+    kind: entity.person
+    zh: 林俊旸
+    en: Justin Lin
+    aliases:
+    - Justin Lin
+  resource-hardware:
+    kind: resource.infrastructure
+    zh: 硬件
+    en: Hardware
+    aliases:
+    - 服务器硬件
+  resource-bare-metal-datacenter:
+    kind: resource.infrastructure
+    zh: 裸金属与数据中心
+    en: Bare Metal & Data Centers
+    aliases:
+    - 裸金属
+    - 自有机房
+    - 托管机房
+    - IDC
+  resource-database:
+    kind: resource.infrastructure
+    zh: 数据库
+    en: Databases
+    aliases:
+    - Database
+  service-compute:
+    kind: resource.service
+    zh: 计算
+    en: Compute
+    aliases:
+    - EC2
+    - ECS
+    - 云服务器
+  service-vps:
+    kind: resource.service
+    zh: VPS
+    en: VPS
+    aliases:
+    - 虚拟专用服务器
+    - 云主机
+  service-block-storage:
+    kind: resource.service
+    zh: 块存储
+    en: Block Storage
+    aliases:
+    - EBS
+    - 云盘
+  service-object-storage:
+    kind: resource.service
+    zh: 对象存储
+    en: Object Storage
+    aliases:
+    - S3
+    - OSS
+    - COS
+    - BOS
+  service-cdn-edge:
+    kind: resource.service
+    zh: CDN 与边缘
+    en: CDN & Edge
+    aliases:
+    - CDN
+    - DCDN
+    - EdgeOne
+  service-edge-computing:
+    kind: resource.service
+    zh: 边缘计算
+    en: Edge Computing
+    aliases:
+    - Workers
+    - Serverless Edge
+  service-dns-domain:
+    kind: resource.service
+    zh: DNS 与域名
+    en: DNS & Domains
+    aliases:
+    - DNS
+    - 域名
+  service-networking:
+    kind: resource.service
+    zh: 网络
+    en: Networking
+    aliases:
+    - 带宽
+    - 专线
+    - 流量
+  service-iam-control-plane:
+    kind: resource.service
+    zh: IAM 与控制面
+    en: IAM & Control Plane
+    aliases:
+    - IAM
+    - 管控面
+    - 控制面
+  service-managed-database:
+    kind: resource.service
+    zh: 云数据库（RDS）
+    en: Managed Databases
+    aliases:
+    - RDS
+    - 云数据库
+    - 托管数据库
+  service-saas:
+    kind: resource.service
+    zh: SaaS
+    en: SaaS
+    aliases:
+    - Software as a Service
+  service-ai-platform:
+    kind: resource.service
+    zh: AI 平台与助手
+    en: AI Platforms & Assistants
+    aliases:
+    - AI 平台
+    - 云上 AI
+  service-ai-models:
+    kind: resource.service
+    zh: 大模型
+    en: Foundation Models
+    aliases:
+    - LLM
+    - 大模型
+    - 开放权重模型
+  service-ai-agents:
+    kind: resource.service
+    zh: AI Agent
+    en: AI Agents
+    aliases:
+    - Agent
+    - 智能体
+  service-containers:
+    kind: resource.service
+    zh: 容器
+    en: Containers
+    aliases:
+    - 容器化
+  service-observability:
+    kind: resource.service
+    zh: 监控与可观测性
+    en: Observability
+    aliases:
+    - 监控
+    - 可观测性
+  service-backup-dr:
+    kind: resource.service
+    zh: 备份与容灾
+    en: Backup & Disaster Recovery
+    aliases:
+    - 备份
+    - 灾备
+    - DR
+  service-api:
+    kind: resource.service
+    zh: API
+    en: API
+    aliases:
+    - 应用程序接口
+  service-payment-platform:
+    kind: resource.service
+    zh: 支付平台
+    en: Payment Platforms
+    aliases:
+    - 支付系统
+  service-message-queue:
+    kind: resource.service
+    zh: 消息队列
+    en: Message Queues
+    aliases:
+    - MQ
+    - 消息中间件
+  service-consumer-cloud-storage:
+    kind: resource.service
+    zh: 个人云存储
+    en: Consumer Cloud Storage
+    aliases:
+    - 网盘
+    - 个人云盘
+  tech-postgresql:
+    kind: resource.technology
+    zh: PostgreSQL
+    en: PostgreSQL
+    aliases:
+    - Postgres
+    - PG
+  tech-mysql:
+    kind: resource.technology
+    zh: MySQL
+    en: MySQL
+    aliases: []
+  tech-redis:
+    kind: resource.technology
+    zh: Redis
+    en: Redis
+    aliases: []
+  tech-oracle-database:
+    kind: resource.technology
+    zh: Oracle 数据库
+    en: Oracle Database
+    aliases:
+    - Oracle DB
+  tech-kubernetes:
+    kind: resource.technology
+    zh: Kubernetes
+    en: Kubernetes
+    aliases:
+    - K8S
+    - K8s
+  tech-opentelemetry:
+    kind: resource.technology
+    zh: OpenTelemetry
+    en: OpenTelemetry
+    aliases:
+    - OTel
+  tech-iceberg:
+    kind: resource.technology
+    zh: Apache Iceberg
+    en: Apache Iceberg
+    aliases:
+    - Iceberg
+  tech-olap:
+    kind: resource.technology
+    zh: OLAP
+    en: OLAP
+    aliases:
+    - 分析型数据库
+  tech-duckdb:
+    kind: resource.technology
+    zh: DuckDB
+    en: DuckDB
+    aliases:
+    - pg_duckdb
+    - rds_duckdb
+  tech-fastjson:
+    kind: resource.technology
+    zh: FastJSON
+    en: FastJSON
+    aliases:
+    - fastjson
+  tech-clickhouse:
+    kind: resource.technology
+    zh: ClickHouse
+    en: ClickHouse
+    aliases: []
+  product-pigsty:
+    kind: resource.product
+    zh: Pigsty
+    en: Pigsty
+    aliases: []
+  product-supabase:
+    kind: resource.product
+    zh: Supabase
+    en: Supabase
+    aliases: []
+  product-minio:
+    kind: resource.product
+    zh: MinIO
+    en: MinIO
+    aliases: []
+  product-dify:
+    kind: resource.product
+    zh: Dify
+    en: Dify
+    aliases: []
+  product-openclaw:
+    kind: resource.product
+    zh: OpenClaw
+    en: OpenClaw
+    aliases:
+    - 小龙虾
+  product-qwen:
+    kind: resource.product
+    zh: 通义千问
+    en: Qwen
+    aliases:
+    - 千问
+    - Qwen
+  product-claude:
+    kind: resource.product
+    zh: Claude
+    en: Claude
+    aliases: []
+  product-polardb:
+    kind: resource.product
+    zh: PolarDB
+    en: PolarDB
+    aliases: []
+  product-kubesphere:
+    kind: resource.product
+    zh: KubeSphere
+    en: KubeSphere
+    aliases: []
+  product-slack:
+    kind: resource.product
+    zh: Slack
+    en: Slack
+    aliases: []
+  product-wordpress:
+    kind: resource.product
+    zh: WordPress
+    en: WordPress
+    aliases: []
+  topic-cloud-exit:
+    kind: topic
+    zh: 下云
+    en: Cloud Exit
+    aliases:
+    - Cloud-Exit
+    - 云回迁
+    - 逃离云
+  topic-cloud-economics:
+    kind: topic
+    zh: 云成本经济
+    en: Cloud Economics
+    aliases:
+    - 成本
+    - Cost
+    - TCO
+    - 价格
+  topic-migration:
+    kind: topic
+    zh: 迁移与回迁
+    en: Migration & Repatriation
+    aliases:
+    - 迁移
+    - Migration
+    - Repatriation
+  topic-finops:
+    kind: topic
+    zh: FinOps
+    en: FinOps
+    aliases:
+    - 云成本管理
+  topic-self-hosting:
+    kind: topic
+    zh: 自建
+    en: Self-Hosting
+    aliases:
+    - 自托管
+    - 本地部署
+  topic-vendor-lock-in:
+    kind: topic
+    zh: 厂商锁定
+    en: Vendor Lock-in
+    aliases:
+    - 平台锁定
+    - 云依赖
+  topic-data-sovereignty:
+    kind: topic
+    zh: 数据主权
+    en: Data Sovereignty
+    aliases:
+    - 数据自主
+    - 数据所有权
+  topic-local-first:
+    kind: topic
+    zh: 本地优先
+    en: Local First
+    aliases:
+    - Local-First
+  topic-open-source:
+    kind: topic
+    zh: 开源
+    en: Open Source
+    aliases:
+    - 开放源码
+  topic-licensing-governance:
+    kind: topic
+    zh: 许可证与共同体治理
+    en: Licensing & Community Governance
+    aliases:
+    - 开源许可证
+    - 社区治理
+  topic-reliability:
+    kind: topic
+    zh: 可靠性与可用性
+    en: Reliability & Availability
+    aliases:
+    - 可靠性
+    - 可用性
+  topic-security:
+    kind: topic
+    zh: 安全
+    en: Security
+    aliases:
+    - 信息安全
+  topic-privacy:
+    kind: topic
+    zh: 隐私
+    en: Privacy
+    aliases:
+    - 个人信息保护
+  topic-billing-risk:
+    kind: topic
+    zh: 账单风险
+    en: Billing Risk
+    aliases:
+    - 账单异常
+    - 费用失控
+  topic-data-loss:
+    kind: topic
+    zh: 数据丢失
+    en: Data Loss
+    aliases:
+    - 删库
+    - 数据删除
+  topic-software-quality:
+    kind: topic
+    zh: 软件质量
+    en: Software Quality
+    aliases:
+    - 软件工程
+    - 工程质量
+  topic-architecture:
+    kind: topic
+    zh: 架构
+    en: Architecture
+    aliases:
+    - 系统架构
+  topic-infrastructure-capability:
+    kind: topic
+    zh: 基础设施能力
+    en: Infrastructure Capability
+    aliases:
+    - 基础架构能力
+  topic-infrastructure-investment:
+    kind: topic
+    zh: 基础设施投入
+    en: Infrastructure Investment
+    aliases:
+    - 投入不足
+  topic-cloud-business:
+    kind: topic
+    zh: 云商业模式
+    en: Cloud Business Models
+    aliases:
+    - 商业
+    - Business
+  topic-sales-marketing-pr:
+    kind: topic
+    zh: 销售、营销与公关
+    en: Sales, Marketing & PR
+    aliases:
+    - 销售
+    - 营销
+    - 公关
+  topic-regulation:
+    kind: topic
+    zh: 监管与治理
+    en: Regulation & Governance
+    aliases:
+    - 监管
+    - 合规
+  topic-developer-experience:
+    kind: topic
+    zh: 开发者体验
+    en: Developer Experience
+    aliases:
+    - DX
+  topic-careers-organization:
+    kind: topic
+    zh: 职业与组织
+    en: Careers & Organizations
+    aliases:
+    - 职业
+    - 组织能力
+  topic-ai-sovereignty:
+    kind: topic
+    zh: AI 主权
+    en: AI Sovereignty
+    aliases:
+    - 模型主权
+    - AI 自主
+  topic-centralization-risk:
+    kind: topic
+    zh: 集中化风险
+    en: Centralization Risk
+    aliases:
+    - 单点集中风险
+  topic-geopolitical-risk:
+    kind: topic
+    zh: 地缘与物理风险
+    en: Geopolitical & Physical Risk
+    aliases:
+    - 战争风险
+    - 物理风险
+  topic-postgres-ecosystem:
+    kind: topic
+    zh: PostgreSQL 生态
+    en: PostgreSQL Ecosystem
+    aliases:
+    - PG生态
+    - PG Ecosystem
+  topic-cloud-native:
+    kind: topic
+    zh: 云原生
+    en: Cloud Native
+    aliases:
+    - Cloud-Native
+  topic-sla:
+    kind: topic
+    zh: SLA
+    en: SLA
+    aliases:
+    - 服务等级协议
+  topic-high-availability:
+    kind: topic
+    zh: 高可用
+    en: High Availability
+    aliases:
+    - HA
+    - 容灾
+  topic-automation:
+    kind: topic
+    zh: 自动化
+    en: Automation
+    aliases:
+    - 运维自动化
+  topic-community-trust:
+    kind: topic
+    zh: 共同体信任
+    en: Community Trust
+    aliases:
+    - 社区信任
+    - 生态信任
+  topic-supply-chain-risk:
+    kind: topic
+    zh: 供应链风险
+    en: Supply Chain Risk
+    aliases:
+    - 供应链安全
+  topic-testing-release:
+    kind: topic
+    zh: 测试与发布工程
+    en: Testing & Release Engineering
+    aliases:
+    - 测试
+    - 发布工程
+  topic-public-sector:
+    kind: topic
+    zh: 政企与公共部门
+    en: Public Sector
+    aliases:
+    - 政企
+    - 国企
+    - 公共部门
+  topic-service-quality:
+    kind: topic
+    zh: 服务质量
+    en: Service Quality
+    aliases:
+    - 产品质量
+    - 客户支持
+  topic-platform-risk:
+    kind: topic
+    zh: 平台风险
+    en: Platform Risk
+    aliases:
+    - 平台控制风险
+  topic-credential-security:
+    kind: topic
+    zh: 凭据安全
+    en: Credential Security
+    aliases:
+    - 密码泄漏
+    - 密钥泄漏
+  topic-data-breach:
+    kind: topic
+    zh: 数据泄露
+    en: Data Breaches
+    aliases:
+    - 数据泄漏
+  topic-phishing-fraud:
+    kind: topic
+    zh: 钓鱼与诈骗
+    en: Phishing & Fraud
+    aliases:
+    - 钓鱼
+    - 诈骗
+  topic-certificates:
+    kind: topic
+    zh: 证书管理
+    en: Certificate Management
+    aliases:
+    - HTTPS 证书
+    - TLS 证书
+  topic-competition:
+    kind: topic
+    zh: 市场竞争
+    en: Market Competition
+    aliases:
+    - 价格战
+    - 竞争
+  form-case-study:
+    kind: form.primary
+    zh: 案例
+    en: Case Study
+    aliases:
+    - 案例分析
+  form-incident-report:
+    kind: form.primary
+    zh: 事件记录
+    en: Incident Report
+    aliases:
+    - 事故快讯
+    - 事件快讯
+  form-postmortem:
+    kind: form.primary
+    zh: 故障复盘
+    en: Postmortem
+    aliases:
+    - Incident Review
+    - 事故复盘
+  form-tutorial:
+    kind: form.primary
+    zh: 教程
+    en: Tutorial
+    aliases:
+    - 操作教程
+  form-guide:
+    kind: form.primary
+    zh: 指南
+    en: Guide
+    aliases:
+    - 选型指南
+  form-comparison:
+    kind: form.primary
+    zh: 对比评测
+    en: Comparison
+    aliases:
+    - 比较
+    - 评测
+  form-data-analysis:
+    kind: form.primary
+    zh: 数据分析
+    en: Data Analysis
+    aliases:
+    - 定量分析
+  form-commentary:
+    kind: form.primary
+    zh: 评论
+    en: Commentary
+    aliases:
+    - 技术评论
+    - 商业评论
+    - 社会观察
+  form-interview:
+    kind: form.primary
+    zh: 访谈
+    en: Interview
+    aliases:
+    - 访谈问答
+    - 圆桌访谈
+  form-manifesto:
+    kind: form.primary
+    zh: 宣言
+    en: Manifesto
+    aliases: []
+  form-announcement:
+    kind: form.primary
+    zh: 发布公告
+    en: Announcement
+    aliases:
+    - 发布说明
+    - 版本发布
+  form-retrospective:
+    kind: form.primary
+    zh: 回顾
+    en: Retrospective
+    aliases:
+    - 年度回顾
+  form-rebuttal:
+    kind: form.primary
+    zh: 驳论
+    en: Rebuttal
+    aliases:
+    - 反驳
+  form-essay:
+    kind: form.primary
+    zh: 随笔
+    en: Essay
+    aliases:
+    - 长文
+  form-faq:
+    kind: form.primary
+    zh: 问答
+    en: FAQ
+    aliases:
+    - 常见问题
+  form-talk:
+    kind: form.primary
+    zh: 演讲稿
+    en: Talk
+    aliases:
+    - 分享稿
+    - 演讲实录
+  form-translation:
+    kind: form.modifier
+    zh: 译文
+    en: Translation
+    aliases:
+    - 翻译
+  tone-satire:
+    kind: tone
+    zh: 讽刺
+    en: Satire
+    aliases:
+    - 戏谑
+    - 反讽
+  tone-polemic:
+    kind: tone
+    zh: 论战
+    en: Polemic
+    aliases:
+    - 檄文
+    - 激烈评论
+  tone-cautionary:
+    kind: tone
+    zh: 警示
+    en: Cautionary
+    aliases:
+    - 风险警示

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "policy": "Reviewed replacements for legacy URLs that returned a confirmed 404 or had a clearly obsolete language/path layout.",
+  "replacements": [
+    {
+      "old": "https://github.com/Vonng/pigsty/blob/master/roles/node_id/vars/rpm.yml",
+      "new": "https://github.com/pgsty/pigsty/blob/v3.0.0/roles/node_id/vars/rpm.yml"
+    },
+    {
+      "old": "https://github.com/Vonng/pigsty/blob/master/roles/node_id/vars/deb.yml",
+      "new": "https://github.com/pgsty/pigsty/blob/v3.0.0/roles/node_id/vars/deb.yml"
+    },
+    {
+      "old": "https://github.com/pgsty/pigsty/blob/main/terraform/spec/aliyun-meta-s3.tf",
+      "new": "https://github.com/pgsty/pigsty/blob/main/terraform/spec/aliyun-s3.tf"
+    },
+    {
+      "old": "https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/right-to-data-portability/",
+      "new": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-data-portability/"
+    },
+    {
+      "old": "https://joinup.ec.europa.eu/sites/default/files/document/2011-12/OSS-procurement-guideline-final.pdf",
+      "new": "https://interoperable-europe.ec.europa.eu/sites/default/files/document/2011-12/OSS-procurement-guideline%20-final.pdf"
+    },
+    {
+      "old": "https://ma.tt/2024/10/other-lawsuits/",
+      "new": "https://diff.blog/post/those-other-lawsuits-192074/"
+    },
+    {
+      "old": "https://pigsty.io/docs/reference/compatibility",
+      "new": "https://pigsty.io/docs/ref/linux/"
+    },
+    {
+      "old": "https://pigsty.io/docs/setup/prepare/",
+      "new": "https://pigsty.io/docs/deploy/prepare/"
+    },
+    {
+      "old": "https://pigsty.io/docs/setup/provision/",
+      "new": "https://pigsty.io/docs/deploy/sandbox/"
+    },
+    {
+      "old": "https://pigsty.io/docs/releasenote/#v200",
+      "new": "https://pigsty.io/docs/about/release/#v200"
+    },
+    {
+      "old": "https://pigsty.io/docs/releasenote/#v240",
+      "new": "https://pigsty.io/docs/about/release/#v240"
+    },
+    {
+      "old": "https://pigsty.io/docs/releasenote/#v300",
+      "new": "https://pigsty.io/docs/about/release/#v300"
+    },
+    {
+      "old": "https://pigsty.io/docs/releasenote/#v310",
+      "new": "https://pigsty.io/docs/about/release/#v310"
+    },
+    {
+      "old": "https://pigsty.io/docs/releasenote/#v360",
+      "new": "https://pigsty.io/docs/about/release/#v360"
+    },
+    {
+      "old": "https://pigsty.io/zh/blog/db/cve-2024-6387/",
+      "new": "https://pigsty.cc/blog/db/cve-2024-6387/"
+    }
+  ],
+  "language_replacements": [
+    {
+      "old": "https://pigsty.io/zh/",
+      "en": "https://pigsty.io/",
+      "zh": "https://pigsty.cc/"
+    },
+    {
+      "old": "https://pigsty.io/zh/doc/provision",
+      "en": "https://pigsty.io/docs/deploy/terraform/",
+      "zh": "https://pigsty.cc/docs/deploy/terraform/"
+    },
+    {
+      "old": "https://pigsty.io/zh/docs/about/service",
+      "en": "https://pigsty.io/docs/about/service/",
+      "zh": "https://pigsty.cc/docs/about/service/"
+    }
+  ]
+}

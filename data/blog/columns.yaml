@@ -1,0 +1,58 @@
+schema: 1
+columns:
+  - id: cloud-exit-economics
+    weight: 10
+    icon: fa-solid fa-arrow-right-from-bracket
+    title_en: Cloud Exit Economics
+    title_zh: 云成本与下云
+    description_en: Exit cases, TCO models, resource prices, FinOps, and the economics of leaving cloud services.
+    description_zh: 下云案例、TCO 模型、资源价格、FinOps，以及离开云服务的经济账。
+  - id: failures-postmortems
+    weight: 20
+    icon: fa-solid fa-triangle-exclamation
+    title_en: Failures & Postmortems
+    title_zh: 故障与复盘
+    description_en: Service incidents, technical causes, timelines, accountability, and lessons from failure.
+    description_zh: 云服务事故、技术原因、事件时间线、责任边界与故障教训。
+  - id: security-control-risks
+    weight: 30
+    icon: fa-solid fa-shield-halved
+    title_en: Security, Privacy & Control Risks
+    title_zh: 安全、隐私与控制风险
+    description_en: Security, privacy, billing, data-loss, and control-plane risks when someone else holds the keys.
+    description_zh: 当控制权掌握在他人手中时，安全、隐私、账单、数据丢失与控制面风险。
+  - id: cloud-business
+    weight: 40
+    icon: fa-solid fa-chart-line
+    title_en: Cloud Business & Industry
+    title_zh: 云产业与商业评论
+    description_en: Cloud vendors, market structure, pricing strategy, sales, public relations, and industry commentary.
+    description_zh: 云厂商、市场结构、定价策略、销售、公关与产业评论。
+  - id: cloud-databases
+    weight: 50
+    icon: fa-solid fa-database
+    title_en: Cloud Databases
+    title_zh: 云数据库
+    description_en: RDS economics, operational boundaries, database capability, and the changing role of DBAs.
+    description_zh: RDS 经济账、托管边界、数据库能力，以及 DBA 角色的变化。
+  - id: self-hosting
+    weight: 60
+    icon: fa-solid fa-screwdriver-wrench
+    title_en: Self-Hosting Playbooks
+    title_zh: 自建实践
+    description_en: Practical playbooks, deployment guides, product choices, and operating experience for self-hosting.
+    description_zh: 自建部署的实操手册、产品选型、迁移方法与运行经验。
+  - id: sovereignty-open-ecosystems
+    weight: 70
+    icon: fa-solid fa-key
+    title_en: Data Sovereignty & Open Ecosystems
+    title_zh: 数据主权与开放生态
+    description_en: Data sovereignty, exit rights, local-first software, open source, licensing, and community governance.
+    description_zh: 数据主权、退出权、本地优先、开源软件、许可证与共同体治理。
+  - id: infrastructure-engineering
+    weight: 80
+    icon: fa-solid fa-gears
+    title_en: Infrastructure Engineering & Organizations
+    title_zh: 基础设施工程与组织
+    description_en: Architecture, APIs, hardware, SRE, platform teams, and durable infrastructure capability.
+    description_zh: 架构、API、硬件、SRE、平台团队与可持续的基础设施能力。

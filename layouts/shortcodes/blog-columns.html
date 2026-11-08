@@ -1,0 +1,25 @@
+{{- $lang := .Page.Language.Lang -}}
+{{- $columns := hugo.Data.blog.columns.columns | default slice -}}
+<div class="td-section-index td-section-index--cards td-content-cards ce-blog-columns" style="--td-card-columns: 2">
+  {{- range sort $columns "weight" -}}
+    {{- $term := $.Page.Site.GetPage (printf "/categories/%s" .id) -}}
+    {{- $title := cond (eq $lang "zh") .title_zh .title_en -}}
+    {{- $description := cond (eq $lang "zh") .description_zh .description_en -}}
+    {{- $count := 0 -}}
+    {{- with $term }}{{ $count = len .Pages }}{{ end -}}
+    <article class="td-content-card td-section-index__card">
+      <div class="td-content-card__body">
+        <h2 class="td-content-card__heading">
+          <i class="{{ .icon }} td-content-card__icon" aria-hidden="true"></i>
+          {{- with $term -}}
+            <a class="td-content-card__title" href="{{ .RelPermalink }}">{{ $title }}</a>
+          {{- else -}}
+            <span class="td-content-card__title">{{ $title }}</span>
+          {{- end -}}
+          <span class="ce-blog-columns__count">{{ $count }}</span>
+        </h2>
+        <p>{{ $description }}</p>
+      </div>
+    </article>
+  {{- end -}}
+</div>

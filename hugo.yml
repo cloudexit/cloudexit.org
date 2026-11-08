@@ -9,6 +9,15 @@ outputs:
   page: [HTML, markdown]
   section: [HTML, RSS, print, markdown]
 
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+  series: series
+
+pagination:
+  pagerSize: 24
+
 markup:
   tableOfContents:
     endLevel: 4
@@ -45,12 +54,12 @@ languages:
         - { identifier: evidence, name: Evidence, pageRef: /evidence, weight: 30 }
         - { identifier: cases, name: Cases, pageRef: /cases, weight: 40 }
         - { identifier: playbook, name: Playbook, pageRef: /playbook, weight: 50 }
-        - identifier: source
+        - identifier: blog
           name: Essays
-          url: https://vonng.com/cloud/
-          weight: 90
+          pageRef: /blog
+          weight: 60
           params:
-            icon: fa-solid fa-arrow-up-right-from-square
+            icon: fa-solid fa-pen-nib
 
   zh:
     label: 简体中文
@@ -69,12 +78,12 @@ languages:
         - { identifier: evidence, name: 档案, pageRef: /evidence, weight: 30 }
         - { identifier: cases, name: 案例, pageRef: /cases, weight: 40 }
         - { identifier: playbook, name: 手册, pageRef: /playbook, weight: 50 }
-        - identifier: source
-          name: 评论原文
-          url: https://vonng.com/cloud/
-          weight: 90
+        - identifier: blog
+          name: 文章
+          pageRef: /blog
+          weight: 60
           params:
-            icon: fa-solid fa-arrow-up-right-from-square
+            icon: fa-solid fa-pen-nib
 
 params:
   tdVersion:
