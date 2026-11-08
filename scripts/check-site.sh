@@ -15,7 +15,7 @@ command -v ruby >/dev/null
 command -v rg >/dev/null
 
 hugo_version="$("$hugo" version)"
-if [[ "$hugo_version" != 'hugo v0.168.0+extended '* && "$hugo_version" != 'hugo v0.168.0+extended+'* ]]; then
+if [[ ! "$hugo_version" =~ ^hugo\ v0\.168\.0(-[0-9a-f]+)?\+extended(\+withdeploy)?[[:space:]] ]]; then
   printf 'expected Hugo Extended 0.168.0, got: %s\n' "$hugo_version" >&2
   exit 1
 fi
