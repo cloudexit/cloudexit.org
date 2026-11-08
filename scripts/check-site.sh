@@ -13,8 +13,8 @@ ruby -rjson -e 'JSON.parse(File.read("schemas/vendor.schema.json")); puts "vendo
 python3 scripts/verify-ledger-assets.py
 
 module_graph="$(hugo mod graph)"
-if [[ "$module_graph" != *"github.com/pgsty/oink@v1.5.0"* ]]; then
-  printf '%s\n' 'Oink module is not pinned to v1.5.0' >&2
+if [[ "$module_graph" != *"github.com/pgsty/oink@v1.5.1"* ]]; then
+  printf '%s\n' 'Oink module is not pinned to v1.5.1' >&2
   exit 1
 fi
 
