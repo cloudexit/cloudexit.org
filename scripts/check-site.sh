@@ -14,16 +14,26 @@ command -v python3 >/dev/null
 command -v ruby >/dev/null
 command -v rg >/dev/null
 
-hugo_version="$("$hugo" version)"
-if [[ ! "$hugo_version" =~ ^hugo\ v0\.168\.0(-[0-9a-f]+)?\+extended(\+withdeploy)?[[:space:]] ]]; then
-  printf 'expected Hugo Extended 0.168.0, got: %s\n' "$hugo_version" >&2
+"$hugo" version
+go version
+go mod verify
+if [[ $# == 0 ]]; then
+  version="$(go list -mod=readonly -m -f '{{if not .Replace}}{{.Version}}{{end}}' github.com/pgsty/oink)"
+  [[ "$version" =~ ^v1\.[0-9]+\.[0-9]+$ ]] || { echo "Expected a pinned OINK release in go.mod" >&2; exit 1; }
+  expected_theme="github.com/pgsty/oink@$version"
+elif [[ $# == 2 && "$1" == --theme-dir ]]; then
+  expected_theme="$(cd "$2" && pwd -P)"
+  rg -qx 'module github\.com/pgsty/oink' "$expected_theme/go.mod"
+  export HUGO_MODULE_REPLACEMENTS="github.com/pgsty/oink -> $expected_theme"
+else
+  echo "usage: $0 [--theme-dir OINK_CHECKOUT]" >&2
+  exit 2
+fi
+module_graph="$("$hugo" mod graph)"
+if ! printf '%s\n' "$module_graph" | cut -d ' ' -f 2- | rg -Fxq -- "$expected_theme"; then
+  printf 'Expected OINK %s in module graph:\n%s\n' "$expected_theme" "$module_graph" >&2
   exit 1
 fi
-if [[ "$(go env GOVERSION)" != 'go1.27.3' ]]; then
-  printf '%s\n' 'expected Go 1.27.3' >&2
-  exit 1
-fi
-printf '%s\n' "$hugo_version" "$(go version)"
 
 ruby scripts/check-home-parity.rb
 ruby -rjson -e 'JSON.parse(File.read("schemas/vendor.schema.json")); puts "vendor schema JSON OK"'
@@ -32,12 +42,6 @@ python3 scripts/verify-blog-import.py
 ruby scripts/check-blog-editorial.rb
 python3 scripts/check-blog-markdown.py
 python3 scripts/check-blog-external-snapshot.py
-
-module_graph="$("$hugo" mod graph)"
-if ! printf '%s\n' "$module_graph" | rg -q '^[^[:space:]]+ github[.]com/pgsty/oink@v1[.]5[.]1$'; then
-  printf '%s\n' 'Oink module is not pinned to v1.5.1' >&2
-  exit 1
-fi
 
 while IFS= read -r source_page; do
   case "$source_page" in

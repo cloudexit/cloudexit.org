@@ -1,7 +1,7 @@
 # Cloud Exit
 
 Local skeleton for [cloudexit.org](https://cloudexit.org/), built with Hugo and
-[Oink 1.5.1](https://github.com/pgsty/oink/releases/tag/v1.5.1).
+[Oink 1.6.0](https://github.com/pgsty/oink/releases/tag/v1.6.0).
 
 > Status: **v0.1 evidence site with essay archive**. The information
 > architecture, bilingual landing page, editorial contracts, and route
@@ -43,9 +43,9 @@ SHA-256 digest of every copied file. `make check` verifies that inventory.
 
 ## Local preview
 
-Use **Hugo Extended 0.168.0** and **Go 1.27.3**. If another Hugo is on
-`PATH`, pass `HUGO=/path/to/hugo` to Make. LibSass is bundled with Hugo;
-its deprecation warning is accepted and must remain visible.
+Use Hugo and the Go version declared in `go.mod` (OINK `v1.6.0`, plain CSS).
+Run `make dev` to preview against a sibling theme checkout and `make check-local`
+to validate it; set `THEME_DIR` to select another checkout.
 
 ```bash
 make serve
@@ -58,8 +58,8 @@ make check
 ```
 
 `serve`, `build`, and `check` disable both workspaces and local theme
-replacements. `check` also verifies the exact toolchain and published theme
-pin, then builds to a temporary directory outside the repository.
+replacements. `check` reports the toolchain, verifies the published theme pin,
+and builds to a temporary directory outside the repository.
 
 The generated static site is written to `public/`. Local build success is not
 deployment, DNS, or production-rendering proof.
@@ -80,8 +80,6 @@ checksums and headline values.
   named commercial tool could benefit.
 - English is the canonical public standard; Chinese is maintained in parity for
   the standard, method, registry, and core playbook.
-
-Local theme regression preview: run `make dev` with the sibling `../oink` checkout, or set `THEME_DIR=/path/to/oink`. This disables both Go and Hugo workspaces and uses the current local theme; the published module pin is unchanged.
 
 Preview screenshots and one-off design helpers stay local and are ignored.
 Article images and author portraits are source assets with hashes recorded in

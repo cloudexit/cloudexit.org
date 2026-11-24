@@ -1,0 +1,69 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #164b63;
+  --bs-secondary: #9a4f12;
+  --bs-success: #2f6b4f;
+  --bs-warning: #8a5a00;
+  --bs-danger: #8b2f3f;
+  --bs-primary-rgb: 22, 75, 99;
+  --bs-secondary-rgb: 154, 79, 18;
+  --bs-success-rgb: 47, 107, 79;
+  --bs-warning-rgb: 138, 90, 0;
+  --bs-danger-rgb: 139, 47, 63;
+  --bs-primary-text-emphasis: #091e28;
+  --bs-secondary-text-emphasis: #3e2007;
+  --bs-success-text-emphasis: #132b20;
+  --bs-warning-text-emphasis: #372400;
+  --bs-danger-text-emphasis: #381319;
+  --bs-primary-bg-subtle: #d0dbe0;
+  --bs-secondary-bg-subtle: #ebdcd0;
+  --bs-success-bg-subtle: #d5e1dc;
+  --bs-warning-bg-subtle: #e8decc;
+  --bs-danger-bg-subtle: #e8d5d9;
+  --bs-primary-border-subtle: #a2b7c1;
+  --bs-secondary-border-subtle: #d7b9a0;
+  --bs-success-border-subtle: #acc4b9;
+  --bs-warning-border-subtle: #d0bd99;
+  --bs-danger-border-subtle: #d1acb2;
+  --bs-form-valid-color: var(--bs-success);
+  --bs-form-valid-border-color: var(--bs-success);
+  --bs-form-invalid-color: var(--bs-danger);
+  --bs-form-invalid-border-color: var(--bs-danger);
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary-text-emphasis: #7393a1;
+  --bs-secondary-text-emphasis: #c29571;
+  --bs-success-text-emphasis: #82a695;
+  --bs-warning-text-emphasis: #b99c66;
+  --bs-danger-text-emphasis: #b9828c;
+  --bs-primary-bg-subtle: #040f14;
+  --bs-secondary-bg-subtle: #1f1004;
+  --bs-success-bg-subtle: #091510;
+  --bs-warning-bg-subtle: #1c1200;
+  --bs-danger-bg-subtle: #1c090d;
+  --bs-primary-border-subtle: #0d2d3b;
+  --bs-secondary-border-subtle: #5c2f0b;
+  --bs-success-border-subtle: #1c402f;
+  --bs-warning-border-subtle: #533600;
+  --bs-danger-border-subtle: #531c26;
+  --bs-form-valid-color: #98cdaf;
+  --bs-form-valid-border-color: #98cdaf;
+  --bs-form-invalid-color: #dd8091;
+  --bs-form-invalid-border-color: #dd8091;
+}
+
+.nav-link:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.btn-link {
+  --bs-btn-focus-shadow-rgb: 57, 102, 122;
+}
+
+.pagination {
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+  --bs-pagination-active-bg: var(--bs-primary);
+  --bs-pagination-active-border-color: var(--bs-primary);
+}
+

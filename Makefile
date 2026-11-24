@@ -1,7 +1,7 @@
 THEME_DIR ?= ../oink
 HUGO ?= hugo
 HUGO_ENV = env -u HUGO_MODULE_REPLACEMENTS -u HUGO_PANICONWARNING GOWORK=off HUGO_MODULE_WORKSPACE=off
-.PHONY: serve build data blog-editorial check clean
+.PHONY: serve build data blog-editorial check check-local clean
 
 serve:
 	$(HUGO_ENV) $(HUGO) server -D
@@ -22,6 +22,9 @@ blog-editorial:
 
 check:
 	HUGO="$(HUGO)" ./scripts/check-site.sh
+
+check-local:
+	HUGO="$(HUGO)" ./scripts/check-site.sh --theme-dir "$(THEME_DIR)"
 
 clean:
 	rm -rf public resources

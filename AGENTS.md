@@ -2,13 +2,11 @@
 
 ## OINK build baseline
 
-As of 2026-11-07, this site uses OINK v1.5.1 and Hugo Extended 0.168.0.
-Keep CI and local builds on this baseline. Do not enable `--panicOnWarning`
-or `HUGO_PANICONWARNING`; keep warnings visible and review them. The upstream
-LibSass deprecation warning is accepted. No external Sass compiler is required.
-
-Use Go 1.27.3. `make check` validates the published module with both workspaces
-and local replacements disabled; select a non-default Hugo with `HUGO=/path/to/hugo`.
+Use the Go version in `go.mod` and the installed Hugo. `make check` validates
+the published module with both workspaces and local replacements disabled.
+`make check-local` validates the OINK 1.6 site styles against the sibling
+theme checkout. Select a Hugo binary with `HUGO=/path/to/hugo`. Review build
+warnings with `--panicOnWarning` and `HUGO_PANICONWARNING` disabled.
 Site-owned landing overrides live in `layouts/_partials/landing/sections/`;
 `taxonomy-label.html` and `blog-columns.html` supply the archive's column labels
 and navigation. These are site extensions, not OINK APIs.
