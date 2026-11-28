@@ -87,10 +87,11 @@ languages:
 
 params:
   tdVersion:
-    latest: v1.5.1
+    latest: v1.7.0
   version: v0.1
-  hugoMinVersion: 0.168.0
+  hugoMinVersion: 0.169.0
   productionURL: https://cloudexit.org
+  video_embeds: [bilibili, youtube]
   copyright:
     authors: >-
       [Cloud Exit](https://cloudexit.org/) is an open evidence project initiated

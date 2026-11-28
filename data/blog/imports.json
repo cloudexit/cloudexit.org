@@ -4503,15 +4503,15 @@
         },
         {
           "path": "content/blog/entrepreneur-vs-rds/index.md",
-          "bytes": 26250,
-          "sha256": "b59564fd5a405ac6aee2b69cf5303bdf53adba416a400581f61cfc073a6d5fda",
+          "bytes": 26152,
+          "sha256": "f66cc370d56ca5f0bbc0bc1c09e47113df673b174defbee97d34463e90e2110b",
           "import_sha256": "ec0811f0d2ea14a1c70c30ed00dd89b903259bf8e240e6b93f6390baa83f7a03",
           "editorially_modified": true
         },
         {
           "path": "content/blog/entrepreneur-vs-rds/index.zh.md",
-          "bytes": 22993,
-          "sha256": "338ce58ad6a4f8d4ef0b9d6359ca1561a8798474f01322c8b169cbdbc57748b9",
+          "bytes": 22909,
+          "sha256": "fb3db1c0465568b3651285b661e2fd3001228f9ddb560fbf28435a5ff85d6142",
           "import_sha256": "27213e7d2983a0a8a0d6b235b91f15587482c1969c52c91801177e0db696ac3f",
           "editorially_modified": true
         }
@@ -10940,7 +10940,7 @@
   ],
   "totals": {
     "article_files": 1273,
-    "article_bytes": 168588715,
+    "article_bytes": 168588533,
     "support_files": 109,
     "support_bytes": 3545423,
     "editorially_modified_files": 239,
@@ -10949,8 +10949,8 @@
   },
   "editorial_revision": {
     "schema": 1,
-    "updated_at": "2026-11-08T14:39:42.312515+00:00",
-    "note": "publication review: replace literal Dify secrets, require HTTPS video embeds, and trim redundant whitespace",
+    "updated_at": "2026-11-28T10:02:48.761289+00:00",
+    "note": "upgrade OINK to v1.7.0 and adopt native click-to-play video card",
     "removed_import_files": [
       {
         "path": "content/blog/rds/rds.en.md",

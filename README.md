@@ -1,7 +1,7 @@
 # Cloud Exit
 
 Local skeleton for [cloudexit.org](https://cloudexit.org/), built with Hugo and
-[Oink 1.6.0](https://github.com/pgsty/oink/releases/tag/v1.6.0).
+[Oink 1.7.0](https://github.com/pgsty/oink/releases/tag/v1.7.0).
 
 > Status: **v0.1 evidence site with essay archive**. The information
 > architecture, bilingual landing page, editorial contracts, and route
@@ -43,7 +43,7 @@ SHA-256 digest of every copied file. `make check` verifies that inventory.
 
 ## Local preview
 
-Use Hugo and the Go version declared in `go.mod` (OINK `v1.6.0`, plain CSS).
+Use Hugo and the Go version declared in `go.mod` (OINK `v1.7.0`, plain CSS).
 Run `make dev` to preview against a sibling theme checkout and `make check-local`
 to validate it; set `THEME_DIR` to select another checkout.
 
